@@ -1,0 +1,308 @@
+{
+ "id": "2026-10-08",
+ "date": "2026-10-08",
+ "category": "求职",
+ "title": "招聘顾问来电初筛 BA 合同岗",
+ "titleEn": "A recruiter screens you for a BA contract role",
+ "scene": [
+  "周四上午，你接到一个陌生号码。对方是招聘中介（recruitment agency）的顾问 Brooke，在 LinkedIn 上看到你的资料，想推荐你去 CBD 一个州政府部门做 6 个月 BA 合同岗（可续约、混合办公）。 她语速很快，会一口气问：现在方不方便、你的工作权利、notice period、期望日薪（含不含 super）、Agile 经验，最后说要发 PD 给你、让你发更新的 CV。",
+  "你的目标：听懂合同时长和办公安排；说清 notice period 和日薪范围；没听清的地方至少追问 2 次；最后确认“谁、什么时候、发什么邮件”。"
+ ],
+ "vocab": [
+  {
+   "en": "touch base",
+   "zh": "联系一下、简单沟通一下",
+   "ex": "Just wanted to touch base about a role I'm working on."
+  },
+  {
+   "en": "a quick chat",
+   "zh": "简短聊几句（常指电话初筛）",
+   "ex": "Have you got time for a quick chat?"
+  },
+  {
+   "en": "a contract role",
+   "zh": "合同岗（固定期限）；对比 permanent role 长期岗",
+   "ex": "It's a six-month contract role."
+  },
+  {
+   "en": "with a view to extend",
+   "zh": "有续约的可能",
+   "ex": "It's six months, with a view to extend."
+  },
+  {
+   "en": "hybrid",
+   "zh": "混合办公（部分在家）",
+   "ex": "It's hybrid, three days in and two from home."
+  },
+  {
+   "en": "notice period",
+   "zh": "离职需提前通知的时间",
+   "ex": "My notice period is four weeks."
+  },
+  {
+   "en": "day rate",
+   "zh": "日薪（合同工常按天算）",
+   "ex": "What sort of day rate are you after?"
+  },
+  {
+   "en": "plus super / inclusive of super",
+   "zh": "另加养老金 / 已含养老金",
+   "ex": "Is that plus super or inclusive of super?"
+  },
+  {
+   "en": "ballpark (figure)",
+   "zh": "大概数字、大致范围",
+   "ex": "Just a ballpark figure is fine."
+  },
+  {
+   "en": "full working rights",
+   "zh": "完全的工作权利（无限制）",
+   "ex": "The role needs full working rights."
+  },
+  {
+   "en": "put you forward",
+   "zh": "把你推荐给（雇主）",
+   "ex": "I'll put you forward to the hiring manager."
+  },
+  {
+   "en": "hiring manager",
+   "zh": "用人经理（真正做决定的人）",
+   "ex": "The hiring manager wants to meet next week."
+  }
+ ],
+ "listening": [
+  {
+   "en": "Hi, is that Amy? It's Brooke from Harbour Talent. Have I caught you at a bad time?",
+   "sound": "is that → “izzat”；caught you at → “cor-cha-at”，三个词连成一串；整句一口气说完。",
+   "zh": "你好，是 Amy 吗？我是 Harbour Talent 的 Brooke。我是不是打扰你了？",
+   "reply": "No, it's fine. I've got a few minutes. / Actually, could I call you back in an hour?"
+  },
+  {
+   "en": "I came across your profile on LinkedIn and reckon you'd be a really good fit.",
+   "sound": "came across → “kay-muh-cross”；reckon you'd → “reck-uh-nyood”。reckon 是澳洲人最常用的“我觉得”。",
+   "zh": "我在 LinkedIn 上看到你的资料，觉得你非常合适。",
+   "reply": "Oh, thanks. Can you tell me a bit more about the role?"
+  },
+  {
+   "en": "Six-month contract, view to extend, three days in, two from home.",
+   "sound": "省掉了很多词：完整是 “It's a six-month contract, with a view to extend. You work three days in the office and two days from home.” 澳洲人常用这种“清单式”快说。",
+   "zh": "6 个月合同，可续约，三天在办公室，两天在家。",
+   "reply": "Sorry, could you say that again a bit slower?"
+  },
+  {
+   "en": "What sort of day rate are you after? Just ballpark's fine.",
+   "sound": "what sort of → “wot-sorta”；are you after → “ah-ya-after”（after = 想要）；ballpark's = ballpark is。",
+   "zh": "你期望多少日薪？说个大概就行。",
+   "reply": "I'd be looking for around seven fifty a day, plus super."
+  },
+  {
+   "en": "No dramas, they're keen to get someone on board by early November.",
+   "sound": "No dramas = No worries（没问题）；get someone on board → “ge-someone-on-board”，t 几乎听不见；on board = 入职。",
+   "zh": "没问题，他们希望 11 月初前有人入职。",
+   "reply": "Okay. My notice period is four weeks, so that should work."
+  },
+  {
+   "en": "I'll flick you the PD this arvo. If you're keen, shoot me through an updated CV.",
+   "sound": "flick you / shoot me through = 发给你/发给我；PD = position description；arvo = afternoon；If you're keen → “if-yer-keen”。",
+   "zh": "我今天下午把职位说明发给你。如果你感兴趣，就把更新的简历发给我。",
+   "reply": "Great. So you'll email me the PD this afternoon, and I'll send you my CV. Is that right?"
+  }
+ ],
+ "speech": {
+  "topic": "你是谁、现在做什么、一个最近的项目、你想找什么样的工作",
+  "paragraphs": [
+   "Sure, happy to. My name is Amy, and I'm a Business Analyst based here in Adelaide. Over the last few years, I've mainly worked on projects that help teams replace manual processes with better systems and reporting.",
+   "In my current role, I work closely with business users and the IT team. A normal week for me includes running workshops, writing user stories, and making sure everyone agrees on the requirements before the developers start building.",
+   "One recent project I'm proud of is a reporting dashboard for our operations team. Before the project, they spent hours every week copying data into spreadsheets. I interviewed the key users, mapped the current process, and found out which numbers really mattered to them. Then I wrote the requirements and worked with the developers to test each part.",
+   "We had a few challenges. For example, at first we couldn't get access to test data, so I chased it up with the data team and we found a workaround. Now the team saves around five hours a week, and the managers can see the numbers straight away.",
+   "What I enjoy most about being a BA is turning a messy problem into something clear and practical. I'm good at asking questions, listening carefully, and writing things down so people can make decisions.",
+   "At the moment, I'm looking for a role where I can work with a wider range of stakeholders and keep growing my skills. I'm open to contract or permanent roles, and a hybrid set-up would suit me well. I can start after my notice period, which is four weeks."
+  ],
+  "zh": "当然。我叫 Amy，是一名在阿德莱德工作的业务分析师。过去几年，我主要做的项目是帮助团队用更好的系统和报表替代手工流程。在现在的岗位上，我和业务用户、IT 团队紧密合作。我平常一周会主持工作坊、写用户故事，并确保开发开始之前大家对需求达成一致。最近一个让我自豪的项目，是给运营团队做的报表看板。项目之前，他们每周花好几个小时把数据复制到表格里。我访谈了关键用户，梳理了现有流程，弄清楚哪些数字对他们真正重要。然后我写了需求，并和开发一起测试每个部分。过程中有一些挑战。比如一开始我们拿不到测试数据的权限，我就去跟数据团队催，最后找到了变通办法。现在团队每周大约节省五个小时，经理们也能马上看到数据。做 BA 我最喜欢的，是把一个乱糟糟的问题变得清楚、可落地。我擅长提问、认真倾听，并把事情写清楚，方便大家做决定。目前我在找一个能接触更多不同利益相关方、继续提升能力的岗位。合同岗或长期岗我都可以考虑，混合办公会很适合我。我可以在离职通知期结束后入职，通知期是四周。",
+  "patterns": [
+   {
+    "en": "In my current role, I mainly work on ___, and I work closely with ___.",
+    "zh": "现在的岗位上，我主要做___，和___紧密合作。"
+   },
+   {
+    "en": "One recent project I'm proud of is ___. Before that, ___. I ___, and now ___.",
+    "zh": "最近一个让我自豪的项目是___。之前___。我做了___，现在___。"
+   },
+   {
+    "en": "What I enjoy most about ___ is ___. I'm good at ___.",
+    "zh": "关于___我最喜欢的是___。我擅长___。"
+   },
+   {
+    "en": "At the moment, I'm looking for ___. I can start ___.",
+    "zh": "目前我在找___。我可以___入职。"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Brooke",
+   "role": "招聘顾问"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Hi, is that Amy? It's Brooke calling from Harbour Talent. Have I caught you at a bad time?",
+    "zh": "你好，是 Amy 吗？我是 Harbour Talent 的 Brooke。我是不是打扰你了？"
+   },
+   {
+    "s": "y",
+    "en": "Hi Brooke. No, it's fine, I've got a few minutes. What's it about?",
+    "zh": "你好 Brooke。没关系，我有几分钟。是什么事？"
+   },
+   {
+    "s": "o",
+    "en": "Oh, lovely. So, I came across your profile on LinkedIn, and I reckon you'd be a really good fit for a BA role I'm working on at the moment. Just wanted to touch base and have a quick chat, if that's all right.",
+    "zh": "哦，太好了。我在 LinkedIn 上看到你的资料，觉得你很适合我手上一个 BA 岗位。想跟你简单聊几句，可以吗？"
+   },
+   {
+    "s": "y",
+    "en": "Sure, sounds good. Can you tell me a bit more about the role?",
+    "zh": "好的。能多介绍一下这个岗位吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, absolutely. So, it's with a state government department in the CBD. Six-month contract, view to extend, and it's hybrid, so three days in, two from home. They're replacing an old case management system, so there's a fair bit of stakeholder engagement, workshops, process mapping, that kind of thing.",
+    "zh": "当然。是 CBD 的一个州政府部门。6 个月合同，可续约，混合办公，三天在办公室、两天在家。他们要替换一个老的案件管理系统，所以有不少和利益相关方沟通、工作坊、流程梳理之类的工作。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, could you say that again a bit slower? I didn't quite catch the part after \"six-month contract\".",
+    "zh": "不好意思，能说慢一点再说一遍吗？“六个月合同”后面那部分我没太听清。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, sorry, I do talk fast! Six-month contract, with a view to extend, so there's a good chance it'll go longer. And it's hybrid: three days in the office, two at home.",
+    "zh": "哦，抱歉，我说话是挺快的！6 个月合同，有续约的可能，所以很可能会更长。混合办公：三天在办公室，两天在家。"
+   },
+   {
+    "s": "y",
+    "en": "Got it, thanks. That sounds interesting. I've done a lot of workshops and process mapping in my current role.",
+    "zh": "明白了，谢谢。听起来挺有意思。我现在的工作里做过很多工作坊和流程梳理。"
+   },
+   {
+    "s": "o",
+    "en": "Perfect. And just quickly, it's government, so they need full working rights, and you'd have to pass a police check. Is that all okay for you?",
+    "zh": "太好了。顺便问一下，因为是政府岗位，需要完全的工作权利，还要通过无犯罪记录审查。这些对你都没问题吧？"
+   },
+   {
+    "s": "y",
+    "en": "Yes, I've got full working rights, and I'm happy to do a police check.",
+    "zh": "没问题，我有完全的工作权利，也愿意做无犯罪记录审查。"
+   },
+   {
+    "s": "o",
+    "en": "Great. And what's your notice period looking like?",
+    "zh": "好。你的离职通知期是多久？"
+   },
+   {
+    "s": "y",
+    "en": "It's four weeks.",
+    "zh": "四周。"
+   },
+   {
+    "s": "o",
+    "en": "Four weeks, no dramas. They're keen to get someone on board by early November, but I reckon they'd wait for the right person. Now, rates. What sort of day rate are you after? Just a ballpark's fine.",
+    "zh": "四周，没问题。他们希望 11 月初前有人入职，不过我觉得遇到合适的人他们会愿意等。那说说薪资吧。你期望多少日薪？说个大概就行。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, just to confirm, do you mean the daily rate for the contract?",
+    "zh": "不好意思，确认一下，你是说这份合同的日薪吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, that's it. Contractors usually get paid by the day, so a dollar figure per day, and whether that's plus super or including super.",
+    "zh": "对，就是这个。合同工一般按天付钱，所以就是每天多少钱，还有是另加 super 还是包含 super。"
+   },
+   {
+    "s": "y",
+    "en": "Okay, thanks. I'd be looking for around seven hundred and fifty a day, plus super. But I'm a bit flexible, depending on the role.",
+    "zh": "好的，谢谢。我期望每天大约 750 澳元，另加 super。不过根据岗位情况，我可以灵活一些。"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, that's right in the range they've got, so that works. Have you had much experience with Agile? Like, writing user stories, sitting in on sprint planning, that sort of thing?",
+    "zh": "嗯，正好在他们的预算范围内，可以。你 Agile 经验多吗？比如写用户故事、参加冲刺计划会之类的？"
+   },
+   {
+    "s": "y",
+    "en": "Yes, quite a lot. In my current team, I write the user stories and acceptance criteria, and I join sprint planning and the daily stand-ups.",
+    "zh": "有，挺多的。在现在的团队里，我负责写用户故事和验收标准，也参加冲刺计划会和每日站会。"
+   },
+   {
+    "s": "o",
+    "en": "Awesome. Okay, so here's what I'll do. I'll flick you the PD this arvo. Have a read, and if you're keen, shoot me through an updated CV, ideally tailored a bit to the role, and I'll put you forward to the hiring manager.",
+    "zh": "太好了。那我这样安排：今天下午我把 PD 发给你。你看一下，如果感兴趣，就把更新过的简历发给我，最好针对这个岗位稍微调整一下，然后我把你推荐给用人经理。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, what's a PD?",
+    "zh": "不好意思，PD 是什么？"
+   },
+   {
+    "s": "o",
+    "en": "Oh, sorry, position description. Basically the full job details: the duties, the skills they want, and who you'd report to.",
+    "zh": "哦，抱歉，就是职位说明。基本上是完整的岗位信息：职责、要求的技能，还有你向谁汇报。"
+   },
+   {
+    "s": "y",
+    "en": "Ah, okay. So you'll email me the position description this afternoon, and then I'll send you my updated CV. Is that right?",
+    "zh": "啊，好的。所以你今天下午把职位说明发邮件给我，然后我把更新的简历发给你，对吗？"
+   },
+   {
+    "s": "o",
+    "en": "Spot on. If they like it, they'll probably want a quick Teams interview sometime next week. Would mornings or afternoons suit you better?",
+    "zh": "完全正确。如果他们满意，可能下周会安排一个简短的 Teams 面试。上午还是下午对你更方便？"
+   },
+   {
+    "s": "y",
+    "en": "Mornings are better for me, after nine thirty, because I do the school drop-off first. Could you send the interview details by email as well, please?",
+    "zh": "上午对我更好，九点半以后，因为我要先送孩子上学。面试的具体信息也能发邮件给我吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, of course, I'll pop everything in an email. Righto, thanks heaps for your time, Amy. Chat soon!",
+    "zh": "当然，我会把所有信息都写在邮件里。好啦，非常感谢你抽时间，Amy。回头聊！"
+   },
+   {
+    "s": "y",
+    "en": "Thanks, Brooke. Have a good day. Bye!",
+    "zh": "谢谢你，Brooke。祝你今天愉快。再见！"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, could you say that again a bit slower, please?",
+   "zh": "不好意思，能慢一点再说一遍吗？"
+  },
+  {
+   "en": "Sorry, what does PD stand for?",
+   "zh": "不好意思，PD 是什么的缩写？（换成任何听不懂的缩写）"
+  },
+  {
+   "en": "Could you spell the name of your agency for me, please?",
+   "zh": "能帮我拼一下你们中介的名字吗？"
+  },
+  {
+   "en": "Just to confirm, you mean three days in the office and two from home, right?",
+   "zh": "确认一下，你是说三天在办公室、两天在家，对吗？"
+  },
+  {
+   "en": "Would you mind sending me the details by email, so I don't miss anything?",
+   "zh": "能把详细信息发邮件给我吗？这样我不会漏掉。"
+  }
+ ],
+ "checklist": [
+  "我听懂了合同时长、办公安排和下一步安排",
+  "对话里我至少用了 2 次追问 / 确认句",
+  "我能用一句话说清 notice period 和期望日薪（含不含 super）",
+  "2 分钟演讲中间没有超过 5 秒的停顿",
+  "我用上了至少 3 个今天的新表达"
+ ]
+}

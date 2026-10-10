@@ -1,0 +1,309 @@
+{
+ "id": "2026-10-09",
+ "date": "2026-10-09",
+ "category": "保险/医疗",
+ "title": "专科诊所来电改复诊时间",
+ "titleEn": "The specialist's rooms call to reschedule",
+ "scene": [
+  "周五早上，你接到一个电话：是 Parkside Specialist Centre（专科诊所）的前台 Mel。你下周三约了 Dr Patel 的复诊，但医生那周休假，她要帮你改时间；她还会告诉你：GP 开的转诊信（referral）已经过了 12 个月有效期。",
+  "你的目标：① 听清她给的日期和时间，选一个不影响送孩子上学的时段；② 搞清楚要不要找 GP 重开转诊信、怎么发给诊所；③ 问清自付多少、Medicare 能退多少、取消规则。"
+ ],
+ "vocab": [
+  {
+   "en": "specialist rooms",
+   "zh": "专科医生诊所（澳洲常说 rooms）",
+   "ex": "I'm calling from Dr Patel's rooms at Parkside Specialist Centre."
+  },
+  {
+   "en": "reschedule / move (an appointment)",
+   "zh": "改预约时间",
+   "ex": "Dr Patel's away that week, so we've gotta move you."
+  },
+  {
+   "en": "bring forward / push back",
+   "zh": "提前 / 推后",
+   "ex": "Can we bring it forward a week, or push it back to the afternoon?"
+  },
+  {
+   "en": "squeeze someone in",
+   "zh": "挤出时间加个号",
+   "ex": "She reckons she can squeeze you in at eight forty."
+  },
+  {
+   "en": "cancellation list",
+   "zh": "取消候补名单（有人取消就通知你）",
+   "ex": "I can pop you on the cancellation list if you like."
+  },
+  {
+   "en": "referral",
+   "zh": "转诊信（GP 开给专科的）",
+   "ex": "Your referral's run out, so you'll need a new one."
+  },
+  {
+   "en": "run out / expire",
+   "zh": "过期、用完",
+   "ex": "It was only good for twelve months, so it's run out."
+  },
+  {
+   "en": "upfront",
+   "zh": "当场先付全款",
+   "ex": "It's a hundred and sixty upfront on the day."
+  },
+  {
+   "en": "out of pocket / the gap",
+   "zh": "自付部分 / 差额",
+   "ex": "You're out of pocket about seventy-five dollars."
+  },
+  {
+   "en": "Medicare rebate / claim",
+   "zh": "Medicare 退款 / 报销",
+   "ex": "We can do the Medicare claim for you on the day."
+  },
+  {
+   "en": "follow-up (appointment)",
+   "zh": "复诊",
+   "ex": "It's a follow-up, so it's shorter than the first one."
+  },
+  {
+   "en": "48 hours' notice / cancellation fee",
+   "zh": "提前 48 小时通知 / 取消费",
+   "ex": "We need forty-eight hours' notice, otherwise there's a cancellation fee."
+  }
+ ],
+ "listening": [
+  {
+   "en": "Hi, is that Amy? It's Mel calling from Dr Patel's rooms. How're you going?",
+   "sound": "is that → \"izzat\"；How're you going → \"How-ya-goin'?\"（问好，不是问你去哪）",
+   "zh": "你好，是 Amy 吗？我是 Dr Patel 诊所的 Mel。你好吗？",
+   "reply": "Good, thanks. How are you?"
+  },
+  {
+   "en": "Dr Patel's gonna be away that week, so we've gotta move you, sorry about that.",
+   "sound": "gonna = going to；we've gotta → \"we've godda\"（t 浊化成轻 d）",
+   "zh": "Patel 医生那周不在，所以得给你改时间，不好意思。",
+   "reply": "No worries. What other times have you got?"
+  },
+  {
+   "en": "I've got a ten-forty on the twenty-first, or there's a quarter past two the week after.",
+   "sound": "a ten-forty = 一个 10:40 的号；quarter past two = 2:15；数字连在一起说得很快",
+   "zh": "21 号有个 10:40 的号，或者下一周有个 2:15 的。",
+   "reply": "Sorry, was that ten forty on the twenty-first?"
+  },
+  {
+   "en": "Your referral's run out. It was only good for twelve months, so you'll need to grab a new one off your GP.",
+   "sound": "referral's = referral has；good for = 有效期是；grab one off your GP = 找 GP 拿一份",
+   "zh": "你的转诊信过期了，只有 12 个月有效，你得找 GP 重开一份。",
+   "reply": "Oh, I see. Can my GP email it to you?"
+  },
+  {
+   "en": "It's a hundred and sixty upfront, you'll get around eighty-five back, so you're out of pocket about seventy-five.",
+   "sound": "a hundred and sixty → \"a hundred n sixty\"；get around → \"ged-around\"",
+   "zh": "当天先付 160，大概能退 85，自付大约 75。",
+   "reply": "So I pay one-sixty on the day and get about eighty-five back?"
+  },
+  {
+   "en": "I'll just pop you on hold for a sec while I check with her.",
+   "sound": "pop you on hold = 让你稍等（电话保持）；for a sec = 一下下",
+   "zh": "我先让你稍等一下，我去问问医生。",
+   "reply": "Sure, no worries."
+  }
+ ],
+ "speech": {
+  "topic": "讲讲你在澳洲是怎么处理看医生/预约这件事的，有没有踩过坑？（第一人称）",
+  "paragraphs": [
+   "Today I want to talk about how I handle medical appointments here in Adelaide.",
+   "When I first moved to Australia, the health system was quite confusing for me. In my home country, I could go straight to a hospital and see a specialist. Here, it works differently. First, you see a GP, and if you need a specialist, the GP writes you a referral.",
+   "I didn't know that a referral only lasts for twelve months. Last year, I turned up to a specialist appointment, and the receptionist told me my referral had run out. I had to pay the full fee, and I couldn't claim anything back from Medicare. That was a lesson for me.",
+   "Now I'm much more organised. I keep all our appointments in one calendar on my phone, including my kid's check-ups. When I book a specialist, I always ask three questions: how much it costs upfront, how much I'll get back from Medicare, and what the cancellation policy is.",
+   "The hardest part for me is still the phone calls. Receptionists often speak very fast, and they say dates and times quickly, like \"a ten-forty on the twenty-first\". I used to just say \"yes\" even when I wasn't sure. Now I ask them to slow down, or I repeat the details back to check. Most people are really friendly about it.",
+   "My tip for anyone new to Australia is simple: don't be shy to ask again. It's much better to ask twice than to turn up on the wrong day, or with the wrong paperwork."
+  ],
+  "zh": "我想聊聊在阿德莱德怎么处理看医生的预约。刚来澳洲时，医疗系统让我很困惑：在国内可以直接去医院看专科，这里要先看 GP，需要专科时由 GP 开转诊信。我不知道转诊信只有 12 个月有效。去年去看专科时，前台说我的转诊信过期了，我只能付全款，Medicare 一分都退不了，算是买了个教训。现在我更有条理了：全家的预约都放在手机日历里，包括孩子的检查。预约专科时我一定问三件事：当天先付多少、Medicare 退多少、取消规则是什么。对我来说最难的还是电话：前台说得很快，日期时间一口气说完。以前没听清也会说 yes，现在我会请对方慢一点，或者把细节复述一遍确认。大多数人都很友好。给新来澳洲的人一个建议：别不好意思再问一遍，问两次总比去错日子、带错材料强。",
+  "patterns": [
+   {
+    "en": "When I first moved to Australia, ___ was quite confusing for me.",
+    "zh": "刚来澳洲时，___ 让我很困惑。（换成：the school system / renting a house / tax returns）"
+   },
+   {
+    "en": "I didn't know that ___. That was a lesson for me.",
+    "zh": "我不知道 ___，算是买了个教训。"
+   },
+   {
+    "en": "Now I always ___ before I ___.",
+    "zh": "现在我在 ___ 之前一定会 ___。"
+   },
+   {
+    "en": "My tip for anyone new to ___ is simple: ___.",
+    "zh": "给刚接触 ___ 的人一个简单建议：___。"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Mel",
+   "role": "专科诊所前台"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Hi, is that Amy? It's Mel calling from Dr Patel's rooms at Parkside Specialist Centre. How're you going?",
+    "zh": "你好，是 Amy 吗？我是 Parkside 专科中心 Dr Patel 诊所的 Mel。你好吗？"
+   },
+   {
+    "s": "y",
+    "en": "Hi Mel, I'm good, thanks. How are you?",
+    "zh": "你好 Mel，我挺好的，谢谢。你呢？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, not bad, thanks. Look, I'm just ringing about your appointment on Wednesday the fourteenth. Unfortunately Dr Patel's gonna be away that week, so we've gotta move you. Sorry about that.",
+    "zh": "嗯，还不错，谢谢。是这样，我打电话是关于你 14 号周三的预约。很遗憾 Patel 医生那周不在，所以得给你改时间。不好意思。"
+   },
+   {
+    "s": "y",
+    "en": "Oh, OK. No problem. What other times do you have?",
+    "zh": "哦，好的，没问题。还有什么别的时间？"
+   },
+   {
+    "s": "o",
+    "en": "So I've got a ten-forty on Wednesday the twenty-first, or there's a quarter past two on Tuesday the twenty-seventh. Otherwise it's not till mid-November, I'm afraid.",
+    "zh": "我这边有 21 号周三上午 10:40，或者 27 号周二下午 2:15。不然就要等到 11 月中了。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, could you say that again a bit slower? I didn't catch the times.",
+    "zh": "不好意思，能再说一遍、慢一点吗？我没听清时间。"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, no worries. Ten forty in the morning, Wednesday the twenty-first. Or two fifteen in the afternoon, Tuesday the twenty-seventh.",
+    "zh": "好的，没问题。21 号周三上午 10:40，或者 27 号周二下午 2:15。"
+   },
+   {
+    "s": "y",
+    "en": "The afternoon one is a bit hard, because I have to pick up my kid from school. Is there anything early in the morning, like before nine?",
+    "zh": "下午那个有点难，因为我要去学校接孩子。有没有早上早一点的，比如九点前？"
+   },
+   {
+    "s": "o",
+    "en": "Hmm, she doesn't usually start till half eight... Hang on, I'll just pop you on hold for a sec and check with her.",
+    "zh": "嗯，她一般八点半才开始……稍等，我先让你等一下，我去问问她。"
+   },
+   {
+    "s": "y",
+    "en": "Sure, thank you.",
+    "zh": "好的，谢谢。"
+   },
+   {
+    "s": "o",
+    "en": "Thanks for holding. She reckons she can squeeze you in at eight forty on the twenty-first. Would that work for you?",
+    "zh": "谢谢你等。她说 21 号早上 8:40 可以给你加个号。这个时间可以吗？"
+   },
+   {
+    "s": "y",
+    "en": "Eight forty on the twenty-first. Yes, that works. Thank you so much.",
+    "zh": "21 号 8:40。可以，太感谢了。"
+   },
+   {
+    "s": "o",
+    "en": "Lovely. Now, while I've got you, I was just looking at your file, and your referral's actually run out. It was only good for twelve months, so you'll need to grab a new one off your GP before you come in.",
+    "zh": "好的。另外趁着跟你通话，我刚看了你的档案，你的转诊信其实已经过期了。它只有 12 个月有效，所以来之前你得找 GP 重新开一份。"
+   },
+   {
+    "s": "y",
+    "en": "Just to confirm, you mean I need a new referral letter from my GP before the twenty-first?",
+    "zh": "我确认一下，你是说 21 号之前我需要 GP 开一封新的转诊信？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, spot on. Otherwise you won't get anything back from Medicare. Your GP can email it straight to us, or fax it through, whatever's easier.",
+    "zh": "对，没错。不然 Medicare 一分钱都不退。你的 GP 可以直接发邮件给我们，或者传真过来，哪个方便都行。"
+   },
+   {
+    "s": "y",
+    "en": "OK. Could you spell the email address for me, please?",
+    "zh": "好的。你能把邮箱地址拼给我吗？"
+   },
+   {
+    "s": "o",
+    "en": "Sure. It's reception at parksidespec dot com dot au. That's P-A-R-K-S-I-D-E, then S-P-E-C.",
+    "zh": "可以。是 reception@parksidespec.com.au，拼写是 P-A-R-K-S-I-D-E，然后 S-P-E-C。"
+   },
+   {
+    "s": "y",
+    "en": "Got it. And how much will it cost? Is it the same as last time?",
+    "zh": "记下了。那费用是多少？跟上次一样吗？"
+   },
+   {
+    "s": "o",
+    "en": "So it's a follow-up, so it's a hundred and sixty upfront, and you'll get around eighty-five back from Medicare, so you're out of pocket about seventy-five. We can do the claim for you on the day if you bring your Medicare card.",
+    "zh": "这是复诊，当天先付 160，Medicare 大概退 85，所以你自付大约 75。如果你带 Medicare 卡，当天我们可以帮你报销。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, so I pay one-sixty on the day, and I get about eighty-five back?",
+    "zh": "不好意思，所以我当天付 160，然后大概退 85，对吗？"
+   },
+   {
+    "s": "o",
+    "en": "That's right. It goes straight back into your bank account, usually within a day or two.",
+    "zh": "对。钱会直接退到你的银行账户，一般一两天内到。"
+   },
+   {
+    "s": "y",
+    "en": "Great. Will I get a reminder?",
+    "zh": "太好了。会有提醒吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, you'll get a text two days before. Just reply Y to confirm. And if anything comes up, give us a ring. We just need forty-eight hours' notice, otherwise there's a cancellation fee.",
+    "zh": "会的，提前两天会发短信给你，回复 Y 确认就行。如果临时有事给我们打电话，我们需要提前 48 小时通知，不然要收取消费。"
+   },
+   {
+    "s": "y",
+    "en": "OK, no worries. So it's eight forty, Wednesday the twenty-first, and I'll ask my GP to email the new referral.",
+    "zh": "好的，没问题。那就是 21 号周三 8:40，我会请 GP 把新转诊信发邮件过去。"
+   },
+   {
+    "s": "o",
+    "en": "Perfect. Thanks, Amy. Have a good weekend!",
+    "zh": "完美。谢谢你 Amy，周末愉快！"
+   },
+   {
+    "s": "y",
+    "en": "Thanks, you too. Bye!",
+    "zh": "谢谢，你也是。拜拜！"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, could you say the date and time again, a bit slower?",
+   "zh": "不好意思，能再慢一点说一下日期和时间吗？"
+  },
+  {
+   "en": "Just to confirm, that's eight forty on Wednesday the twenty-first?",
+   "zh": "我确认一下，是 21 号周三 8:40 对吗？"
+  },
+  {
+   "en": "Could you spell that for me, please?",
+   "zh": "能帮我拼一下吗？"
+  },
+  {
+   "en": "Would you mind texting me the details, just so I have them in writing?",
+   "zh": "能把细节发短信给我吗？我想留个书面记录。"
+  },
+  {
+   "en": "I'm in a meeting right now. Could I call you back in ten minutes?",
+   "zh": "我现在在开会，十分钟后回你电话可以吗？"
+  }
+ ],
+ "checklist": [
+  "我听懂了 Mel 给的两个时间（10:40 / 2:15）和最后定的 8:40",
+  "我知道 referral 过期是什么意思、要怎么处理",
+  "我用了至少 2 次礼貌追问（say that again / just to confirm）",
+  "我能说出 upfront、out of pocket、rebate 的区别",
+  "2 分钟演讲我讲满了，中间停顿不超过 3 秒",
+  "我最后把关键信息复述了一遍（日期 + 要做的事）"
+ ]
+}

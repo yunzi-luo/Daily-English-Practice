@@ -1,0 +1,309 @@
+{
+ "id": "2026-10-06",
+ "date": "2026-10-06",
+ "category": "工作",
+ "title": "长周末后茶水间和同事闲聊",
+ "titleEn": "Kitchen small talk after the long weekend",
+ "scene": [
+  "周二早上 9 点前，你在办公室 kitchen 冲咖啡。同事 Dave（团队的 Senior Developer，地道阿德莱德人，说话快、爱用缩略）走进来，先聊长周末，再顺口告诉你今天 stand-up 推迟，经理 Mel 会让你汇报 reporting dashboard 的需求进度。",
+  "你的目标：① 自然地聊两句周末；② 听准新的开会时间并确认；③ 用一两句话说清进度和卡点（blocker），接受对方的帮忙。"
+ ],
+ "vocab": [
+  {
+   "en": "long weekend",
+   "zh": "长周末（周一公休，连放三天）",
+   "ex": "How was the long weekend? Did you do anything fun?"
+  },
+  {
+   "en": "get away",
+   "zh": "出门度假、离开本地",
+   "ex": "We didn't get away this time. We just stayed home."
+  },
+  {
+   "en": "have a quiet one",
+   "zh": "安安静静过（周末/晚上）",
+   "ex": "We had a quiet one at home with the kids."
+  },
+  {
+   "en": "heads-up",
+   "zh": "提前提醒、打个招呼",
+   "ex": "Just a heads-up, Mel's joining the meeting late."
+  },
+  {
+   "en": "push back",
+   "zh": "推迟（时间）",
+   "ex": "The stand-up's been pushed back to half nine."
+  },
+  {
+   "en": "rundown",
+   "zh": "简要汇报、概况",
+   "ex": "Can you give us a quick rundown of the project?"
+  },
+  {
+   "en": "on track",
+   "zh": "按计划进行",
+   "ex": "The user stories are on track for Thursday."
+  },
+  {
+   "en": "blocker",
+   "zh": "卡点、阻碍工作的问题",
+   "ex": "My only blocker is access to the test data."
+  },
+  {
+   "en": "chase up",
+   "zh": "跟进、催一下",
+   "ex": "I'll chase up the data team this arvo."
+  },
+  {
+   "en": "flick (someone) a message",
+   "zh": "随手给某人发条消息",
+   "ex": "I'll flick you a message on Teams."
+  },
+  {
+   "en": "flat out",
+   "zh": "忙得不可开交",
+   "ex": "Sorry, I've been flat out all morning."
+  },
+  {
+   "en": "sign-off",
+   "zh": "签字确认、正式批准",
+   "ex": "We need sign-off from the business by Friday."
+  }
+ ],
+ "listening": [
+  {
+   "en": "How'd you pull up after the long weekend?",
+   "sound": "How'd you → “How-juh”；pull up 连成 “pu-lup”。澳洲人用 pull up 问“（玩完/累完之后）恢复得怎么样”。",
+   "zh": "长周末之后状态怎么样？缓过来了吗？",
+   "reply": "Pretty good, thanks! Still a bit sleepy, though."
+  },
+  {
+   "en": "D'ya get away or just have a quiet one?",
+   "sound": "Did you → “D'ya / Dja”，几乎听不到 did。quiet one 连读成 “quie-twun”。",
+   "zh": "你是出去玩了，还是在家安静过的？",
+   "reply": "We mostly stayed home. We just had a quiet one."
+  },
+  {
+   "en": "Bit knackered, to be honest.",
+   "sound": "句首省掉了 I'm a；knackered 读 “NACK-erd”，意思是累坏了。",
+   "zh": "说实话，累坏了。",
+   "reply": "Oh no! Long drive?"
+  },
+  {
+   "en": "Stand-up's been pushed back to half nine 'cause Mel's stuck in traffic.",
+   "sound": "Stand-up's been → “stan-dups-bin”；half nine 就是 9:30（不是 8:30！）；'cause = because。",
+   "zh": "站会推迟到九点半，因为 Mel 堵车了。",
+   "reply": "Just to confirm, nine thirty, right?"
+  },
+  {
+   "en": "Can you give us a quick rundown on where the reporting stuff's at?",
+   "sound": "give us → “giv-us”，这里的 us 其实是“我”；where ... is at = 进展到哪了。",
+   "zh": "你能简单说说报表那块进展到哪了吗？",
+   "reply": "Sure. The requirements are about eighty percent done."
+  },
+  {
+   "en": "Reckon you'll have it sorted by end of week, or is that a bit of a stretch?",
+   "sound": "句首省掉了 Do you；reckon = think；sorted = 搞定；a bit of a → “bid-uv-a”；a stretch = 有点勉强。",
+   "zh": "你觉得这周末前能搞定吗，还是有点悬？",
+   "reply": "I reckon Thursday's doable, as long as I get the test data."
+  }
+ ],
+ "speech": {
+  "topic": "同事问 \"How was your weekend?\" 时，用两分钟讲讲你的长周末（第一人称）",
+  "paragraphs": [
+   "I had a pretty relaxed long weekend. It's school holidays at the moment, so my little one has been at holiday care during the week. That means the weekend is our special family time. On Saturday morning, I took my kid to the playground near our place in Mitcham.",
+   "The weather was lovely, about twenty-two degrees and sunny, so lots of families were out. After that, we grabbed a coffee and a babycino at a local café. On Sunday, we didn't do much. I caught up on some housework and did the grocery shopping for the week.",
+   "In the afternoon, we watched a movie together on the couch. It was nice to have a slow day. On Monday, the public holiday, we drove down to Glenelg. It was a bit windy, but my kid loved running on the sand, and we had fish and chips by the beach.",
+   "The traffic on the way home was pretty bad, so we got back later than I planned. Overall, it was a good break. We didn't go anywhere special, but I feel rested and ready for the week. This week is going to be busy at work.",
+   "I have a couple of workshops with the business, and I need to finish some user stories by Thursday. I'm hoping everything stays on track. If I have time, I'd like to plan a day trip before school goes back, maybe to Victor Harbor or the Barossa. Anyway, that was my long weekend.",
+   "How about you? Did you do anything fun?"
+  ],
+  "zh": "我的长周末过得挺放松的。现在是学校假期，所以平时孩子都在假期托管班，周末就成了我们的家庭时间。周六早上，我带孩子去了 Mitcham 家附近的游乐场。天气很好，大概 22 度，阳光明媚，很多家庭都出来了。之后我们在附近咖啡馆买了一杯咖啡和一杯 babycino（儿童奶泡）。周日我们没做什么，我补做了些家务，买了一周的菜。下午我们一起窝在沙发上看了部电影，慢悠悠过一天挺好的。周一公休日，我们开车去了 Glenelg。风有点大，但孩子很喜欢在沙滩上跑，我们在海边吃了炸鱼薯条。回家路上很堵，比计划晚到家。总的来说是个不错的休息。我们没去什么特别的地方，但我感觉休息好了，准备好迎接这一周。这周工作会很忙，我要和业务方开几个 workshop，还要在周四前完成一些 user stories。希望一切按计划进行。如果有时间，我想在开学前安排一次一日游，可能去 Victor Harbor 或 Barossa。好了，这就是我的长周末。你呢？做了什么好玩的吗？",
+  "patterns": [
+   {
+    "en": "I had a pretty relaxed / busy / quiet long weekend.",
+    "zh": "我的长周末过得挺……"
+   },
+   {
+    "en": "On Saturday, I took my kid to the playground / the library / a friend's place.",
+    "zh": "周六我带孩子去了……"
+   },
+   {
+    "en": "It was a bit windy / crowded / hot, but we still had a great time.",
+    "zh": "有点……，但是……"
+   },
+   {
+    "en": "This week is going to be busy. I need to finish the user stories by Thursday.",
+    "zh": "这周会很……，我要在……前完成……"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Dave",
+   "role": "同事 · Senior Developer"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Morning, Amy! How're you going? How'd you pull up after the long weekend?",
+    "zh": "早上好 Amy！你好吗？长周末之后缓过来了吗？"
+   },
+   {
+    "s": "y",
+    "en": "Morning, Dave! Pretty good, thanks. Still a bit sleepy, though. How about you?",
+    "zh": "早上好 Dave！挺好的，谢谢。不过还有点困。你呢？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, not bad, not bad. Bit knackered, to be honest. We drove up to the Riverland to see the in-laws, and the kids were fighting in the back the whole way. D'ya get away or just have a quiet one?",
+    "zh": "嗯，还行还行。说实话有点累。我们开车去 Riverland 看岳父岳母，孩子们在后座吵了一路。你是出去玩了，还是在家安静过的？"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, did I get… what? Could you say that again a bit slower?",
+    "zh": "不好意思，我有没有……什么？你能说慢一点再说一遍吗？"
+   },
+   {
+    "s": "o",
+    "en": "Oh, sorry! Did you go away anywhere, or just stay home and take it easy?",
+    "zh": "哦，抱歉！你是出门去哪儿了，还是在家放松？"
+   },
+   {
+    "s": "y",
+    "en": "Ah, got it. We mostly stayed home. On Monday we went down to Glenelg. My little one loved the beach.",
+    "zh": "啊，明白了。我们基本在家。周一去了 Glenelg，孩子特别喜欢海滩。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, lovely. Bit windy down there, though, wasn't it? I reckon it was blowing a gale on Monday arvo.",
+    "zh": "哦，真好。不过那边风挺大的吧？我觉得周一下午简直是狂风。"
+   },
+   {
+    "s": "y",
+    "en": "Yeah, it was really windy! But we had fish and chips, so it was worth it.",
+    "zh": "是啊，风特别大！不过我们吃了炸鱼薯条，值了。"
+   },
+   {
+    "s": "o",
+    "en": "Ha, can't go wrong with fish and chips. Hey, while I've got you, just a heads-up: stand-up's been pushed back to half nine 'cause Mel's stuck in traffic on Main North Road.",
+    "zh": "哈，炸鱼薯条永远不会错。对了，趁碰到你，提前说一声：站会推迟到九点半，因为 Mel 在 Main North Road 上堵车了。"
+   },
+   {
+    "s": "y",
+    "en": "Just to confirm, you mean the stand-up is at nine thirty today, not nine?",
+    "zh": "确认一下，你是说今天站会是九点半，不是九点？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, spot on. Half nine. Same room, level three.",
+    "zh": "对，没错。九点半，还是三楼那个会议室。"
+   },
+   {
+    "s": "y",
+    "en": "No worries. Thanks for letting me know.",
+    "zh": "好的没问题，谢谢你告诉我。"
+   },
+   {
+    "s": "o",
+    "en": "And Mel's gonna want a quick rundown on where the reporting stuff's at, so maybe have a couple of points ready.",
+    "zh": "还有，Mel 会想让你简单讲讲报表那块进展到哪了，你可以准备两三个要点。"
+   },
+   {
+    "s": "y",
+    "en": "Sure. The requirements for the reporting dashboard are about eighty percent done. I've finished most of the user stories.",
+    "zh": "好的。报表看板的需求大概完成了百分之八十，大部分 user stories 我都写完了。"
+   },
+   {
+    "s": "o",
+    "en": "Good stuff. Any blockers?",
+    "zh": "不错。有什么卡点吗？"
+   },
+   {
+    "s": "y",
+    "en": "Just one. I still don't have access to the test data. I sent a request last Thursday, but I haven't heard back.",
+    "zh": "就一个。我还是拿不到测试数据的权限。我上周四提了申请，但还没回音。"
+   },
+   {
+    "s": "o",
+    "en": "Ah, that'll be the data team. They've been flat out, and half of 'em were on leave Friday. Have you chased it up with Raj, or d'you want me to flick him a message?",
+    "zh": "啊，那是数据团队的事。他们忙疯了，周五一半人还休假了。你找 Raj 催过了吗，还是要我给他发个消息？"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, I didn't quite catch that last part. Do you mean you can send Raj a message for me?",
+    "zh": "不好意思，最后那部分我没太听清。你是说你可以帮我给 Raj 发消息吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, exactly. I'll flick him a quick message on Teams. He owes me one anyway.",
+    "zh": "对，就是这个意思。我在 Teams 上给他发个消息，反正他欠我个人情。"
+   },
+   {
+    "s": "y",
+    "en": "That would be great, thank you. Do you think he can sort it out today?",
+    "zh": "那太好了，谢谢你。你觉得他今天能搞定吗？"
+   },
+   {
+    "s": "o",
+    "en": "Should be right. If not, give me a yell and we'll escalate it. So, reckon you'll have it all sorted by end of week, or is that a bit of a stretch?",
+    "zh": "应该没问题。不行的话喊我一声，我们往上报。那你觉得这周末前能全部搞定吗，还是有点悬？"
+   },
+   {
+    "s": "y",
+    "en": "I reckon Thursday is doable, as long as I get the test data by tomorrow. Then we can get sign-off from the business on Friday.",
+    "zh": "我觉得周四可以，只要明天前拿到测试数据。然后周五就能拿到业务方的确认。"
+   },
+   {
+    "s": "o",
+    "en": "Perfect. Mel'll be happy with that. Right, I'd better go refill my coffee before the meeting. You keen for one?",
+    "zh": "完美，Mel 听了会很满意。好了，我得在开会前再续杯咖啡。你要来一杯吗？"
+   },
+   {
+    "s": "y",
+    "en": "Yes, please! A flat white would be lovely. Can I shout you next time?",
+    "zh": "好呀！来杯 flat white 就太好了。下次我请你？"
+   },
+   {
+    "s": "o",
+    "en": "Deal. See you at half nine, then.",
+    "zh": "说定了。那九点半见。"
+   },
+   {
+    "s": "y",
+    "en": "See you there. Thanks, Dave!",
+    "zh": "会上见。谢谢你，Dave！"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, could you say that again a bit slower?",
+   "zh": "不好意思，能说慢一点再说一遍吗？"
+  },
+  {
+   "en": "Sorry, I didn't quite catch that. Do you mean …?",
+   "zh": "不好意思，我没太听清。你是说……吗？"
+  },
+  {
+   "en": "Just to confirm, the meeting is at nine thirty, right?",
+   "zh": "确认一下，会议是九点半，对吧？"
+  },
+  {
+   "en": "Sorry, what does “a bit of a stretch” mean?",
+   "zh": "不好意思，“a bit of a stretch” 是什么意思？（任何听不懂的词都可以这样问）"
+  },
+  {
+   "en": "Would you mind sending that to me on Teams, so I don't forget?",
+   "zh": "你介意在 Teams 上发给我吗？免得我忘了。"
+  }
+ ],
+ "checklist": [
+  "不看文字时听出了 “half nine” = 9:30",
+  "能听懂 “How'd you pull up?” 和 “D'ya get away?”",
+  "至少用了 2 次追问 / 确认句，而且没有卡住",
+  "用一句话说清了进度 + blocker",
+  "演讲讲满了 2 分钟，中间停顿不超过 5 秒",
+  "用上了 reckon / heads-up / chase up 其中一个"
+ ]
+}

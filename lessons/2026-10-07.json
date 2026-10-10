@@ -1,0 +1,307 @@
+{
+ "id": "2026-10-07",
+ "date": "2026-10-07",
+ "category": "日常",
+ "title": "修车厂来电：刹车片要不要换",
+ "titleEn": "The mechanic calls during your logbook service",
+ "scene": [
+  "你今天早上把车（一辆旧 Corolla）送到 Mitcham 附近的修车厂做定期保养（logbook service）。中午师傅 Gav 打电话来：保养做完了，但前刹车片快磨光了，后轮胎纹也偏浅，问你要不要加修，还会推迟取车时间。",
+  "你的目标：听懂是什么问题、是否紧急、多少钱（含不含人工和 GST）；只批准刹车片，轮胎先不做；要求书面报价；确认取车时间、总价和付款方式。"
+ ],
+ "vocab": [
+  {
+   "en": "logbook service",
+   "zh": "按厂家保养手册做的定期保养",
+   "ex": "I booked the car in for its logbook service this morning."
+  },
+  {
+   "en": "have it up on the hoist",
+   "zh": "把车升到举升机上检查",
+   "ex": "We had it up on the hoist and found a few things."
+  },
+  {
+   "en": "brake pads",
+   "zh": "刹车片",
+   "ex": "Your front brake pads are nearly worn out."
+  },
+  {
+   "en": "down to the metal",
+   "zh": "磨到底了（只剩金属）",
+   "ex": "The pads are pretty much down to the metal."
+  },
+  {
+   "en": "quote",
+   "zh": "报价单",
+   "ex": "Could you send me a quote before you start?"
+  },
+  {
+   "en": "parts and labour",
+   "zh": "零件费加人工费",
+   "ex": "It's about three hundred and eighty, parts and labour."
+  },
+  {
+   "en": "all up",
+   "zh": "总共、全部算上",
+   "ex": "It comes to six hundred and forty all up."
+  },
+  {
+   "en": "ballpark (figure)",
+   "zh": "大概的数字",
+   "ex": "Can you give me a ballpark figure?"
+  },
+  {
+   "en": "go ahead with",
+   "zh": "批准去做",
+   "ex": "Yes, please go ahead with the brake pads."
+  },
+  {
+   "en": "hold off on",
+   "zh": "先不做、暂缓",
+   "ex": "I'd like to hold off on the tyres for now."
+  },
+  {
+   "en": "low on tread",
+   "zh": "胎纹浅了（轮胎磨损）",
+   "ex": "Your rear tyres are getting low on tread."
+  },
+  {
+   "en": "rego",
+   "zh": "车辆注册（registration）",
+   "ex": "Your rego is due at the end of the month."
+  }
+ ],
+ "listening": [
+  {
+   "en": "G'day, is that Amy? It's Gav from Mitcham Auto, just ringing about the Corolla.",
+   "sound": "“G'day” 读成 /gə-DAY/；“is that” 连成 “izzat”；“just ringing” 的 t 吞掉，听起来像 “jus' ringin'”。",
+   "zh": "你好，是 Amy 吗？我是 Mitcham Auto 的 Gav，打电话说一下你的 Corolla。",
+   "reply": "Hi Gav, yes, this is Amy. Is everything OK with the car?"
+  },
+  {
+   "en": "We've had her up on the hoist and, look, your front pads are pretty much down to the metal.",
+   "sound": "澳洲人常把车叫 “her/she”；“had her up on” 连成 “had-er-up-on”；“pretty” 读成 “priddy”；“look,” 只是开场填充词。",
+   "zh": "我们把车升起来看了，嗯，你前面的刹车片差不多磨到底了。",
+   "reply": "Sorry, could you say that again a bit slower?"
+  },
+  {
+   "en": "It's not gonna fall apart tomorrow, but I wouldn't leave it too long.",
+   "sound": "“gonna” = going to；“wouldn't leave it” 的 t 几乎听不到，像 “wouldn' leave-it”。意思是不至于马上出事，但别拖。",
+   "zh": "明天不会出问题，但我建议别拖太久。",
+   "reply": "OK. So is it still safe to drive for now?"
+  },
+  {
+   "en": "Ballpark, you're looking at about three-eighty, parts and labour.",
+   "sound": "数字常省掉 hundred：“three-eighty” = $380；“you're looking at” 连成 “yer lookin' at”。",
+   "zh": "大概要 380 块，零件加人工。",
+   "reply": "Just to confirm, you mean three hundred and eighty dollars in total?"
+  },
+  {
+   "en": "Righto, it'll be more like four-ish this arvo. That gonna work for you?",
+   "sound": "“Righto” = 好的；“four-ish” = 四点左右；“arvo” = afternoon；问句省掉了 “Is”。",
+   "zh": "好的，那大概下午四点左右才好，你那边可以吗？",
+   "reply": "Sorry, I didn't catch that. Did you say four o'clock this afternoon?"
+  },
+  {
+   "en": "No dramas. I'll flick you the quote and give you a buzz when she's ready.",
+   "sound": "“No dramas” = 没问题；“flick you” = 发给你（短信/邮件）；“give you a buzz” = 给你打电话；“she's ready” 指车好了。",
+   "zh": "没问题，我把报价发给你，车好了给你打电话。",
+   "reply": "Great, thanks. Could you send it by email too?"
+  }
+ ],
+ "speech": {
+  "topic": "Talk about your car and how you look after it（第一人称）",
+  "paragraphs": [
+   "I'd like to talk about my car and how I look after it. I drive a small Toyota. It's about eight years old, but it still runs well. In Adelaide, I need a car for almost everything. I drive to work, I drop my child off in the morning, and I do the shopping on the weekend.",
+   "I try to get the car serviced every six months or every ten thousand kilometres, whichever comes first. I take it to a local mechanic near Mitcham. I like going to the same place, because they know the history of my car.",
+   "Talking to mechanics used to make me nervous. They speak quickly, and they use words I didn't know, like pads, discs and tread. Sometimes they called me during the day to approve extra work, and I just said yes, because I didn't fully understand.",
+   "Now I do things differently. First, I ask what the problem is and whether it's urgent. Second, I ask for a quote by text or email. Third, if something isn't urgent, I say, \"Let's hold off on that for now,\" and I plan it for later.",
+   "This helps me control the cost and feel more confident. I also keep a note on my phone with the service dates and the rego due date, so I don't forget. For me, looking after a car is not only about money. It's about safety, because I often drive with my child in the back."
+  ],
+  "zh": "我想聊聊我的车以及我怎么保养它。我开一辆小丰田，大约八年了，但还很好开。在阿德莱德，几乎做什么都要开车：上班、早上送孩子、周末买东西。我尽量每六个月或每一万公里保养一次，以先到者为准。我去 Mitcham 附近的一家修车厂。我喜欢固定去一家，因为他们了解我这辆车的情况。以前跟修车师傅打交道让我很紧张。他们说话快，还用很多我不认识的词，比如刹车片、刹车盘、胎纹。有时候他们白天打电话让我批准额外的维修，我没完全听懂就说好了。现在我的做法不一样了。第一，我会问是什么问题、急不急。第二，我要求他们用短信或邮件发报价。第三，如果不急，我就说“这个先等等”，然后之后再安排。这样我能控制花费，也更有底气。我还在手机里记着保养日期和注册到期日，免得忘记。对我来说，保养车不只是钱的问题，更关乎安全，因为我经常带着孩子开车。",
+  "patterns": [
+   {
+    "en": "I try to ___ every ___, whichever comes first.",
+    "zh": "我尽量每___做一次___，以先到者为准。 例：I try to see the dentist every six months."
+   },
+   {
+    "en": "___ used to make me nervous, because ___.",
+    "zh": "___以前让我很紧张，因为___。 例：Phone calls with the bank used to make me nervous."
+   },
+   {
+    "en": "If something isn't urgent, I say, \"Let's hold off on that for now.\"",
+    "zh": "如果不急，我会说：这个先等等。 可换成：\"Can we do that next time?\""
+   },
+   {
+    "en": "For me, ___ is not only about ___. It's about ___.",
+    "zh": "对我来说，___不只是___的问题，更是___。"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Gav",
+   "role": "修车厂师傅"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "G'day, is that Amy? It's Gav from Mitcham Auto. Just ringing about the Corolla.",
+    "zh": "你好，是 Amy 吗？我是 Mitcham Auto 的 Gav，打来说一下你的 Corolla。"
+   },
+   {
+    "s": "y",
+    "en": "Hi Gav, yes, this is Amy. Is everything OK with the car?",
+    "zh": "嗨 Gav，是我。车没什么问题吧？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, mostly good. The logbook service is all done, oil and filter's changed, no worries there. But we've had her up on the hoist and, look, your front brake pads are pretty much down to the metal.",
+    "zh": "嗯，基本没问题。保养做完了，机油和滤芯都换了，这些没事。但我们把车升起来看了，你前面的刹车片差不多磨到底了。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, could you say that again a bit slower? The brake pads are… what?",
+    "zh": "不好意思，能说慢一点再说一遍吗？刹车片怎么了？"
+   },
+   {
+    "s": "o",
+    "en": "Sorry, yeah. The front brake pads. They're really worn. There's only about two mil left, so they need replacing pretty soon.",
+    "zh": "哦抱歉。前刹车片磨得很厉害，只剩大概两毫米，所以很快就得换。"
+   },
+   {
+    "s": "y",
+    "en": "Oh, I see. Is it still safe to drive?",
+    "zh": "哦，明白了。现在开还安全吗？"
+   },
+   {
+    "s": "o",
+    "en": "Ah, it's not gonna fall apart tomorrow, but I wouldn't leave it too long. If it goes metal on metal, you'll chew up the discs, and that's a much bigger job.",
+    "zh": "嗯，明天不会出事，但别拖太久。要是金属磨金属，会把刹车盘也磨坏，那就是大修了。"
+   },
+   {
+    "s": "y",
+    "en": "OK. How much would it cost to replace them?",
+    "zh": "好的。换一下要多少钱？"
+   },
+   {
+    "s": "o",
+    "en": "Ballpark, you're looking at about three-eighty, parts and labour. That's new pads and machining the discs.",
+    "zh": "大概 380 块，零件加人工。包括换新刹车片和打磨刹车盘。"
+   },
+   {
+    "s": "y",
+    "en": "Just to confirm, you mean three hundred and eighty dollars, and that includes everything?",
+    "zh": "确认一下，你是说 380 澳元，而且全部都包括了？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, three-eighty all up, GST included. Oh, and while I've got you, your rear tyres are getting a bit low on tread. They're still legal, but you'd want to look at them in the next few months.",
+    "zh": "对，总共 380，含 GST。哦，顺便说一下，你后轮胎纹有点浅了。现在还合规，但这几个月里最好考虑换。"
+   },
+   {
+    "s": "y",
+    "en": "How much are new tyres?",
+    "zh": "新轮胎多少钱？"
+   },
+   {
+    "s": "o",
+    "en": "Depends what you go for. A decent pair would be around two-sixty, fitted and balanced. But that one's not urgent.",
+    "zh": "看你选什么牌子。一对还不错的大概 260，含安装和动平衡。不过这个不急。"
+   },
+   {
+    "s": "y",
+    "en": "OK. Let's go ahead with the brake pads today, but I'd like to hold off on the tyres for now.",
+    "zh": "好的。刹车片今天就换吧，轮胎我想先等等。"
+   },
+   {
+    "s": "o",
+    "en": "No dramas. Pads today, tyres later. I'll just need a yes in writing, so I'll flick you the quote by text. Just reply \"approved\" and we'll crack on.",
+    "zh": "没问题，今天换刹车片，轮胎以后再说。我需要你书面同意，我把报价短信发给你，你回复 approved 我们就开工。"
+   },
+   {
+    "s": "y",
+    "en": "Sure. Could you also send it by email? I'd like to keep a copy.",
+    "zh": "好的。能不能也发一份邮件？我想留个底。"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, can do, to the email we've got on file. Now, it'll push the pick-up back a bit. We were saying two, but it'll be more like four-ish this arvo. That gonna work for you?",
+    "zh": "可以，发到我们存档的邮箱。另外，取车时间要往后推一点。原来说两点，现在大概要下午四点左右。你那边行吗？"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, I didn't catch that. Did you say four o'clock this afternoon?",
+    "zh": "不好意思，我没听清。你是说今天下午四点吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, around four. I'll give you a buzz when she's ready, so you're not hanging around waiting.",
+    "zh": "对，四点左右。车好了我给你打电话，免得你干等。"
+   },
+   {
+    "s": "y",
+    "en": "That's fine. I've got to pick up my little one at three, so I'll come after that. What time do you close?",
+    "zh": "可以。我三点要去接孩子，之后过来。你们几点关门？"
+   },
+   {
+    "s": "o",
+    "en": "Half five, so plenty of time. Oh, one more thing. Your rego's due at the end of the month, just so you know. You can do it online.",
+    "zh": "五点半，时间很充裕。哦还有一件事，提醒你一下，你的车辆注册月底到期，可以网上续。"
+   },
+   {
+    "s": "y",
+    "en": "Thanks for the reminder. Can I pay by card when I pick it up?",
+    "zh": "谢谢提醒。取车的时候可以刷卡吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, card's fine, just tap. All up, it'll be the service plus the pads, so roughly six-forty. I'll have the invoice ready for you.",
+    "zh": "可以，刷卡就行，直接 tap。全部算上是保养加刹车片，大概 640。我会把发票准备好。"
+   },
+   {
+    "s": "y",
+    "en": "Great. So, just to check: brake pads today, tyres later, pick-up around four, and about six hundred and forty dollars in total. Is that right?",
+    "zh": "好。那我核对一下：今天换刹车片，轮胎以后再做，四点左右取车，总共大约 640 澳元。对吗？"
+   },
+   {
+    "s": "o",
+    "en": "Spot on. Cheers, Amy. I'll give you a buzz this arvo.",
+    "zh": "完全正确。谢啦 Amy，下午给你打电话。"
+   },
+   {
+    "s": "y",
+    "en": "Thanks, Gav. Talk soon. Bye!",
+    "zh": "谢谢 Gav，回头聊，拜拜！"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, could you say that again a bit slower?",
+   "zh": "不好意思，能说慢一点再说一遍吗？"
+  },
+  {
+   "en": "Sorry, what's that part called? Could you spell it for me?",
+   "zh": "不好意思，那个零件叫什么？能拼一下吗？"
+  },
+  {
+   "en": "Is it urgent, or can it wait a few weeks?",
+   "zh": "这个急吗，还是可以等几周？"
+  },
+  {
+   "en": "Could you text or email me the quote before you start?",
+   "zh": "开工前能先把报价短信或邮件发给我吗？"
+  },
+  {
+   "en": "Just to confirm, the total is ___, and I can pick it up at ___?",
+   "zh": "确认一下，总价是___，我___点可以来取车，对吗？"
+  }
+ ],
+ "checklist": [
+  "第一遍就听懂了 \"down to the metal\" 和 \"three-eighty all up\"",
+  "用了至少一次 \"Sorry, could you say that again a bit slower?\"",
+  "能说出 \"go ahead with…\" 和 \"hold off on…\" 来分别批准和暂缓",
+  "结束前用 \"Just to check…\" 复述了总价和取车时间",
+  "2 分钟演讲没有长时间停顿（超过 5 秒）"
+ ]
+}

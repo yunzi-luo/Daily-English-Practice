@@ -1,0 +1,303 @@
+{
+ "id": "2026-10-04",
+ "date": "2026-10-04",
+ "category": "房屋",
+ "title": "中介来电约 routine inspection 顺便报修",
+ "titleEn": "The property manager books a routine inspection",
+ "scene": [
+  "你在上班时接到房屋中介（property manager）Jess 的电话：她要在 10月14日（周三）上午 10–12 点来做例行房屋检查（routine inspection），问你是否同意她用办公室钥匙自己进门。",
+  "你的目标：① 听清并确认日期和时间；② 说明你那天不在家、可以让她自己进；③ 趁机报修两件事：浴室洗手盆水龙头一直滴水、后门感应灯不亮；④ 请她发邮件书面确认。",
+  "小知识：在南澳，中介做 routine inspection 一般要提前书面通知（entry notice），租客不在家也可以进行。"
+ ],
+ "vocab": [
+  {
+   "en": "routine inspection",
+   "zh": "例行房屋检查（中介定期来看房子状况）",
+   "ex": "We're doing a routine inspection next Wednesday."
+  },
+  {
+   "en": "property manager / PM",
+   "zh": "物业经理（负责你房子的中介）",
+   "ex": "I'll email my property manager about the tap."
+  },
+  {
+   "en": "entry notice",
+   "zh": "入户通知（书面通知你哪天来）",
+   "ex": "You should've got the entry notice this morning."
+  },
+  {
+   "en": "let ourselves in",
+   "zh": "我们自己开门进去",
+   "ex": "Are you happy for us to let ourselves in?"
+  },
+  {
+   "en": "be happy for someone to do sth",
+   "zh": "同意/不介意某人做某事（澳洲很常用）",
+   "ex": "I'm happy for you to use the office key."
+  },
+  {
+   "en": "a dripping tap",
+   "zh": "一直滴水的水龙头（tap = 水龙头）",
+   "ex": "The bathroom has a dripping tap."
+  },
+  {
+   "en": "lodge a maintenance request",
+   "zh": "提交报修申请",
+   "ex": "Please lodge a maintenance request online."
+  },
+  {
+   "en": "tenant portal",
+   "zh": "租客网上平台/门户",
+   "ex": "The link to the tenant portal is in the email."
+  },
+  {
+   "en": "tradie / sparky / plumber",
+   "zh": "师傅 / 电工 / 水管工",
+   "ex": "I'll send a sparky to check the light."
+  },
+  {
+   "en": "get it sorted",
+   "zh": "把事情搞定",
+   "ex": "Don't worry, we'll get it sorted this week."
+  },
+  {
+   "en": "heads-up",
+   "zh": "提前打个招呼/提醒",
+   "ex": "Thanks for the heads-up."
+  },
+  {
+   "en": "your lease is up",
+   "zh": "你的租约到期",
+   "ex": "Your lease is up in February."
+  }
+ ],
+ "listening": [
+  {
+   "en": "Hi, is that Amy? It's Jess from the agency. How're you going?",
+   "sound": "is that → izzat；How're you going → howya goin（就是 How are you，不是问你去哪）",
+   "zh": "你好，是 Amy 吗？我是中介的 Jess，你好吗？",
+   "reply": "Good, thanks. How are you?"
+  },
+  {
+   "en": "Just a heads-up, we're doing routines round your way on the fourteenth.",
+   "sound": "routines = routine inspections 的简称；round your way → roun' yer way = 你那一带",
+   "zh": "提前说一声，我们 14 号要在你那片做例行检查。",
+   "reply": "Sorry, which day was that again?"
+  },
+  {
+   "en": "D'you reckon you'll be home, or are you happy for us to let ourselves in?",
+   "sound": "Do you reckon → dya reckon = 你觉得；happy for us to → happy fer us ta",
+   "zh": "你觉得你会在家吗，还是我们自己进去也行？",
+   "reply": "I'll be at work, so you can let yourselves in."
+  },
+  {
+   "en": "No dramas, I'll pop it in the system and get a tradie out to have a look.",
+   "sound": "No dramas = 没问题；pop it in → poppid in；get a tradie out → geddah tradie out",
+   "zh": "没问题，我把它录进系统，派个师傅过来看看。",
+   "reply": "Great. Will they call me first?"
+  },
+  {
+   "en": "It'll be sometime between ten and twelve, can't give you an exact time, sorry.",
+   "sound": "It'll be → id'l be；can't 澳洲读 kahnt，句尾 sorry 很轻",
+   "zh": "会在 10 点到 12 点之间，给不了准确时间，抱歉。",
+   "reply": "That's fine. Between ten and twelve, got it."
+  },
+  {
+   "en": "Oh, and while I've got ya, your lease is up in Feb, so keep an eye out for an email.",
+   "sound": "while I've got ya → wile I've godya = 趁我还在电话上；Feb = February",
+   "zh": "哦对了，趁着跟你通话，你的租约二月到期，留意一下邮件。",
+   "reply": "OK, thanks for the heads-up."
+  }
+ ],
+ "speech": {
+  "topic": "讲一讲你租的房子里出过的一个小问题，你是怎么和中介沟通、最后怎么解决的（第一人称）",
+  "paragraphs": [
+   "I'd like to talk about a small problem in my rental home and how I got it fixed. We rent a house in Mitcham, and it's a good place for my family. But a few weeks ago, I noticed that the bathroom tap was dripping all the time. At first, I just turned it off really tight, but it kept dripping, day and night. I was worried about wasting water, and the sound was really annoying at night.",
+   "So I decided to call my property manager. To be honest, I was a bit nervous, because she speaks very fast and I don't always catch everything. Before the call, I wrote down the main points: what the problem was, when it started, and what I had already tried. During the call, when I didn't understand something, I asked her to say it again more slowly. I also repeated the important information back to her, like the date and the time.",
+   "She told me to lodge a maintenance request online and add some photos. A plumber called me two days later, and he fixed it in about ten minutes. He said it just needed a new washer.",
+   "What I learned from this is that it's better to report problems early, because small problems can become big ones. I also learned that it's OK to ask people to slow down. Most people are happy to help. Next time, I'll feel more confident making this kind of call."
+  ],
+  "zh": "我想讲讲我租的房子里的一个小问题，以及我是怎么把它解决的。我们在 Mitcham 租了一栋房子，对我们家来说挺好的。但几周前，我发现浴室的水龙头一直在滴水。一开始我只是把它拧得很紧，但它还是白天晚上一直滴。我担心浪费水，而且晚上那个声音很烦人。所以我决定给中介打电话。说实话我有点紧张，因为她说话很快，我不是每句都能听清。打电话前，我先写下要点：什么问题、什么时候开始的、我已经试过什么。通话中，听不懂的地方我就请她再慢一点说一遍。我还把重要信息复述给她听，比如日期和时间。她让我在网上提交报修，再附几张照片。两天后水管工给我打了电话，大概十分钟就修好了。他说只是需要换个新垫圈。我从中学到的是：问题最好早点报，因为小问题会变成大问题。我也学到了请别人说慢一点是没关系的，大多数人都很乐意帮忙。下次打这种电话，我会更有信心。",
+  "patterns": [
+   {
+    "en": "A few weeks ago, I noticed that ___.",
+    "zh": "几周前，我注意到……（换成：the oven wasn't heating up / there was mould in the bathroom）"
+   },
+   {
+    "en": "I was worried about ___, so I decided to ___.",
+    "zh": "我担心……，所以我决定……"
+   },
+   {
+    "en": "When I didn't understand something, I ___.",
+    "zh": "当我听不懂的时候，我会……"
+   },
+   {
+    "en": "What I learned from this is that ___.",
+    "zh": "我从中学到的是……"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Jess",
+   "role": "房屋中介"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Hi, is that Amy?",
+    "zh": "你好，是 Amy 吗？"
+   },
+   {
+    "s": "y",
+    "en": "Yes, speaking.",
+    "zh": "是的，我就是。"
+   },
+   {
+    "s": "o",
+    "en": "Oh hi Amy, it's Jess, your property manager from the agency. How're you going?",
+    "zh": "哦你好 Amy，我是 Jess，你的房屋中介。你好吗？"
+   },
+   {
+    "s": "y",
+    "en": "I'm good, thanks. How are you?",
+    "zh": "挺好的，谢谢。你呢？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, not bad, bit flat out today to be honest. Look, I'm just giving you a quick call 'cause we're doing routines round your way on Wednesday the fourteenth, and yours is on the list. You should've got the entry notice in your email this morning. Did that come through all right?",
+    "zh": "嗯，还行，说实话今天忙疯了。是这样，我打个电话跟你说一下，我们 14 号周三要在你那片做例行检查，你家也在名单上。你今天早上应该在邮箱里收到入户通知了，收到了吗？"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, could you say that again a bit slower? I didn't catch the date.",
+    "zh": "不好意思，你能说慢一点再说一遍吗？我没听清日期。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, sorry, I'm talking a million miles an hour. Wednesday, the fourteenth of October.",
+    "zh": "哦，抱歉，我说得太快了。周三，10 月 14 号。"
+   },
+   {
+    "s": "y",
+    "en": "Wednesday the fourteenth. OK. And what time will you come?",
+    "zh": "14 号周三，好的。你们几点来？"
+   },
+   {
+    "s": "o",
+    "en": "It'll be sometime between ten and twelve. Can't give you an exact time, sorry, it depends how long the other ones take.",
+    "zh": "大概 10 点到 12 点之间。给不了准确时间，抱歉，要看前面几家花多久。"
+   },
+   {
+    "s": "y",
+    "en": "I'll be at work that day. Is it OK if I'm not home?",
+    "zh": "那天我要上班，我不在家可以吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, no worries at all, most people aren't. Are you happy for us to let ourselves in with the office key?",
+    "zh": "可以，完全没问题，大部分人都不在家。你同意我们用办公室的钥匙自己进去吗？"
+   },
+   {
+    "s": "y",
+    "en": "Just to confirm, you mean you'll use your own key, and I don't need to be there?",
+    "zh": "我确认一下，你是说你们用自己的钥匙，我不用在场，对吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, that's it. You don't need to do a thing. Just make sure it's reasonably tidy, and if you've got any pets, pop them out the back.",
+    "zh": "对，就是这样。你什么都不用做，保持家里大致整洁就行，有宠物的话放到后院。"
+   },
+   {
+    "s": "y",
+    "en": "No pets, just a five-year-old, and she'll be at kindy. Actually, while you're on the phone, I'd like to report two small problems. First, the tap in the bathroom basin keeps dripping. It's been like that for about two weeks. I turned it really tight, but it still drips.",
+    "zh": "没有宠物，只有一个五岁的孩子，那天她在幼儿园。对了，趁你在电话上，我想报修两个小问题。第一，浴室洗手盆的水龙头一直滴水，已经两周左右了。我拧得很紧，还是滴。"
+   },
+   {
+    "s": "o",
+    "en": "Right, yep, probably just needs a new washer, that's pretty common. And the second one?",
+    "zh": "嗯，好的，可能就是要换个垫圈，这挺常见的。第二个呢？"
+   },
+   {
+    "s": "y",
+    "en": "The sensor light at the back door doesn't turn on anymore. I changed the bulb, but it still doesn't work.",
+    "zh": "后门的感应灯不亮了。我换了灯泡，还是不行。"
+   },
+   {
+    "s": "o",
+    "en": "OK, so that might be the sensor itself, or could be an electrical thing, so I'll get a sparky to have a look at that one. Best thing is if you lodge a maintenance request through the tenant portal, chuck a couple of photos on there, and I'll get it sorted ASAP.",
+    "zh": "好，那可能是感应器本身坏了，也可能是电路问题，我叫个电工去看看。最好你在租客平台上提交一个报修，附几张照片，我会尽快处理。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, I didn't quite get that. Lodge it where?",
+    "zh": "不好意思，我没太听懂。在哪里提交？"
+   },
+   {
+    "s": "o",
+    "en": "Sorry, the tenant portal. It's the online thing, the link's at the bottom of all our emails. You just log in, hit \"maintenance\", and fill in the form.",
+    "zh": "抱歉，租客平台。就是网上那个，链接在我们每封邮件的最下面。登录后点“maintenance”，填表就行。"
+   },
+   {
+    "s": "y",
+    "en": "Got it, I'll do that tonight. Will the plumber call me before he comes?",
+    "zh": "明白了，我今晚就弄。水管工来之前会给我打电话吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, the tradie'll give you a ring to book a time. If it suits, they can even come on the day of the inspection while you're out. Up to you.",
+    "zh": "会的，师傅会打电话约时间。如果方便，他们甚至可以在检查那天你不在家时过来，看你。"
+   },
+   {
+    "s": "y",
+    "en": "That would be great, actually. Then I don't need to take time off work. Could you also send me an email with the inspection time, so I have it in writing?",
+    "zh": "那太好了，这样我就不用请假了。你能再发封邮件写一下检查时间吗？我想有个书面记录。"
+   },
+   {
+    "s": "o",
+    "en": "Too easy, it's all in the entry notice, but I'll flick you a quick email as well. Oh, and while I've got ya, your lease is up in Feb, so keep an eye out for an email about renewing.",
+    "zh": "没问题，入户通知里都写了，不过我再给你发封简短的邮件。哦对了，趁跟你通话，你的租约二月到期，留意一下续租的邮件。"
+   },
+   {
+    "s": "y",
+    "en": "OK, thanks for the heads-up. So that's Wednesday the fourteenth, between ten and twelve, and I'll put in the repair request tonight.",
+    "zh": "好的，谢谢提醒。那就是 14 号周三，10 点到 12 点，我今晚提交报修。"
+   },
+   {
+    "s": "o",
+    "en": "Spot on. Thanks, Amy. Have a good one!",
+    "zh": "完全正确。谢谢你 Amy，祝你今天愉快！"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, could you say that again a bit slower?",
+   "zh": "不好意思，能说慢一点再说一遍吗？"
+  },
+  {
+   "en": "Sorry, I didn't catch the date. Could you repeat it for me?",
+   "zh": "抱歉，我没听清日期，能再说一遍吗？"
+  },
+  {
+   "en": "Just to confirm, you mean ___?",
+   "zh": "我确认一下，你的意思是……？"
+  },
+  {
+   "en": "Could you spell that for me, please?",
+   "zh": "能帮我拼一下吗？"
+  },
+  {
+   "en": "Could you send me an email with that, so I have it in writing?",
+   "zh": "能把这个发邮件给我吗？我想有个书面记录。"
+  }
+ ],
+ "checklist": [
+  "我能听出日期 Wednesday the fourteenth 和时间 between ten and twelve",
+  "我至少用了 2 次追问句（say that again / just to confirm）",
+  "我说清了两个报修问题（dripping tap, sensor light）",
+  "我在停顿时能接上 Jess 的话，没有长时间卡住",
+  "两分钟演讲我讲满了 1 分 30 秒以上",
+  "我听懂了 no dramas / flat out / sparky / flick you an email"
+ ]
+}

@@ -1,0 +1,307 @@
+{
+ "id": "2026-10-03",
+ "date": "2026-10-03",
+ "category": "社交",
+ "title": "隔壁邻居邀请周日后院 BBQ",
+ "titleEn": "Your neighbour invites you to a Sunday barbie",
+ "scene": [
+  "情况：周六上午，隔壁的 Sharon（六十岁左右的本地澳洲人，说话快、爱用俚语）在篱笆边跟你打招呼，聊了几句天气，然后邀请你们一家周日下午来她家 BBQ。",
+  "你的目标：听懂时间、地点、要带什么（\"bring a plate\"、\"BYO\" 到底什么意思），问清楚孩子能不能来、有没有人食物过敏，最后交换电话号码。没听清时要敢于礼貌地追问。"
+ ],
+ "vocab": [
+  {
+   "en": "bring a plate",
+   "zh": "带一道菜来分享（不是带空盘子！）",
+   "ex": "It's just a casual barbie, so bring a plate if you like."
+  },
+  {
+   "en": "BYO",
+   "zh": "Bring Your Own，自带饮料（酒水）",
+   "ex": "It's BYO, so bring whatever you want to drink."
+  },
+  {
+   "en": "snags / barbie",
+   "zh": "香肠 / 烧烤（barbecue）",
+   "ex": "Dave's gonna chuck some snags on the barbie."
+  },
+  {
+   "en": "arvo",
+   "zh": "下午（afternoon）",
+   "ex": "We're having a few people over Sunday arvo."
+  },
+  {
+   "en": "have a few people over",
+   "zh": "请几个人来家里",
+   "ex": "We're having a few people over this weekend."
+  },
+  {
+   "en": "if you're keen",
+   "zh": "如果你有兴趣 / 想来的话",
+   "ex": "Come along if you're keen."
+  },
+  {
+   "en": "rock up",
+   "zh": "到场、出现（随意的说法）",
+   "ex": "Just rock up whenever, no need to be on time."
+  },
+  {
+   "en": "heaps of",
+   "zh": "很多",
+   "ex": "Don't worry, there'll be heaps of food."
+  },
+  {
+   "en": "steer clear of",
+   "zh": "避开，别碰",
+   "ex": "Maybe steer clear of nuts, one of the kids is allergic."
+  },
+  {
+   "en": "You're right / all good",
+   "zh": "没问题、不用担心（不是\"你说得对\"）",
+   "ex": "Sorry I'm late! — Oh, you're right, we've only just started."
+  },
+  {
+   "en": "a bit nippy",
+   "zh": "有点冷（天气）",
+   "ex": "It gets a bit nippy once the sun goes down."
+  },
+  {
+   "en": "flick you a text",
+   "zh": "给你发个短信",
+   "ex": "I'll flick you a text with our address."
+  }
+ ],
+ "listening": [
+  {
+   "en": "How're you going?",
+   "sound": "听起来像 \"How-ya-go-in?\"，三个词连成一口气，going 的 g 常吞掉。",
+   "zh": "你好吗？（澳洲最常见的问候，不是问你去哪）",
+   "reply": "Good, thanks! How are you?"
+  },
+  {
+   "en": "We're havin' a few people over Sunday arvo, if you're keen.",
+   "sound": "\"havin'a-few\" 连读；Sunday 听着像 \"Sundy\"；\"if ya keen\"。",
+   "zh": "我们周日下午请几个人来家里，你有兴趣就来。",
+   "reply": "Oh, thank you! We'd love to come."
+  },
+  {
+   "en": "Just bring a plate, and it's BYO.",
+   "sound": "\"jus'-bring-a-plate\" 一口气；BYO 读字母 B-Y-O，很快。",
+   "zh": "带一道菜来分享就行，饮料自带。",
+   "reply": "Sure. Is a salad or some dumplings okay?"
+  },
+  {
+   "en": "Dave's gonna chuck some snags on.",
+   "sound": "\"gonna-chuck-sum\" 连读，some 弱读成 \"sm\"；chuck = 放、扔。",
+   "zh": "Dave 会烤点香肠。",
+   "reply": "Sounds great. My son loves sausages."
+  },
+  {
+   "en": "Nah, you're right, don't stress.",
+   "sound": "\"Nah-yer-right\"，yeah-nah / nah-yeah 很常见，重点听最后那个词。",
+   "zh": "不用不用，没问题，别担心。",
+   "reply": "Okay, thanks. That's very kind."
+  },
+  {
+   "en": "Reckon it'll get a bit nippy later, so rug up.",
+   "sound": "\"reckon-it'll\" 连成 \"rekkn-ill\"；\"rug up\" = 穿暖和。",
+   "zh": "我觉得晚点会有点冷，多穿点。",
+   "reply": "Good idea, I'll bring a jumper for him."
+  }
+ ],
+ "speech": {
+  "topic": "BBQ 上 Sharon 说 \"Everyone, this is Amy from next door!\"，请你用两分钟向大家介绍一下自己和家人（第一人称）",
+  "paragraphs": [
+   "Hi everyone, I'm Amy. I live next door to Sharon and Dave. My family and I moved to Mitcham a few years ago, and we really like it here. It's quiet, the neighbours are friendly, and it's close to the city.",
+   "I work as a business analyst. Basically, I talk to people in the business, find out what problems they have, and help the IT team build the right solution. I spend a lot of my day in meetings, so my English gets plenty of practice. To be honest, the Aussie accent was hard for me at first. People speak fast and use lots of slang, like \"arvo\" and \"reckon\". I'm getting better, but sometimes I still have to ask people to say things again.",
+   "I have a five-year-old son. He started school this year, and he's full of energy. On weekends, we usually go to the park, or we go to the beach at Semaphore if the weather is nice. He loves riding his bike and running around outside, so I think he'll be very happy here today.",
+   "In my free time, I like cooking. I often make dumplings, because they remind me of home, and my son loves helping me fold them. They're not always pretty, but they taste good!",
+   "Anyway, thank you so much for inviting us. It's really nice to meet more people from our street. If anyone needs anything, just knock on our door. And please try the dumplings!"
+  ],
+  "zh": "大家好，我是 Amy，住在 Sharon 和 Dave 隔壁。我们一家几年前搬到 Mitcham，很喜欢这里：安静、邻居友好、离市区也近。我是业务分析师，简单说就是跟业务部门的人聊，弄清楚他们的问题，再帮 IT 团队做出合适的方案。我一天大部分时间在开会，所以英语练得挺多。说实话，一开始澳洲口音对我挺难的，大家说得快，还有很多俚语，比如 \"arvo\" 和 \"reckon\"。我在进步，但有时还得请别人再说一遍。我有一个五岁的儿子，今年刚上学，精力特别旺盛。周末我们一般去公园，天气好就去 Semaphore 海滩。他喜欢骑车、在外面跑，所以我想他今天一定会玩得很开心。有空的时候我喜欢做饭，常包饺子，因为让我想起家乡，儿子也喜欢帮我包。包得不一定好看，但很好吃！总之，非常感谢邀请我们。能认识更多街坊真好。大家有需要随时来敲门。也请一定尝尝饺子！",
+  "patterns": [
+   {
+    "en": "I've been living in ___ for ___, and I really like it because ___.",
+    "zh": "我在___住了___，很喜欢这里，因为___。"
+   },
+   {
+    "en": "I work as a ___. Basically, I ___.",
+    "zh": "我是___。简单说，我的工作就是___。"
+   },
+   {
+    "en": "On weekends, we usually ___, or ___ if the weather is nice.",
+    "zh": "周末我们一般___，天气好就___。"
+   },
+   {
+    "en": "To be honest, ___ was hard for me at first, but I'm getting better.",
+    "zh": "说实话，一开始___对我挺难的，但我在进步。"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Sharon",
+   "role": "隔壁邻居"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Oh, hey Amy! How're you going? Haven't seen you in a while.",
+    "zh": "嘿 Amy！最近好吗？好久没见你了。"
+   },
+   {
+    "s": "y",
+    "en": "Hi Sharon! I'm good, thanks. How are you?",
+    "zh": "嗨 Sharon！我挺好的，谢谢。你呢？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, not bad, not bad. Bit flat out with work, but can't complain. Gorgeous day, isn't it? Finally warming up a bit.",
+    "zh": "嗯，还不错。工作有点忙，不过也没啥好抱怨的。今天天气真好，对吧？终于暖和点了。"
+   },
+   {
+    "s": "y",
+    "en": "Yes, it's lovely. I'm just watering the garden before it gets too hot.",
+    "zh": "是啊，很舒服。我趁还不太热先浇浇花。"
+   },
+   {
+    "s": "o",
+    "en": "Good idea. Hey, listen, we're havin' a few people over Sunday arvo. Just a casual barbie, nothin' fancy. Dave's gonna chuck some snags on, and a couple of the neighbours from down the street are comin' too, so if you and the family are keen, you're more than welcome.",
+    "zh": "好主意。对了，我们周日下午请几个人来家里，就是随便烧烤一下，不搞什么排场。Dave 会烤点香肠，街那头的几个邻居也会来。你们一家有兴趣的话，非常欢迎。"
+   },
+   {
+    "s": "y",
+    "en": "Oh, thank you! Sorry, could you say that again a bit slower? I didn't catch all of it.",
+    "zh": "哦，谢谢！不好意思，你能说慢一点再说一遍吗？我没全听清。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, sorry, I talk too fast! A barbecue. At our place. This Sunday afternoon. You're all invited.",
+    "zh": "哎呀不好意思，我说太快了！烧烤，在我们家，这周日下午，你们全家都请来。"
+   },
+   {
+    "s": "y",
+    "en": "Ah, that sounds great. Thank you so much. What time should we come?",
+    "zh": "啊，太好了，非常感谢。我们几点过来？"
+   },
+   {
+    "s": "o",
+    "en": "Ah, anytime from about three-ish. No need to be on the dot or anything, just rock up whenever.",
+    "zh": "大概三点左右以后都行，不用准时，随时过来就好。"
+   },
+   {
+    "s": "y",
+    "en": "Okay, around three. Should I bring anything?",
+    "zh": "好的，三点左右。我需要带什么吗？"
+   },
+   {
+    "s": "o",
+    "en": "Just bring a plate if you like. A salad or a dessert, whatever's easy. And it's BYO, so bring whatever you wanna drink.",
+    "zh": "方便的话带个菜就行，沙拉或甜点，什么简单带什么。饮料自带，你想喝什么就带什么。"
+   },
+   {
+    "s": "y",
+    "en": "Just to confirm, \"bring a plate\" means bring some food to share, right? Not an empty plate?",
+    "zh": "我确认一下，\"bring a plate\" 是带点吃的来分享，对吧？不是带个空盘子？"
+   },
+   {
+    "s": "o",
+    "en": "Ha! Yeah, exactly. Some food to share. Don't stress, though, there'll be heaps of food.",
+    "zh": "哈！对，就是这个意思，带点吃的分享。不过别有压力，吃的会有很多。"
+   },
+   {
+    "s": "y",
+    "en": "Great. I can make some dumplings. My son loves helping with them, even if they come out a bit funny-looking.",
+    "zh": "好的。我可以包点饺子，我儿子很喜欢帮忙，虽然包出来有点奇形怪状。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, yum, that'd be awesome. The kids'll go nuts for those. Speaking of which, how old's your little fella now?",
+    "zh": "哇，好吃，太棒了。孩子们肯定抢着吃。说到孩子，你家小家伙现在几岁了？"
+   },
+   {
+    "s": "y",
+    "en": "He's five. He started school this year.",
+    "zh": "五岁了，今年刚上学。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, lovely. Our grandkids'll be there too, they're about the same age, so he'll have someone to run around with. We've got the trampoline set up out the back, so they'll be busy for hours.",
+    "zh": "真好。我们孙子孙女也会在，年纪差不多，他有伴一起玩了。后院还搭了蹦床，够他们玩好几个小时。"
+   },
+   {
+    "s": "y",
+    "en": "Perfect, he'll love that. Is there anything I should know? Like, does anyone have food allergies?",
+    "zh": "太好了，他一定喜欢。有什么我需要注意的吗？比如有人食物过敏吗？"
+   },
+   {
+    "s": "o",
+    "en": "Hmm, good question. I think Kerry's boy can't have nuts, so maybe steer clear of those. Otherwise you're right.",
+    "zh": "嗯，好问题。我记得 Kerry 的儿子不能吃坚果，所以最好别放坚果。其他都没问题。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, \"you're right\"? You mean it's fine?",
+    "zh": "不好意思，\"you're right\" 是说没问题的意思吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, yeah, sorry! \"You're right\" just means you're all good, no problem at all.",
+    "zh": "对对，抱歉！\"You're right\" 就是\"你没问题、都挺好\"的意思。"
+   },
+   {
+    "s": "y",
+    "en": "Got it. No nuts. Thanks for letting me know.",
+    "zh": "明白了，不放坚果。谢谢提醒。"
+   },
+   {
+    "s": "o",
+    "en": "No worries. Oh, and it gets a bit nippy once the sun goes down, so maybe chuck a jumper in for the little one. Here, I'll give you my number in case you're running late. It's oh-four-nine-one, five-seven-oh, one-five-six.",
+    "zh": "不客气。哦对了，太阳一下山会有点凉，给小家伙带件毛衣吧。来，我给你我的电话，万一你们晚到可以打。0491 570 156。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, was that oh-four-nine-one, five-seven-oh, one-five-six? Let me call you now so you've got mine.",
+    "zh": "不好意思，是 0491 570 156 吗？我现在打给你，这样你也有我的号码。"
+   },
+   {
+    "s": "o",
+    "en": "Yep, that's the one. Lovely. Righto, I'd better let you get on with it. See you Sunday!",
+    "zh": "对，就是这个。好嘞，不耽误你干活了，周日见！"
+   },
+   {
+    "s": "y",
+    "en": "See you Sunday. Thanks again, Sharon!",
+    "zh": "周日见，再次谢谢你，Sharon！"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, I didn't quite catch that. Could you say it again?",
+   "zh": "不好意思，我没太听清，你能再说一遍吗？"
+  },
+  {
+   "en": "Could you say that a bit slower? I'm still getting used to the accent.",
+   "zh": "能说慢一点吗？我还在适应口音。"
+  },
+  {
+   "en": "Sorry, what does \"bring a plate\" mean exactly?",
+   "zh": "不好意思，\"bring a plate\" 具体是什么意思？（把引号里换成你没听懂的词）"
+  },
+  {
+   "en": "Just to confirm, Sunday from about three, at your place?",
+   "zh": "我确认一下：周日三点左右，在你家，对吗？"
+  },
+  {
+   "en": "Could you text me the details so I don't forget? And how do you spell your street name?",
+   "zh": "能把细节发短信给我吗，免得我忘了？你们街名怎么拼？"
+  }
+ ],
+ "checklist": [
+  "能听懂 \"bring a plate\"、\"BYO\"、\"arvo\"、\"snags\"",
+  "1.15x 播放时，能抓住 Sharon 说的时间和要带的东西",
+  "至少用了两次追问句（请对方重复 / 确认意思）",
+  "两分钟演讲没有长时间停顿，讲完了家庭、工作、周末三块",
+  "能说出 \"How're you going?\" 的回答且语气自然"
+ ]
+}

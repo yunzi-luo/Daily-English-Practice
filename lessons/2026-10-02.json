@@ -1,0 +1,322 @@
+{
+ "id": "2026-10-02",
+ "date": "2026-10-02",
+ "category": "保险/医疗",
+ "title": "Bupa 来电：牙科理赔要补材料",
+ "titleEn": "Bupa calls about your dental extras claim",
+ "scene": [
+  "谁打来：Bupa 理赔部的客服 Jess，澳洲口音，语速偏快，开头会先核实你的身份（出生日期、地址）。 发生了什么：你周一在 App 上传的牙科收据照片太糊，看不清项目编码（item number），理赔暂停了。",
+  "你的目标：①听懂要补什么 ②确认怎么交（新建还是回邮件）③问清多久到账、能报多少 ④拿到通话参考号。"
+ ],
+ "vocab": [
+  {
+   "en": "policyholder",
+   "zh": "保单持有人",
+   "ex": "Are you the main policyholder on this account?"
+  },
+  {
+   "en": "extras cover",
+   "zh": "附加险（牙科、理疗、眼镜等）",
+   "ex": "My extras cover includes two dental check-ups a year."
+  },
+  {
+   "en": "lodge a claim",
+   "zh": "提交理赔",
+   "ex": "I lodged the claim through the app on Monday."
+  },
+  {
+   "en": "itemised receipt",
+   "zh": "明细收据（每项服务分开列）",
+   "ex": "Could you email me an itemised receipt, please?"
+  },
+  {
+   "en": "item number",
+   "zh": "项目编码（牙科是三位数）",
+   "ex": "We couldn't see the item numbers on the receipt."
+  },
+  {
+   "en": "benefit",
+   "zh": "保险赔付的钱",
+   "ex": "The benefit will be paid into your account."
+  },
+  {
+   "en": "annual limit",
+   "zh": "年度报销上限",
+   "ex": "You've still got plenty left on your annual limit."
+  },
+  {
+   "en": "waiting period",
+   "zh": "等待期（买保险后要等一段时间才能报）",
+   "ex": "There's a two-month waiting period for general dental."
+  },
+  {
+   "en": "out of pocket / the gap",
+   "zh": "自付的部分 / 差价",
+   "ex": "How much will I be out of pocket?"
+  },
+  {
+   "en": "assess (a claim)",
+   "zh": "审核（理赔）",
+   "ex": "Your claim will be assessed within two business days."
+  },
+  {
+   "en": "business days",
+   "zh": "工作日",
+   "ex": "It'll hit your account in three to five business days."
+  },
+  {
+   "en": "reference number",
+   "zh": "参考号/工单号",
+   "ex": "Could I get a reference number for this call?"
+  }
+ ],
+ "listening": [
+  {
+   "en": "G'day, it's Jess calling from Bupa. How're you going?",
+   "sound": "how're you going 连成 “houya-goin”，结尾 g 基本不发音。",
+   "zh": "你好，我是 Bupa 的 Jess，你还好吗？（就是 How are you）",
+   "reply": "Good, thanks. How are you?"
+  },
+  {
+   "en": "Before we go any further, I just need to run through a couple of security questions.",
+   "sound": "go any 连成 “go-weny”；run through 是“过一遍”。",
+   "zh": "继续之前，我得先问你几个安全验证问题。",
+   "reply": "Sure, go ahead."
+  },
+  {
+   "en": "Can I grab your date of birth?",
+   "sound": "grab your 连成 “grab-ya”，grab 在这里就是“要一下”。",
+   "zh": "能告诉我你的出生日期吗？",
+   "reply": "It's the 12th of March, 1988."
+  },
+  {
+   "en": "I'll just pop you on hold for a sec while I pull up the claim.",
+   "sound": "pop you on hold 连读很快；for a sec = 一下下；pull up = 调出来（记录）。",
+   "zh": "我让你稍等一下，我把理赔记录调出来。",
+   "reply": "No worries."
+  },
+  {
+   "en": "The receipt came through a bit blurry, so we couldn't make out the item numbers.",
+   "sound": "came through = 传过来；make out = 看清楚，常被吞成 “may-kout”。",
+   "zh": "收据照片传过来有点糊，我们看不清项目编码。",
+   "reply": "Oh, I see. Should I upload it again?"
+  },
+  {
+   "en": "Once that's in, it should hit your account in three to five business days.",
+   "sound": "that's in = 交上来以后；hit your account = 到账。",
+   "zh": "交上来之后，3 到 5 个工作日到账。",
+   "reply": "Great, thanks."
+  }
+ ],
+ "speech": {
+  "topic": "My experience with private health insurance in Australia（讲讲你在澳洲用私人医保的经历）（第一人称）",
+  "paragraphs": [
+   "Today I'd like to talk about my experience with private health insurance in Australia. When I first moved here, I found the whole system quite confusing. There's Medicare, which is the public system, and then there's private health insurance, like Bupa or Medibank.",
+   "On top of that, most private policies are split into two parts: hospital cover and extras cover. At the moment, I have a family policy with Bupa, and I mainly use the extras part for dental check-ups and glasses. My kid goes to the dentist every six months, so I make claims quite often.",
+   "Usually, I just take a photo of the receipt and lodge the claim through the app. It's quick and easy, and the money normally comes into my account within a few days. However, it isn't always smooth. Last time, my claim was put on hold because the photo of the receipt was blurry.",
+   "Someone from Bupa called me to explain, but she spoke very fast, and I didn't understand everything the first time. I had to ask her to repeat a few things. In the end, I uploaded a clearer copy and the claim was paid. From this experience, I learned two things.",
+   "First, always ask for an itemised receipt, because the insurer needs the item numbers. Second, it's totally fine to ask people to slow down or spell something. Most people are happy to help. Overall, I think private health insurance is worth it for my family, but it's important to understand your annual limits and waiting periods before you need them."
+  ],
+  "zh": "今天我想聊聊我在澳洲用私人医保的经历。刚搬来的时候，我觉得整个体系挺让人糊涂的。有公立的 Medicare，还有私人医保，比如 Bupa 或 Medibank。而且大部分私人保险分成两部分：住院险和附加险。现在我在 Bupa 有一份家庭保单，主要用附加险看牙和配眼镜。孩子每半年看一次牙，所以我经常报销。一般我就拍一下收据，在 App 里提交理赔。又快又方便，钱一般几天就到账。不过也不总是顺利。上次我的理赔被暂停了，因为收据照片太糊。Bupa 的人打电话来解释，但她说得很快，我第一遍没全听懂。我请她重复了几次。最后我传了一张更清楚的，理赔就到账了。从这件事我学到两点。第一，一定要明细收据，因为保险公司需要项目编码。第二，请别人说慢点或拼一下完全没问题，大部分人都很乐意帮忙。总的来说，我觉得私人医保对我们家是值得的，但要提前搞清楚年度上限和等待期。",
+  "patterns": [
+   {
+    "en": "When I first moved here, I found ___ quite confusing.",
+    "zh": "刚搬来的时候，我觉得 ___ 挺让人糊涂的。"
+   },
+   {
+    "en": "At the moment, I mainly use ___ for ___.",
+    "zh": "现在我主要用 ___ 来 ___。"
+   },
+   {
+    "en": "However, it isn't always smooth. Last time, ___.",
+    "zh": "不过也不总是顺利。上次 ___。"
+   },
+   {
+    "en": "From this experience, I learned two things. First, ___. Second, ___.",
+    "zh": "这次经历让我学到两点：第一，___；第二，___。"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Jess",
+   "role": "Bupa 理赔客服"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Hi there, am I speaking with Amy?",
+    "zh": "你好，请问是 Amy 吗？"
+   },
+   {
+    "s": "y",
+    "en": "Yes, speaking. Who's calling, please?",
+    "zh": "是我，请问是哪位？"
+   },
+   {
+    "s": "o",
+    "en": "G'day Amy, it's Jess calling from Bupa. How're you going today?",
+    "zh": "你好 Amy，我是 Bupa 的 Jess。今天还好吗？"
+   },
+   {
+    "s": "y",
+    "en": "I'm good, thanks. How are you?",
+    "zh": "挺好的，谢谢。你呢？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, not bad, thanks. Look, I'm just calling about an extras claim you lodged through the app on Monday. Before we go any further, I just need to run through a couple of quick security questions. Is that alright?",
+    "zh": "还不错，谢谢。是这样，我打电话是关于你周一在 App 提交的一个附加险理赔。继续之前，我得先问几个安全验证问题，可以吗？"
+   },
+   {
+    "s": "y",
+    "en": "Sure, go ahead.",
+    "zh": "可以，请问。"
+   },
+   {
+    "s": "o",
+    "en": "Lovely. Can I grab your date of birth and the residential address on the policy?",
+    "zh": "好的。能告诉我你的出生日期和保单上的住址吗？"
+   },
+   {
+    "s": "y",
+    "en": "My date of birth is the twelfth of March, 1988, and the address is 14 Wattle Street, Mitcham.",
+    "zh": "我的出生日期是 1988 年 3 月 12 日，地址是 Mitcham 的 Wattle 街 14 号。（示例）"
+   },
+   {
+    "s": "o",
+    "en": "Perfect, thanks for that. I'll just pop you on hold for a sec while I pull up the claim. … Okay, thanks for holding. So the claim was for a dental check-up and a clean for your little one, is that right?",
+    "zh": "好的，谢谢。我让你稍等一下，我调一下理赔记录……好了，谢谢等待。这个理赔是孩子的牙科检查和洗牙，对吗？"
+   },
+   {
+    "s": "y",
+    "en": "Yes, that's right.",
+    "zh": "对，是的。"
+   },
+   {
+    "s": "o",
+    "en": "Great. So the issue is, the receipt came through a bit blurry, so our assessors couldn't make out the item numbers, and without those we can't process the benefit.",
+    "zh": "好。问题是收据照片有点糊，我们的审核员看不清项目编码，没有编码我们没法赔付。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, could you say that again a bit slower? I didn't quite catch the part about the numbers.",
+    "zh": "不好意思，能说慢一点再说一遍吗？关于编码那部分我没太听清。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, sorry, no worries. So, the photo of the receipt was blurry. We need to see the item numbers. They're the little three-digit codes next to each service, like zero-one-one or one-one-four.",
+    "zh": "哦不好意思，没事。就是收据照片糊了。我们需要看到项目编码，就是每项服务旁边的三位数小编码，比如 011 或 114。"
+   },
+   {
+    "s": "y",
+    "en": "Ah, I see. So I just need to upload a clearer photo of the receipt?",
+    "zh": "哦明白了。那我只要再上传一张清楚点的收据照片就行？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, exactly. Ideally an itemised receipt from the dental clinic. If you haven't got one, just give them a ring and they'll email it through to you.",
+    "zh": "对，没错。最好是牙科诊所开的明细收据。如果你没有，给他们打个电话，他们会发邮件给你。"
+   },
+   {
+    "s": "y",
+    "en": "Okay, I can do that. Just to confirm, do I upload it under the same claim, or lodge a new one?",
+    "zh": "好的，没问题。确认一下，我是在原来那个理赔下面上传，还是新建一个？"
+   },
+   {
+    "s": "o",
+    "en": "Good question. You can just reply to the email we sent you this morning and attach it there. That way it gets linked to the existing claim and you don't have to start from scratch.",
+    "zh": "问得好。你直接回复我们今天早上发给你的邮件，把收据附上就行。这样会关联到原来的理赔，不用从头再来。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, which email? I'm not sure I've seen it.",
+    "zh": "不好意思，哪封邮件？我好像没看到。"
+   },
+   {
+    "s": "o",
+    "en": "It should've come through this morning with the subject line \"More information needed\". Might've ended up in your junk folder.",
+    "zh": "应该是今天早上发的，标题是“需要补充信息”。可能进了垃圾邮件箱。"
+   },
+   {
+    "s": "y",
+    "en": "Okay, I'll have a look. And how long will it take after that?",
+    "zh": "好，我去找一下。那之后要多久？"
+   },
+   {
+    "s": "o",
+    "en": "Once that's in, it should be assessed within a couple of days, and then it'll hit your account in three to five business days.",
+    "zh": "交上来以后，一两天内审核，然后 3 到 5 个工作日到账。"
+   },
+   {
+    "s": "y",
+    "en": "Great. And will the full amount be covered?",
+    "zh": "好的。那全部费用都能报吗？"
+   },
+   {
+    "s": "o",
+    "en": "So your extras cover pays seventy percent for general dental, up to your annual limit. You've still got plenty left this year, so you'd be looking at about a hundred and fifteen back, and the rest is out of pocket.",
+    "zh": "你的附加险普通牙科报 70%，不超过年度上限。你今年额度还剩很多，所以大概能报回 115 块，剩下的自付。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, just to confirm, about one hundred and fifteen dollars back, and I pay the gap?",
+    "zh": "不好意思，确认一下：大约报回 115 块，差价我自己付，对吗？"
+   },
+   {
+    "s": "o",
+    "en": "That's it, you've got it.",
+    "zh": "对，就是这样。"
+   },
+   {
+    "s": "y",
+    "en": "Could I get a reference number for this call, please?",
+    "zh": "能给我这次通话的参考号吗？"
+   },
+   {
+    "s": "o",
+    "en": "Of course. It's C-L-7-4-2-9. Anything else I can help you with today?",
+    "zh": "当然，是 CL7429。今天还有其他需要帮忙的吗？"
+   },
+   {
+    "s": "y",
+    "en": "No, that's everything. Thanks so much for your help, Jess.",
+    "zh": "没有了，就这些。非常感谢你，Jess。"
+   },
+   {
+    "s": "o",
+    "en": "No worries at all. Have a lovely arvo. Oh, morning, sorry! Have a good one.",
+    "zh": "不客气。下午愉快——哦，现在是上午，不好意思！祝你今天顺利。"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, the line's a bit unclear. Could you say that again a bit slower?",
+   "zh": "不好意思，信号不太好，能说慢一点再说一遍吗？"
+  },
+  {
+   "en": "Could you spell that for me, please?",
+   "zh": "能帮我拼一下吗？"
+  },
+  {
+   "en": "Just to confirm, you're saying I need to send a clearer receipt?",
+   "zh": "确认一下，你是说我需要再发一张清楚的收据？"
+  },
+  {
+   "en": "Would you mind sending that to me by email, so I have it in writing?",
+   "zh": "可以把这个发邮件给我吗？我想留个书面记录。"
+  },
+  {
+   "en": "Could I get a reference number for this call, please?",
+   "zh": "能给我这次通话的参考号吗？"
+  }
+ ],
+ "checklist": [
+  "听懂了 Jess 为什么打电话（收据太糊，看不清 item number）",
+  "记住了 how're you going / pop you on hold / hit your account 是什么意思",
+  "在角色扮演里至少用了 2 次追问句",
+  "两分钟演讲讲满 1 分 30 秒以上，没有停下来超过 5 秒",
+  "能说出今天 12 个词里的至少 8 个"
+ ]
+}
