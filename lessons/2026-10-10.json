@@ -1,0 +1,328 @@
+{
+ "id": "2026-10-10",
+ "date": "2026-10-10",
+ "category": "社交",
+ "title": "同学妈妈来电邀请生日派对",
+ "titleEn": "A birthday party invite from another school mum",
+ "scene": [
+  "周六早上，孩子 Reception 班同学 Ava 的妈妈 Nicole 打来电话：Ava 下周六满 6 岁，要在 Main North Road 上的室内游乐场办派对，想请你家孩子去。她说话快、很随意，会顺口说很多细节：时间、要不要家长留下、防滑袜、主题装扮、礼物、RSVP。",
+  "你的目标：① 听清日期、时间、地点；② 弄明白是不是 drop-off party、要带什么；③ 礼貌地问礼物和装扮，并说好什么时候、怎么回复（RSVP）。"
+ ],
+ "facts": [
+  {
+   "k": "When",
+   "v": "Sat 17 Oct · 11am–1pm"
+  },
+  {
+   "k": "Where",
+   "v": "Indoor play centre, Main North Rd"
+  },
+  {
+   "k": "Theme",
+   "v": "Superheroes（可选）"
+  },
+  {
+   "k": "RSVP",
+   "v": "周三前发短信"
+  }
+ ],
+ "vocab": [
+  {
+   "en": "keen (to do sth)",
+   "zh": "很想、乐意（澳洲超常用）",
+   "ex": "Ava's really keen to have your kid come along."
+  },
+  {
+   "en": "RSVP",
+   "zh": "回复是否出席",
+   "ex": "Just RSVP to me by Wednesday so I can give the venue numbers."
+  },
+  {
+   "en": "drop-off party",
+   "zh": "家长把孩子送到就可以走的派对",
+   "ex": "It's sort of a drop-off party, but you're welcome to stay."
+  },
+  {
+   "en": "hang around / stick around",
+   "zh": "留下来、待着",
+   "ex": "Heaps of parents hang around for a coffee."
+  },
+  {
+   "en": "heads-up",
+   "zh": "提前提醒一声",
+   "ex": "Just a heads-up, they're strict about grippy socks."
+  },
+  {
+   "en": "grippy socks",
+   "zh": "防滑袜（游乐场、蹦床必备）",
+   "ex": "If you haven't got grippy socks, they sell them at the front."
+  },
+  {
+   "en": "party pies & fairy bread",
+   "zh": "迷你肉派和彩糖面包（澳洲儿童派对标配）",
+   "ex": "We've got party pies, sausage rolls and fairy bread."
+  },
+  {
+   "en": "lolly bag",
+   "zh": "派对结束发的糖果回礼袋",
+   "ex": "Every kid goes home with a lolly bag."
+  },
+  {
+   "en": "dress up (as)",
+   "zh": "装扮成…",
+   "ex": "It's superheroes, if they want to dress up."
+  },
+  {
+   "en": "don't go overboard",
+   "zh": "别太破费、别搞太夸张",
+   "ex": "No presents necessary, just don't go overboard."
+  },
+  {
+   "en": "pencil it in",
+   "zh": "先记在日程上（暂定）",
+   "ex": "I'll pencil it in now and text you tonight."
+  },
+  {
+   "en": "give someone a lift",
+   "zh": "顺路载某人",
+   "ex": "We go right past your place, so I can give your kid a lift."
+  }
+ ],
+ "listening": [
+  {
+   "en": "Hi, it's Nicole, Ava's mum from Reception. Have you got a sec?",
+   "sound": "Have you got a sec → \"av-ya-godda-sec\"；Reception = 南澳小学第一年（不是酒店前台）",
+   "zh": "你好，我是 Nicole，Reception 班 Ava 的妈妈。你现在有空吗？",
+   "reply": "Oh hi Nicole! Yes, of course."
+  },
+  {
+   "en": "Ava's turning six next Saturday, so we're doing a little thing for her at the play centre.",
+   "sound": "turning six = 满六岁；doing a little thing = 办个小派对（很随口的说法）",
+   "zh": "Ava 下周六满六岁，我们要在游乐场给她小小庆祝一下。",
+   "reply": "That's lovely! Next Saturday, the seventeenth?"
+  },
+  {
+   "en": "It's sort of a drop-off thing, but heaps of the parents end up hanging around for a coffee.",
+   "sound": "sort of → \"sorta\"；heaps of = 很多；end up hanging around → \"en-dup hang-in-round\"",
+   "zh": "差不多是家长送到就能走的那种，不过很多家长最后都会留下喝杯咖啡。",
+   "reply": "I think I'll stay for a coffee."
+  },
+  {
+   "en": "If you haven't got any, they sell 'em at the front counter for like four bucks.",
+   "sound": "'em = them；for like four bucks = 大概四块钱（like 是口头禅，bucks = dollars）",
+   "zh": "如果你没有，前台有卖，大概四块钱。",
+   "reply": "OK, good to know. Thanks."
+  },
+  {
+   "en": "Has your little one got any allergies or anything I should know about?",
+   "sound": "got any → \"godd-eny\"；or anything → \"or-anythin'\"，句尾声音会降下去、很快带过",
+   "zh": "你家小朋友有什么过敏之类我需要知道的吗？",
+   "reply": "No allergies, thanks for checking."
+  },
+  {
+   "en": "Seriously, no presents necessary. But if you wanna, she's mad about unicorns at the mo.",
+   "sound": "wanna = want to；mad about = 特别迷；at the mo = at the moment（眼下）",
+   "zh": "真的，不用带礼物。不过你想买的话，她最近特别迷独角兽。",
+   "reply": "Got it, unicorns. Thanks for the tip."
+  }
+ ],
+ "speech": {
+  "topic": "讲讲澳洲小朋友的生日派对：你第一次参加时的感受，现在怎么应对，你的建议。（第一人称）",
+  "paragraphs": [
+   "I'd like to talk about kids' birthday parties in Australia, because they were quite new to me.",
+   "Since my kid started school this year, we've been invited to lots of birthday parties. Every few weeks, there's a new invitation in the school bag or a message from another parent.",
+   "Parties here are usually quite simple. They're often at a park, at home, or at an indoor play centre. The kids run around for two hours, eat party pies and fairy bread, and then go home with a lolly bag. Many parents stay and have a coffee together.",
+   "At first, I felt a bit nervous. I didn't know the rules. Should I stay or leave? How much should I spend on a present? What if I can't understand the other parents? At my first party, I just nodded and smiled the whole time, because everyone was talking so fast.",
+   "Now I feel more comfortable. I learned that most parents spend about twenty or thirty dollars on a present, and a book or a small toy is totally fine. I also learned that it's OK to ask questions. When I don't understand something, I just say, \"Sorry, what does that mean?\" People are usually happy to explain.",
+   "For me, these parties are not only for the kids. They're also a great way to make friends and practise my English in a relaxed way.",
+   "So my advice is simple: say yes to the invitation, stay for the coffee, and talk to at least one new person."
+  ],
+  "zh": "我想聊聊澳洲小朋友的生日派对，因为这对我来说挺新鲜的。孩子今年上学以后，我们收到了很多生日派对邀请，隔几周书包里就有一张新请帖，或者别的家长发来消息。这里的派对一般很简单，常在公园、家里或室内游乐场。孩子们跑两个小时，吃迷你肉派和彩糖面包，走的时候拿一袋糖果。很多家长会留下一起喝咖啡。一开始我有点紧张，不懂规矩：该留下还是走？礼物花多少钱？听不懂其他家长怎么办？第一次参加派对时，我全程只是点头微笑，因为大家说得太快了。现在我自在多了。我知道大多数家长礼物花二三十块，一本书或一个小玩具完全可以。我也明白了，提问没关系。听不懂时我就说“不好意思，那是什么意思？”大家通常都很乐意解释。对我来说，这些派对不只是给孩子的，也是我交朋友、轻松练英语的好机会。所以我的建议很简单：接受邀请，留下喝杯咖啡，至少和一个新朋友聊聊。",
+  "patterns": [
+   {
+    "en": "At first, I felt a bit nervous, because I didn't know ___.",
+    "zh": "一开始我有点紧张，因为我不知道 ___。（换成：the rules / anyone there / what to bring）"
+   },
+   {
+    "en": "I learned that it's totally fine to ___.",
+    "zh": "我发现 ___ 完全没问题。"
+   },
+   {
+    "en": "For me, ___ is not only about ___. It's also a great way to ___.",
+    "zh": "对我来说，___ 不只是 ___，也是 ___ 的好机会。"
+   },
+   {
+    "en": "So my advice is simple: ___, ___, and ___.",
+    "zh": "所以我的建议很简单：___、___、还有 ___。"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Nicole",
+   "role": "Ava 的妈妈"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Hi, it's Nicole here, Ava's mum from Reception. Have you got a sec?",
+    "zh": "你好，我是 Nicole，Reception 班 Ava 的妈妈。你现在有空吗？"
+   },
+   {
+    "s": "y",
+    "en": "Oh hi Nicole! Yes, of course. How are you going?",
+    "zh": "哦，你好 Nicole！当然有空。你好吗？"
+   },
+   {
+    "s": "o",
+    "en": "Good, good, bit of a mad morning, you know how it is. Look, I won't keep you long. Ava's turning six next Saturday, and we're doing a little thing for her, and she's really keen to have your kid come along.",
+    "zh": "挺好挺好，早上有点手忙脚乱，你懂的。是这样，我不耽误你太久。Ava 下周六满六岁，我们给她办个小派对，她特别想让你家孩子来。"
+   },
+   {
+    "s": "y",
+    "en": "Oh, that's so lovely. Thank you! Next Saturday, the seventeenth?",
+    "zh": "哦，太好了，谢谢！下周六，17 号？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, the seventeenth. It's at that indoor play centre on Main North Road, eleven till one. They've got the big climbing frame and the trampolines and that, so they'll run themselves ragged.",
+    "zh": "对，17 号。在 Main North Road 那个室内游乐场，11 点到 1 点。那里有大攀爬架、蹦床什么的，孩子们能玩到累趴。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, could you say the time again a bit slower? I didn't quite catch it.",
+    "zh": "不好意思，能再慢一点说一下时间吗？我没太听清。"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, sorry, I talk a hundred miles an hour. Eleven a.m. till one p.m. So two hours.",
+    "zh": "好的，抱歉，我说话太快了。上午 11 点到下午 1 点，两个小时。"
+   },
+   {
+    "s": "y",
+    "en": "Eleven till one. Great. Should I stay with my kid, or is it a drop-off party?",
+    "zh": "11 点到 1 点，好的。我需要陪着孩子，还是送到就可以走？"
+   },
+   {
+    "s": "o",
+    "en": "It's sort of a drop-off thing, but heaps of the parents end up hanging around for a coffee, so totally up to you. There's a little café bit right next to the play area.",
+    "zh": "差不多是送到就走的那种，不过很多家长最后都留下来喝咖啡，完全看你。游乐区旁边就有个小咖啡区。"
+   },
+   {
+    "s": "y",
+    "en": "I think I'll stay for a coffee. It's a good chance to meet the other parents.",
+    "zh": "我想我会留下喝杯咖啡，正好认识一下其他家长。"
+   },
+   {
+    "s": "o",
+    "en": "Oh, perfect, it'll be nice to have a proper chat. Oh, and just a heads-up, they're pretty strict about grippy socks. If you haven't got any, they sell 'em at the front counter for like four bucks.",
+    "zh": "太好了，可以好好聊聊。哦对了，提醒一下，他们对防滑袜要求挺严的。如果你没有，前台有卖，大概四块钱。"
+   },
+   {
+    "s": "y",
+    "en": "Just to confirm, you mean special socks for the trampolines? Normal socks are not OK?",
+    "zh": "我确认一下，你是说蹦床用的专门袜子？普通袜子不行吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, exactly. The ones with the little rubber bits on the bottom so they don't slip. Normal ones won't cut it, unfortunately.",
+    "zh": "对，就是那种。底下有小胶粒防滑的。普通袜子不行，可惜。"
+   },
+   {
+    "s": "y",
+    "en": "OK, good to know. Does my kid need to bring anything else? Like food or a drink bottle?",
+    "zh": "好，知道了。孩子还需要带别的吗？比如吃的或者水壶？"
+   },
+   {
+    "s": "o",
+    "en": "Nah, we've got food sorted. Party pies, sausage rolls, fairy bread, the usual. Maybe just chuck a water bottle in. Has your little one got any allergies or anything I should know about?",
+    "zh": "不用，吃的我们都准备好了：迷你肉派、香肠卷、彩糖面包，老三样。顺手塞个水壶就行。你家小朋友有什么过敏之类我需要知道的吗？"
+   },
+   {
+    "s": "y",
+    "en": "No allergies, thanks for checking. Is there a theme? Do the kids dress up?",
+    "zh": "没有过敏，谢谢你问。有主题吗？孩子们要装扮吗？"
+   },
+   {
+    "s": "o",
+    "en": "It's superheroes, if they want to dress up, but no pressure at all. Half of them will turn up in their footy jumpers anyway.",
+    "zh": "是超级英雄主题，想装扮就装扮，完全不用有压力。反正一半孩子会穿着球衣来。"
+   },
+   {
+    "s": "y",
+    "en": "Ha, OK. And what about presents? Is there anything Ava would like?",
+    "zh": "哈哈，好的。那礼物呢？Ava 有什么想要的吗？"
+   },
+   {
+    "s": "o",
+    "en": "Oh, seriously, no presents necessary. But if you really wanna get something, she's mad about unicorns at the mo. Just don't go overboard, a book or a little something is plenty.",
+    "zh": "哎，真的不用带礼物。不过如果你真想买，她最近特别迷独角兽。别太破费，一本书或者一个小东西就足够了。"
+   },
+   {
+    "s": "y",
+    "en": "Got it, unicorns. Do you need me to RSVP somewhere, or is this call enough?",
+    "zh": "明白，独角兽。我需要在哪里正式回复吗，还是这个电话就算了？"
+   },
+   {
+    "s": "o",
+    "en": "If you could just shoot me a text by Wednesday, that'd be great. I've gotta give the venue final numbers by Thursday.",
+    "zh": "你周三前给我发个短信就好。我周四前得把最终人数报给场地。"
+   },
+   {
+    "s": "y",
+    "en": "Sure. I'll pencil it in now and text you tonight. Could you also text me the address of the play centre?",
+    "zh": "没问题。我现在先记到日程里，今晚给你发短信。你也能把游乐场地址发给我吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, will do. And look, if it's easier, we go right past your place on the way, so I'm happy to give your kid a lift.",
+    "zh": "好，我发你。还有，如果方便的话，我们去的路上正好经过你家，我可以顺路接你家孩子。"
+   },
+   {
+    "s": "y",
+    "en": "That's really kind, thank you. I think I'll drive, but I'll let you know if anything changes.",
+    "zh": "你真好，谢谢。我想我自己开车去，有变化我再告诉你。"
+   },
+   {
+    "s": "o",
+    "en": "No worries at all. Ava'll be stoked. Righto, I'd better go, the dog's just run off with a shoe. See you at pick-up on Monday!",
+    "zh": "完全没问题。Ava 会超开心的。好啦，我得走了，狗刚叼着一只鞋跑了。周一放学接孩子时见！"
+   },
+   {
+    "s": "y",
+    "en": "Ha, good luck! Thanks again, Nicole. See you Monday. Bye!",
+    "zh": "哈哈，祝你好运！再次谢谢你 Nicole，周一见，拜拜！"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, could you say that again a bit slower? I didn't quite catch it.",
+   "zh": "不好意思，能再慢一点说一遍吗？我没太听清。"
+  },
+  {
+   "en": "Just to confirm, it's Saturday the seventeenth, from eleven till one?",
+   "zh": "我确认一下，是 17 号周六，11 点到 1 点，对吗？"
+  },
+  {
+   "en": "Sorry, I'm not sure what ___ means. Could you explain?",
+   "zh": "不好意思，我不太懂 ___ 是什么意思，能解释一下吗？"
+  },
+  {
+   "en": "Could you text me the address, please? Then I won't get it wrong.",
+   "zh": "能把地址发短信给我吗？这样我就不会弄错。"
+  },
+  {
+   "en": "Let me check our plans and get back to you tonight.",
+   "zh": "我看一下我们的安排，今晚回复你。"
+  }
+ ],
+ "checklist": [
+  "我听清了日期、时间（17 号，11 点到 1 点）和地点",
+  "我明白 drop-off party、grippy socks、lolly bag 是什么",
+  "我用了至少 2 次礼貌追问（say that again / just to confirm）",
+  "我能自然地问礼物和装扮，并说出 RSVP 的方式",
+  "2 分钟演讲我讲满了，中间停顿不超过 3 秒",
+  "挂电话前我复述了要做的事（发短信 RSVP、买防滑袜）"
+ ]
+}

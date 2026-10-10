@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="G'day 口语日课：每天一课澳洲生活场景英语口语练习，词汇、听力难点、两分钟演讲、情景对话，带朗读。">
+<style>html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>G'day 口语日课</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+/* Layout: one reading column. Hero = today's "incoming call" card; sticky voice controls; lesson sections fold; archive is a dated list filtered by life category. */
+:root{
+  --bg:#eef1ec; --surface:#ffffff; --sunk:#e3e8e1; --ink:#1c2925; --muted:#5f6d68; --line:#d3dbd3;
+  --accent:#2e6a55; --accent-ink:#ffffff; --accent-soft:#dcebe3;
+  --them:#a35a1c; --them-soft:#f6e8d9; --me:#2e6a55; --me-soft:#e2efe8;
+  --display:"Young Serif","Noto Serif SC",Georgia,serif;
+  --body:"Noto Sans SC",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121916; --surface:#1a2420; --sunk:#151e1a; --ink:#e6ede9; --muted:#9aaba4; --line:#2b3833;
+  --accent:#7cc4a6; --accent-ink:#0f1a15; --accent-soft:#1f3a2f;
+  --them:#e9a66a; --them-soft:#3a2a1b; --me:#7cc4a6; --me-soft:#1d322a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121916; --surface:#1a2420; --sunk:#151e1a; --ink:#e6ede9; --muted:#9aaba4; --line:#2b3833;
+  --accent:#7cc4a6; --accent-ink:#0f1a15; --accent-soft:#1f3a2f;
+  --them:#e9a66a; --them-soft:#3a2a1b; --me:#7cc4a6; --me-soft:#1d322a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:14px 72px;display:flex;flex-direction:column;gap:14px}
+button{font-family:inherit}
+button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* top nav */
+.nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-size:20px;line-height:1;color:var(--ink);background:none;border:0;padding:0;cursor:pointer}
+.brand small{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em;margin-left:6px}
+.nav .sp{flex:1}
+.pill{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* hero */
+.hero{display:flex;flex-direction:column;gap:10px;padding-block:6px 2px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.cat{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:12px;font-weight:500;background:var(--accent-soft);color:var(--accent);border-radius:4px;padding:1px 8px}
+.new{background:var(--them);color:var(--surface);border-radius:4px;padding:1px 7px;font-size:11px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(27px,7.4vw,40px);line-height:1.15;margin:0;text-wrap:balance}
+.en-title{margin:0;color:var(--muted);font-size:15px;font-style:italic}
+.call{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.ring{flex:none;width:42px;height:42px;border-radius:50%;background:var(--them-soft);color:var(--them);display:grid;place-items:center;position:relative}
+.ring svg{width:20px;height:20px}
+.ring::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid var(--them);opacity:.35;animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.9);opacity:.5}80%,100%{transform:scale(1.25);opacity:0}}
+.call .who{min-width:0;flex:1}
+.call .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--them)}
+.call .nm{font-weight:700;font-size:17px}
+.call .rl{color:var(--muted);font-size:14px}
+.scene p{margin:0 0 8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.facts div{background:var(--sunk);border-radius:8px;padding:8px 10px;font-size:14px;min-width:0}
+.facts span{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
+/* sticky voice bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar .lbl{font-size:13px;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:transparent;color:var(--ink);font:500 13px var(--mono);padding:6px 11px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:500;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.stop{color:var(--them);border-color:var(--them)}
+#voiceInfo{font-size:12px;color:var(--muted);width:100%}
+
+/* sections */
+details.sec{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+details.sec>summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:10px;align-items:baseline}
+details.sec>summary::-webkit-details-marker{display:none}
+summary .tag{font-family:var(--mono);font-size:13px;color:var(--accent);min-width:1.2em}
+summary h2{font-family:var(--display);font-weight:400;font-size:19px;margin:0;flex:1}
+summary .hint{font-size:12px;color:var(--muted)}
+summary::after{content:"＋";color:var(--muted)}
+details[open]>summary::after{content:"－"}
+.body{padding:0 16px 16px;display:flex;flex-direction:column;gap:12px}
+.item{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.item:first-child{border-top:0;padding-top:0}
+.en{display:flex;gap:8px;align-items:flex-start}
+.en .t{flex:1;min-width:0;overflow-wrap:anywhere}
+.term{font-weight:700;font-size:17px}
+.play{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);cursor:pointer;font-size:11px;line-height:1}
+.play.on{background:var(--accent);color:var(--accent-ink)}
+.zh-btn{align-self:flex-start;border:0;background:none;color:var(--muted);font-size:12px;padding:0;cursor:pointer;text-decoration:underline dotted}
+.zh{color:var(--muted);font-size:14px}
+.meaning{font-size:14px;color:var(--accent);font-weight:500}
+.small{font-size:13px;color:var(--muted)}
+.k{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.sound{background:var(--them-soft);border-radius:6px;padding:6px 10px;font-size:14px}
+.reply{border-left:3px solid var(--me);padding-left:10px;font-size:15px}
+.lines{display:flex;flex-direction:column;gap:10px}
+.ln{border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.ln.them{background:var(--them-soft);margin-right:10%}
+.ln.me{background:var(--me-soft);margin-left:10%}
+.ln .who{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.ln.them .who{color:var(--them)} .ln.me .who{color:var(--me)}
+.ln.playing{outline:2px solid var(--accent)}
+.ln.me.hide .t{filter:blur(5px);user-select:none}
+.ctrl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.timer{font-family:var(--mono);font-size:30px;font-variant-numeric:tabular-nums}
+.timer.done{color:var(--them)}
+.status{font-size:13px;color:var(--accent);min-height:1.4em}
+.speech p{margin:0 0 10px}
+ol.steps{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:8px}
+ol.steps b{font-family:var(--mono);font-weight:500;color:var(--accent);font-size:13px}
+.check label{display:flex;gap:8px;align-items:flex-start;font-size:15px}
+.check input{margin-top:6px;accent-color:var(--accent)}
+.done-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* prev/next */
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pager a{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
+.pager a.next{text-align:right}
+.pager span{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.pager b{font-weight:500;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* archive */
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.month{font-family:var(--display);font-size:18px;margin:10px 0 0}
+.list{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.row:first-child{border-top:0}
+.row:hover{background:var(--sunk)}
+.row .d{font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;width:3.6em}
+.row .tt{min-width:0}
+.row .tt b{display:block;font-weight:500;overflow-wrap:anywhere}
+.row .tt i{display:block;font-size:13px;color:var(--muted)}
+.row .ok{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:24px 16px;text-align:center;color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding-top:14px;font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+footer b{color:var(--ink);font-weight:500}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav" aria-label="网站导航">
+    <button type="button" class="brand" id="home">G'day 口语日课<small id="count"></small></button>
+    <span class="sp"></span>
+    <button type="button" class="pill" id="toToday" aria-pressed="true">今天</button>
+    <button type="button" class="pill" id="toArchive" aria-pressed="false">往期</button>
+  </nav>
+
+  <main id="view">
+    <div class="empty" id="loading">正在加载今天的练习…</div>
+  </main>
+
+  <footer>
+    <div><b>每天早上 7 点更新一课。</b>每课一个在澳洲真实会遇到的场景：打电话、同事闲聊、看病、租房、孩子学校……</div>
+    <div>适合日常英语还行、但一到电话和闲聊就听不懂的人。每课包括词汇、听力难点、两分钟演讲、情景对话和救命句，跟着步骤练 15–20 分钟。</div>
+    <div>朗读用的是你手机或电脑自带的声音，没有澳洲口音时会自动换成英式或美式。</div>
+  </footer>
+</div>
+
+<template id="tplLesson">
+  <section class="hero">
+    <div class="eyebrow"><span data-f="date"></span><span class="cat" data-f="cat"></span><span class="new" data-f="new" hidden>今日</span></div>
+    <h1 data-f="title"></h1>
+    <p class="en-title" data-f="titleEn"></p>
+    <div class="call" data-f="callBox">
+      <div class="ring" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div>
+      <div class="who"><div class="lbl">今天和你说话的人</div><div class="nm" data-f="caller"></div><div class="rl" data-f="role"></div></div>
+    </div>
+  </section>
+
+  <div class="bar" role="toolbar" aria-label="朗读设置">
+    <span class="lbl">语速</span>
+    <div class="seg" data-f="rateSeg">
+      <button type="button" data-r="0.8" aria-pressed="false">0.8x</button>
+      <button type="button" data-r="1" aria-pressed="true">1.0x</button>
+      <button type="button" data-r="1.15" aria-pressed="false">1.15x</button>
+    </div>
+    <button type="button" class="btn" data-f="zhAll">显示全部中文</button>
+    <button type="button" class="btn stop" data-f="stopAll">■ 停止</button>
+    <div id="voiceInfo"></div>
+  </div>
+
+  <details class="sec" open>
+    <summary><span class="tag">A</span><h2>场景说明</h2></summary>
+    <div class="body scene"><div data-f="scene"></div><div class="facts" data-f="facts"></div></div>
+  </details>
+  <details class="sec">
+    <summary><span class="tag">B</span><h2>核心词汇与表达</h2><span class="hint" data-f="vocabN"></span></summary>
+    <div class="body" data-f="vocab"></div>
+  </details>
+  <details class="sec">
+    <summary><span class="tag">C</span><h2>听力难点</h2><span class="hint" data-f="listenN"></span></summary>
+    <div class="body" data-f="listen"></div>
+  </details>
+  <details class="sec">
+    <summary><span class="tag">D</span><h2>两分钟演讲</h2><span class="hint">2:00 计时</span></summary>
+    <div class="body">
+      <p class="small" style="margin:0"><b>题目：</b><span data-f="topic"></span></p>
+      <div class="ctrl">
+        <span class="timer" data-f="t2">2:00</span>
+        <button type="button" class="btn primary" data-f="t2go">开始</button>
+        <button type="button" class="btn" data-f="t2reset">重置</button>
+        <button type="button" class="btn" data-f="speechPlay">▶ 朗读范文</button>
+      </div>
+      <div class="speech" data-f="speech"></div>
+      <button type="button" class="zh-btn" data-f="speechZhBtn">显示中文大意</button>
+      <div class="zh" data-f="speechZh" hidden></div>
+      <div class="k">可替换句型</div>
+      <div class="lines" data-f="patterns"></div>
+    </div>
+  </details>
+  <details class="sec">
+    <summary><span class="tag">E</span><h2>情景对话</h2><span class="hint" data-f="dlgN"></span></summary>
+    <div class="body">
+      <div class="ctrl">
+        <button type="button" class="btn primary" data-f="playAll">▶ 播放全部</button>
+        <button type="button" class="btn" data-f="playThem">▶ 只播对方（停顿让我答）</button>
+        <button type="button" class="btn" data-f="hideMe">遮住我的台词</button>
+      </div>
+      <div class="ctrl">
+        <span class="timer" data-f="t5">5:00</span>
+        <button type="button" class="btn" data-f="t5go">开始计时</button>
+        <button type="button" class="btn" data-f="t5reset">重置</button>
+      </div>
+      <div class="status" data-f="dlgStatus"></div>
+      <div class="lines" data-f="dialogue"></div>
+    </div>
+  </details>
+  <details class="sec">
+    <summary><span class="tag">F</span><h2>救命句</h2><span class="hint">听不懂时用</span></summary>
+    <div class="body" data-f="rescue"></div>
+  </details>
+  <details class="sec" open>
+    <summary><span class="tag">G</span><h2>练习步骤</h2><span class="hint">约 18 分钟</span></summary>
+    <div class="body">
+      <ol class="steps" data-f="steps"></ol>
+      <div class="k">自评清单</div>
+      <div class="check" data-f="check"></div>
+      <div class="done-row"><button type="button" class="btn primary" data-f="markDone">这一课我练完了</button><span class="small" data-f="doneNote"></span></div>
+    </div>
+  </details>
+
+  <nav class="pager" data-f="pager" aria-label="上一课和下一课"></nav>
+</template>
+
+<script>
+(function(){
+const $view=document.getElementById('view');
+let INDEX=[];           // newest first
+const cache={};
+const store={get(k){try{return localStorage.getItem(k);}catch(e){return null;}},set(k,v){try{localStorage.setItem(k,v);}catch(e){}}};
+const doneSet=()=>{try{return new Set(JSON.parse(store.get('gd-done')||'[]'));}catch(e){return new Set();}};
+const markDone=id=>{const s=doneSet();s.add(id);store.set('gd-done',JSON.stringify([...s]));};
+
+const WD=['周日','周一','周二','周三','周四','周五','周六'];
+function fmtDate(iso){const [y,m,d]=iso.split('-').map(Number);const dt=new Date(y,m-1,d);return m+'月'+d+'日 · '+WD[dt.getDay()];}
+function todayAdl(){try{return new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Adelaide'}).format(new Date());}catch(e){return new Date().toISOString().slice(0,10);}}
+
+/* ---------- speech ---------- */
+const synth=window.speechSynthesis;let voice=null,rate=parseFloat(store.get('gd-rate')||'1')||1,runId=0;
+function pickVoice(){
+  const info=document.getElementById('voiceInfo');
+  if(!synth){if(info)info.textContent='这个浏览器不支持朗读，换成手机自带浏览器或 Chrome 试试';return;}
+  const vs=synth.getVoices();if(!vs.length){if(info)info.textContent='正在查找英文声音…';return;}
+  const by=l=>vs.filter(v=>v.lang&&v.lang.replace('_','-').toLowerCase().startsWith(l));
+  const au=by('en-au'),gb=by('en-gb'),us=by('en-us'),en=by('en');
+  voice=au[0]||gb[0]||us[0]||en[0]||null;
+  if(info)info.textContent=voice?('朗读声音：'+voice.name+'（'+voice.lang+'）'+(au.length?'':' · 没找到澳洲声音，已用替代')):'没找到英文声音';
+}
+if(synth){synth.onvoiceschanged=pickVoice;}
+function say(text){return new Promise(res=>{
+  if(!synth){res();return;}
+  const u=new SpeechSynthesisUtterance(text.replace(/_{2,}/g,' blank '));
+  if(voice)u.voice=voice;u.lang=voice?voice.lang:'en-AU';u.rate=rate;u.onend=res;u.onerror=res;synth.speak(u);
+});}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+let setStatus=()=>{};
+function stopAll(){runId++;if(synth)synth.cancel();document.querySelectorAll('.play.on').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.ln.playing').forEach(e=>e.classList.remove('playing'));setStatus('');}
+
+function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
+function playBtn(text){
+  const b=el('button','play','▶');b.type='button';b.setAttribute('aria-label','朗读这句');
+  b.onclick=async()=>{stopAll();const id=runId;b.classList.add('on');await say(text);if(id===runId)b.classList.remove('on');};
+  return b;
+}
+function zhToggle(text){
+  const f=document.createDocumentFragment();
+  const z=el('div','zh',text);z.hidden=true;
+  const b=el('button','zh-btn','中文');b.type='button';b.onclick=()=>{z.hidden=!z.hidden;};
+  f.append(b,z);return f;
+}
+function enRow(text,cls){const r=el('div','en');const t=el('div','t'+(cls?' '+cls:''),text);r.append(playBtn(text),t);return r;}
+
+function makeTimer(elT,go,reset,total,startLabel){
+  let left=total,h=null;const fmt=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
+  const draw=()=>{elT.textContent=fmt(left);elT.classList.toggle('done',left===0);};
+  go.onclick=()=>{
+    if(h){clearInterval(h);h=null;go.textContent='继续';return;}
+    if(left===0)left=total;go.textContent='暂停';
+    h=setInterval(()=>{left--;draw();if(left<=0){clearInterval(h);h=null;go.textContent=startLabel;elT.textContent='时间到';}},1000);
+  };
+  reset.onclick=()=>{clearInterval(h);h=null;left=total;go.textContent=startLabel;draw();};
+  draw();
+  return ()=>clearInterval(h);
+}
+let cleanups=[];
+
+/* ---------- data ---------- */
+async function getJSON(p){const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw new Error(r.status);return r.json();}
+async function loadLesson(id){if(!cache[id])cache[id]=await getJSON('lessons/'+id+'.json');return cache[id];}
+
+/* ---------- views ---------- */
+function setNav(which){document.getElementById('toToday').setAttribute('aria-pressed',which==='today'?'true':'false');document.getElementById('toArchive').setAttribute('aria-pressed',which==='archive'?'true':'false');}
+
+async function showLesson(id){
+  stopAll();cleanups.forEach(f=>f());cleanups=[];
+  setNav(id===INDEX[0]?.id?'today':'');
+  let L;
+  try{L=await loadLesson(id);}catch(e){$view.innerHTML='';const m=el('div','empty','这一课没能加载出来。检查一下网络，或者去往期里选别的日期。');$view.append(m);return;}
+  const node=document.getElementById('tplLesson').content.cloneNode(true);
+  const f=n=>node.querySelector('[data-f="'+n+'"]');
+  const other=(L.dialogue&&L.dialogue.other)||{name:'对方',role:''};
+
+  f('date').textContent=fmtDate(L.date);
+  f('cat').textContent=L.category||'';
+  f('new').hidden=L.date!==todayAdl();
+  f('title').textContent=L.title;
+  f('titleEn').textContent=L.titleEn||'';
+  f('caller').textContent=other.name;
+  f('role').textContent=other.role||'';
+  (L.scene||[]).forEach(p=>f('scene').append(el('p',null,p)));
+  if(L.facts&&L.facts.length){L.facts.forEach(x=>{const d=el('div');d.append(el('span',null,x.k),document.createTextNode(x.v));f('facts').append(d);});}else f('facts').remove();
+
+  f('vocabN').textContent=(L.vocab||[]).length+' 个';
+  (L.vocab||[]).forEach(v=>{const it=el('div','item');it.append(enRow(v.en,'term'),el('div','meaning',v.zh));if(v.ex){const e=enRow(v.ex);e.querySelector('.t').style.fontSize='15px';it.append(e);}f('vocab').append(it);});
+
+  f('listenN').textContent=(L.listening||[]).length+' 条 · 先听再看';
+  (L.listening||[]).forEach((x,i)=>{const it=el('div','item');it.append(el('div','k','难点 '+(i+1)),enRow(x.en),el('div','sound','怎么听：'+x.sound),zhToggle(x.zh));if(x.reply){const r=el('div','reply');r.append(enRow('You: '+x.reply));it.append(r);}f('listen').append(it);});
+
+  const sp=L.speech||{paragraphs:[],patterns:[]};
+  f('topic').textContent=sp.topic||'';
+  (sp.paragraphs||[]).forEach(p=>f('speech').append(el('p',null,p)));
+  f('speechZh').textContent=sp.zh||'';
+  f('speechZhBtn').onclick=e=>{const z=e.target.nextElementSibling;z.hidden=!z.hidden;};
+  f('speechPlay').onclick=async()=>{stopAll();const id=runId;for(const p of sp.paragraphs||[]){if(id!==runId)return;await say(p);}};
+  (sp.patterns||[]).forEach(p=>{const it=el('div','item');it.append(enRow(p.en),el('div','small',p.zh));f('patterns').append(it);});
+  cleanups.push(makeTimer(f('t2'),f('t2go'),f('t2reset'),120,'开始'));
+
+  const lines=(L.dialogue&&L.dialogue.lines)||[];
+  f('dlgN').textContent=lines.length+' 轮 · 5:00 计时';
+  const dEl=f('dialogue');const rows=[];
+  lines.forEach(ln=>{const them=ln.s==='o';const it=el('div','ln '+(them?'them':'me'));it.append(el('div','who',them?(other.name+(other.role?' · '+other.role:'')):'You · 你'),enRow(ln.en),zhToggle(ln.zh));dEl.append(it);rows.push(it);});
+  const statusEl=f('dlgStatus');setStatus=t=>{statusEl.textContent=t;};
+  async function runDialogue(onlyThem){
+    stopAll();const id=runId;
+    for(let i=0;i<lines.length;i++){
+      if(id!==runId)return;const ln=lines[i],row=rows[i];
+      row.scrollIntoView({block:'nearest',behavior:'smooth'});
+      if(onlyThem&&ln.s!=='o'){
+        const ms=Math.round((2000+ln.en.split(/\s+/).length*450)/Math.min(rate,1));
+        row.classList.add('playing');
+        for(let left=Math.ceil(ms/1000);left>0;left--){if(id!==runId)return;setStatus('轮到你说 · '+left+' 秒');await wait(1000);}
+        row.classList.remove('playing');setStatus('');continue;
+      }
+      row.classList.add('playing');setStatus(ln.s==='o'?other.name+' 在说…':'你在说…');
+      await say(ln.en);row.classList.remove('playing');if(id!==runId)return;await wait(350);
+    }
+    if(id===runId)setStatus('对话结束');
+  }
+  f('playAll').onclick=()=>runDialogue(false);
+  f('playThem').onclick=()=>runDialogue(true);
+  f('hideMe').onclick=e=>{const on=!dEl.classList.contains('hiding');dEl.classList.toggle('hiding',on);rows.forEach((r,i)=>{if(lines[i].s!=='o')r.classList.toggle('hide',on);});e.target.textContent=on?'显示我的台词':'遮住我的台词';};
+  cleanups.push(makeTimer(f('t5'),f('t5go'),f('t5reset'),300,'开始计时'));
+
+  (L.rescue||[]).forEach(r=>{const it=el('div','item');it.append(enRow(r.en),zhToggle(r.zh));f('rescue').append(it);});
+
+  const steps=[
+    ['3 min','打开 E，1.0x「播放全部」听一遍，先不看中文，记下没听懂的地方。'],
+    ['3 min','看 B 和 C，把没听懂的句子对上号；C 的每条用 1.15x 再听两遍。'],
+    ['4 min','跟读（shadowing）：在 E 里逐句点 '+other.name+' 的台词，0.8x 跟一遍，再 1.0x 跟一遍，模仿连读和语调。'],
+    ['4 min','点「遮住我的台词」+「只播对方」，开 5:00 计时，自己大声回答每一句。'],
+    ['3 min','到 D，先读一遍范文，再用句型换成自己的经历，开 2:00 倒计时脱稿讲。'],
+    ['1 min','用下面的清单自评。']
+  ];
+  steps.forEach(([t,s])=>{const li=el('li');li.append(el('b',null,t),document.createTextNode(' '+s));f('steps').append(li);});
+  (L.checklist||[]).forEach((c,i)=>{const l=el('label');const x=el('input');x.type='checkbox';x.id='ck-'+L.id+'-'+i;l.append(x,document.createTextNode(c));f('check').append(l);});
+  const dn=f('doneNote'),mb=f('markDone');
+  const paintDone=()=>{if(doneSet().has(L.id)){mb.textContent='已练完 ✓';dn.textContent='往期列表里会显示 ✓（只记在这台设备上）';}};
+  mb.onclick=()=>{markDone(L.id);paintDone();};paintDone();
+
+  const i=INDEX.findIndex(x=>x.id===L.id);const pg=f('pager');
+  const older=INDEX[i+1],newer=INDEX[i-1];
+  const link=(x,cls,lab)=>{const a=el('a',cls);a.href='#d'+x.id;a.append(el('span',null,lab+' · '+fmtDate(x.date)),el('b',null,x.title));return a;};
+  if(older)pg.append(link(older,'prev','← 上一课'));else pg.append(el('div'));
+  if(newer)pg.append(link(newer,'next','下一课 →'));
+
+  // rate segment
+  const seg=f('rateSeg');
+  seg.querySelectorAll('button').forEach(b=>{b.setAttribute('aria-pressed',parseFloat(b.dataset.r)===rate?'true':'false');b.onclick=()=>{rate=parseFloat(b.dataset.r);store.set('gd-rate',String(rate));seg.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));};});
+  let zhOn=false;
+  f('zhAll').onclick=e=>{zhOn=!zhOn;$view.querySelectorAll('.zh').forEach(z=>z.hidden=!zhOn);e.target.textContent=zhOn?'隐藏全部中文':'显示全部中文';};
+  f('stopAll').onclick=stopAll;
+
+  $view.innerHTML='';$view.append(node);
+  pickVoice();
+  document.title=fmtDate(L.date).split(' ')[0]+' · '+L.title+' | G\'day 口语日课';
+}
+
+let filterCat='全部';
+function showArchive(){
+  stopAll();cleanups.forEach(f=>f());cleanups=[];
+  setNav('archive');document.title="往期 | G'day 口语日课";
+  $view.innerHTML='';
+  const head=el('section','hero');head.append(el('h1',null,'往期练习'),el('p','en-title','按日期找，或者按生活场景筛选'));
+  $view.append(head);
+  const cats=['全部',...[...new Set(INDEX.map(x=>x.category).filter(Boolean))]];
+  const chips=el('div','chips');
+  cats.forEach(c=>{const b=el('button','pill',c);b.type='button';b.setAttribute('aria-pressed',c===filterCat?'true':'false');b.onclick=()=>{filterCat=c;showArchive();};chips.append(b);});
+  $view.append(chips);
+  const done=doneSet();
+  const items=INDEX.filter(x=>filterCat==='全部'||x.category===filterCat);
+  if(!items.length){$view.append(el('div','empty','这个场景还没有练习，过几天再来看看。'));return;}
+  let curM='',list=null;
+  items.forEach(x=>{
+    const [y,m,d]=x.date.split('-').map(Number);const key=y+'年'+m+'月';
+    if(key!==curM){curM=key;$view.append(el('h2','month',key));list=el('div','list');$view.append(list);}
+    const a=el('a','row');a.href='#d'+x.id;
+    const tt=el('div','tt');tt.append(el('b',null,x.title),el('i',null,(x.category||'')+(x.titleEn?' · '+x.titleEn:'')));
+    a.append(el('span','d',m+'/'+d),tt,el('span','ok',done.has(x.id)?'✓':''));
+    list.append(a);
+  });
+}
+
+function route(){
+  const h=location.hash.replace('#','');
+  if(h==='archive')return showArchive();
+  if(/^d\d{4}-\d{2}-\d{2}$/.test(h)&&INDEX.some(x=>x.id===h.slice(1)))return showLesson(h.slice(1));
+  if(INDEX.length)return showLesson(INDEX[0].id);
+  $view.innerHTML='';$view.append(el('div','empty','第一课马上就来。每天早上 7 点更新。'));
+}
+window.addEventListener('hashchange',()=>{route();window.scrollTo(0,0);});
+document.getElementById('home').onclick=document.getElementById('toToday').onclick=()=>{if(location.hash&&location.hash!=='#')location.hash='';else route();};
+document.getElementById('toArchive').onclick=()=>{location.hash='archive';};
+
+getJSON('lessons/index.json').then(j=>{
+  INDEX=(j.lessons||[]).slice().sort((a,b)=>b.date.localeCompare(a.date));
+  document.getElementById('count').textContent=INDEX.length?('已更新 '+INDEX.length+' 课'):'';
+  route();
+}).catch(()=>{$view.innerHTML='';$view.append(el('div','empty','内容没能加载出来。刷新一下页面试试。'));});
+})();
+</script>
+
+</body>
+</html>
