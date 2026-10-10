@@ -111,14 +111,14 @@
  "speech": {
   "topic": "同事问 \"How was your weekend?\" 时，用两分钟讲讲你的长周末（第一人称）",
   "paragraphs": [
-   "I had a pretty relaxed long weekend. It's school holidays at the moment, so my little one has been at holiday care during the week. That means the weekend is our special family time. On Saturday morning, I took my kid to the playground near our place in Mitcham.",
+   "I had a pretty relaxed long weekend. It's school holidays at the moment, so my little one has been at holiday care during the week. That means the weekend is our special family time. On Saturday morning, I took my kid to the playground near our place in Prospect.",
    "The weather was lovely, about twenty-two degrees and sunny, so lots of families were out. After that, we grabbed a coffee and a babycino at a local café. On Sunday, we didn't do much. I caught up on some housework and did the grocery shopping for the week.",
    "In the afternoon, we watched a movie together on the couch. It was nice to have a slow day. On Monday, the public holiday, we drove down to Glenelg. It was a bit windy, but my kid loved running on the sand, and we had fish and chips by the beach.",
    "The traffic on the way home was pretty bad, so we got back later than I planned. Overall, it was a good break. We didn't go anywhere special, but I feel rested and ready for the week. This week is going to be busy at work.",
    "I have a couple of workshops with the business, and I need to finish some user stories by Thursday. I'm hoping everything stays on track. If I have time, I'd like to plan a day trip before school goes back, maybe to Victor Harbor or the Barossa. Anyway, that was my long weekend.",
    "How about you? Did you do anything fun?"
   ],
-  "zh": "我的长周末过得挺放松的。现在是学校假期，所以平时孩子都在假期托管班，周末就成了我们的家庭时间。周六早上，我带孩子去了 Mitcham 家附近的游乐场。天气很好，大概 22 度，阳光明媚，很多家庭都出来了。之后我们在附近咖啡馆买了一杯咖啡和一杯 babycino（儿童奶泡）。周日我们没做什么，我补做了些家务，买了一周的菜。下午我们一起窝在沙发上看了部电影，慢悠悠过一天挺好的。周一公休日，我们开车去了 Glenelg。风有点大，但孩子很喜欢在沙滩上跑，我们在海边吃了炸鱼薯条。回家路上很堵，比计划晚到家。总的来说是个不错的休息。我们没去什么特别的地方，但我感觉休息好了，准备好迎接这一周。这周工作会很忙，我要和业务方开几个 workshop，还要在周四前完成一些 user stories。希望一切按计划进行。如果有时间，我想在开学前安排一次一日游，可能去 Victor Harbor 或 Barossa。好了，这就是我的长周末。你呢？做了什么好玩的吗？",
+  "zh": "我的长周末过得挺放松的。现在是学校假期，所以平时孩子都在假期托管班，周末就成了我们的家庭时间。周六早上，我带孩子去了 Prospect 家附近的游乐场。天气很好，大概 22 度，阳光明媚，很多家庭都出来了。之后我们在附近咖啡馆买了一杯咖啡和一杯 babycino（儿童奶泡）。周日我们没做什么，我补做了些家务，买了一周的菜。下午我们一起窝在沙发上看了部电影，慢悠悠过一天挺好的。周一公休日，我们开车去了 Glenelg。风有点大，但孩子很喜欢在沙滩上跑，我们在海边吃了炸鱼薯条。回家路上很堵，比计划晚到家。总的来说是个不错的休息。我们没去什么特别的地方，但我感觉休息好了，准备好迎接这一周。这周工作会很忙，我要和业务方开几个 workshop，还要在周四前完成一些 user stories。希望一切按计划进行。如果有时间，我想在开学前安排一次一日游，可能去 Victor Harbor 或 Barossa。好了，这就是我的长周末。你呢？做了什么好玩的吗？",
   "patterns": [
    {
     "en": "I had a pretty relaxed / busy / quiet long weekend.",

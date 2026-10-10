@@ -112,12 +112,12 @@
  "speech": {
   "topic": "讲一讲你租的房子里出过的一个小问题，你是怎么和中介沟通、最后怎么解决的（第一人称）",
   "paragraphs": [
-   "I'd like to talk about a small problem in my rental home and how I got it fixed. We rent a house in Mitcham, and it's a good place for my family. But a few weeks ago, I noticed that the bathroom tap was dripping all the time. At first, I just turned it off really tight, but it kept dripping, day and night. I was worried about wasting water, and the sound was really annoying at night.",
+   "I'd like to talk about a small problem in my rental home and how I got it fixed. We rent a house in Prospect, and it's a good place for my family. But a few weeks ago, I noticed that the bathroom tap was dripping all the time. At first, I just turned it off really tight, but it kept dripping, day and night. I was worried about wasting water, and the sound was really annoying at night.",
    "So I decided to call my property manager. To be honest, I was a bit nervous, because she speaks very fast and I don't always catch everything. Before the call, I wrote down the main points: what the problem was, when it started, and what I had already tried. During the call, when I didn't understand something, I asked her to say it again more slowly. I also repeated the important information back to her, like the date and the time.",
    "She told me to lodge a maintenance request online and add some photos. A plumber called me two days later, and he fixed it in about ten minutes. He said it just needed a new washer.",
    "What I learned from this is that it's better to report problems early, because small problems can become big ones. I also learned that it's OK to ask people to slow down. Most people are happy to help. Next time, I'll feel more confident making this kind of call."
   ],
-  "zh": "我想讲讲我租的房子里的一个小问题，以及我是怎么把它解决的。我们在 Mitcham 租了一栋房子，对我们家来说挺好的。但几周前，我发现浴室的水龙头一直在滴水。一开始我只是把它拧得很紧，但它还是白天晚上一直滴。我担心浪费水，而且晚上那个声音很烦人。所以我决定给中介打电话。说实话我有点紧张，因为她说话很快，我不是每句都能听清。打电话前，我先写下要点：什么问题、什么时候开始的、我已经试过什么。通话中，听不懂的地方我就请她再慢一点说一遍。我还把重要信息复述给她听，比如日期和时间。她让我在网上提交报修，再附几张照片。两天后水管工给我打了电话，大概十分钟就修好了。他说只是需要换个新垫圈。我从中学到的是：问题最好早点报，因为小问题会变成大问题。我也学到了请别人说慢一点是没关系的，大多数人都很乐意帮忙。下次打这种电话，我会更有信心。",
+  "zh": "我想讲讲我租的房子里的一个小问题，以及我是怎么把它解决的。我们在 Prospect 租了一栋房子，对我们家来说挺好的。但几周前，我发现浴室的水龙头一直在滴水。一开始我只是把它拧得很紧，但它还是白天晚上一直滴。我担心浪费水，而且晚上那个声音很烦人。所以我决定给中介打电话。说实话我有点紧张，因为她说话很快，我不是每句都能听清。打电话前，我先写下要点：什么问题、什么时候开始的、我已经试过什么。通话中，听不懂的地方我就请她再慢一点说一遍。我还把重要信息复述给她听，比如日期和时间。她让我在网上提交报修，再附几张照片。两天后水管工给我打了电话，大概十分钟就修好了。他说只是需要换个新垫圈。我从中学到的是：问题最好早点报，因为小问题会变成大问题。我也学到了请别人说慢一点是没关系的，大多数人都很乐意帮忙。下次打这种电话，我会更有信心。",
   "patterns": [
    {
     "en": "A few weeks ago, I noticed that ___.",

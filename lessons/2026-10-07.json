@@ -5,7 +5,7 @@
  "title": "修车厂来电：刹车片要不要换",
  "titleEn": "The mechanic calls during your logbook service",
  "scene": [
-  "你今天早上把车（一辆旧 Corolla）送到 Mitcham 附近的修车厂做定期保养（logbook service）。中午师傅 Gav 打电话来：保养做完了，但前刹车片快磨光了，后轮胎纹也偏浅，问你要不要加修，还会推迟取车时间。",
+  "你今天早上把车（一辆旧 Corolla）送到 Prospect 附近的修车厂做定期保养（logbook service）。中午师傅 Gav 打电话来：保养做完了，但前刹车片快磨光了，后轮胎纹也偏浅，问你要不要加修，还会推迟取车时间。",
   "你的目标：听懂是什么问题、是否紧急、多少钱（含不含人工和 GST）；只批准刹车片，轮胎先不做；要求书面报价；确认取车时间、总价和付款方式。"
  ],
  "vocab": [
@@ -72,9 +72,9 @@
  ],
  "listening": [
   {
-   "en": "G'day, is that Amy? It's Gav from Mitcham Auto, just ringing about the Corolla.",
+   "en": "G'day, is that Amy? It's Gav from Prospect Auto, just ringing about the Corolla.",
    "sound": "“G'day” 读成 /gə-DAY/；“is that” 连成 “izzat”；“just ringing” 的 t 吞掉，听起来像 “jus' ringin'”。",
-   "zh": "你好，是 Amy 吗？我是 Mitcham Auto 的 Gav，打电话说一下你的 Corolla。",
+   "zh": "你好，是 Amy 吗？我是 Prospect Auto 的 Gav，打电话说一下你的 Corolla。",
    "reply": "Hi Gav, yes, this is Amy. Is everything OK with the car?"
   },
   {
@@ -112,12 +112,12 @@
   "topic": "Talk about your car and how you look after it（第一人称）",
   "paragraphs": [
    "I'd like to talk about my car and how I look after it. I drive a small Toyota. It's about eight years old, but it still runs well. In Adelaide, I need a car for almost everything. I drive to work, I drop my child off in the morning, and I do the shopping on the weekend.",
-   "I try to get the car serviced every six months or every ten thousand kilometres, whichever comes first. I take it to a local mechanic near Mitcham. I like going to the same place, because they know the history of my car.",
+   "I try to get the car serviced every six months or every ten thousand kilometres, whichever comes first. I take it to a local mechanic near Prospect. I like going to the same place, because they know the history of my car.",
    "Talking to mechanics used to make me nervous. They speak quickly, and they use words I didn't know, like pads, discs and tread. Sometimes they called me during the day to approve extra work, and I just said yes, because I didn't fully understand.",
    "Now I do things differently. First, I ask what the problem is and whether it's urgent. Second, I ask for a quote by text or email. Third, if something isn't urgent, I say, \"Let's hold off on that for now,\" and I plan it for later.",
    "This helps me control the cost and feel more confident. I also keep a note on my phone with the service dates and the rego due date, so I don't forget. For me, looking after a car is not only about money. It's about safety, because I often drive with my child in the back."
   ],
-  "zh": "我想聊聊我的车以及我怎么保养它。我开一辆小丰田，大约八年了，但还很好开。在阿德莱德，几乎做什么都要开车：上班、早上送孩子、周末买东西。我尽量每六个月或每一万公里保养一次，以先到者为准。我去 Mitcham 附近的一家修车厂。我喜欢固定去一家，因为他们了解我这辆车的情况。以前跟修车师傅打交道让我很紧张。他们说话快，还用很多我不认识的词，比如刹车片、刹车盘、胎纹。有时候他们白天打电话让我批准额外的维修，我没完全听懂就说好了。现在我的做法不一样了。第一，我会问是什么问题、急不急。第二，我要求他们用短信或邮件发报价。第三，如果不急，我就说“这个先等等”，然后之后再安排。这样我能控制花费，也更有底气。我还在手机里记着保养日期和注册到期日，免得忘记。对我来说，保养车不只是钱的问题，更关乎安全，因为我经常带着孩子开车。",
+  "zh": "我想聊聊我的车以及我怎么保养它。我开一辆小丰田，大约八年了，但还很好开。在阿德莱德，几乎做什么都要开车：上班、早上送孩子、周末买东西。我尽量每六个月或每一万公里保养一次，以先到者为准。我去 Prospect 附近的一家修车厂。我喜欢固定去一家，因为他们了解我这辆车的情况。以前跟修车师傅打交道让我很紧张。他们说话快，还用很多我不认识的词，比如刹车片、刹车盘、胎纹。有时候他们白天打电话让我批准额外的维修，我没完全听懂就说好了。现在我的做法不一样了。第一，我会问是什么问题、急不急。第二，我要求他们用短信或邮件发报价。第三，如果不急，我就说“这个先等等”，然后之后再安排。这样我能控制花费，也更有底气。我还在手机里记着保养日期和注册到期日，免得忘记。对我来说，保养车不只是钱的问题，更关乎安全，因为我经常带着孩子开车。",
   "patterns": [
    {
     "en": "I try to ___ every ___, whichever comes first.",
@@ -145,8 +145,8 @@
   "lines": [
    {
     "s": "o",
-    "en": "G'day, is that Amy? It's Gav from Mitcham Auto. Just ringing about the Corolla.",
-    "zh": "你好，是 Amy 吗？我是 Mitcham Auto 的 Gav，打来说一下你的 Corolla。"
+    "en": "G'day, is that Amy? It's Gav from Prospect Auto. Just ringing about the Corolla.",
+    "zh": "你好，是 Amy 吗？我是 Prospect Auto 的 Gav，打来说一下你的 Corolla。"
    },
    {
     "s": "y",
