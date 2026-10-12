@@ -1,0 +1,321 @@
+{
+ "id": "2026-10-12",
+ "date": "2026-10-12",
+ "category": "房屋",
+ "title": "热水器漏水，打电话约水管工上门",
+ "titleEn": "Calling a plumber about a leaking hot water system",
+ "scene": [
+  "周一早上，你发现屋外的燃气热水器底下积了一摊水，旁边的泄压阀一直在滴水，洗澡水也只有温温的。你租的房子，之前中介说过：紧急维修可以直接打给中介常用的水管工，账单寄给中介。你打给水管工 Craig，他一边开车一边接电话，语速快、口头禅多，还会问你一些技术问题。",
+  "你的目标：① 说清楚哪里漏、漏多少、热水还有没有；② 听懂他教你怎么先关水、关燃气，以及上门费怎么算；③ 约好上门时间，确认账单由中介付，并请他发短信确认。"
+ ],
+ "facts": [
+  {
+   "k": "Problem",
+   "v": "热水器底部积水 + 泄压阀一直滴水"
+  },
+  {
+   "k": "Visit",
+   "v": "Today · 1–3pm（出发前会打电话）"
+  },
+  {
+   "k": "Call-out",
+   "v": "$120 含前半小时，零件另算"
+  },
+  {
+   "k": "Bill to",
+   "v": "中介（work order 号码短信发给他）"
+  }
+ ],
+ "vocab": [
+  {
+   "en": "hot water system (HWS)",
+   "zh": "热水器（澳洲常叫 hot water system / HWS）",
+   "ex": "There's water pooling under the hot water system."
+  },
+  {
+   "en": "relief valve",
+   "zh": "泄压阀（热水器侧面的小阀门）",
+   "ex": "The relief valve's been dripping all morning."
+  },
+  {
+   "en": "pool / pooling",
+   "zh": "（水）积成一摊",
+   "ex": "It's pooling around the base of the tank."
+  },
+  {
+   "en": "turn it off at the mains",
+   "zh": "把总水阀关掉",
+   "ex": "If it gets worse, just turn the water off at the mains."
+  },
+  {
+   "en": "isolation valve",
+   "zh": "（某个设备的）分阀、隔断阀",
+   "ex": "There should be an isolation valve on the cold pipe going in."
+  },
+  {
+   "en": "call-out fee",
+   "zh": "上门费",
+   "ex": "The call-out fee covers the first half hour."
+  },
+  {
+   "en": "tradie",
+   "zh": "技工（水管工、电工等的统称）",
+   "ex": "The agent sends their own tradie for urgent repairs."
+  },
+  {
+   "en": "work order",
+   "zh": "（中介发的）维修工单",
+   "ex": "Have you got a work order number from the agent?"
+  },
+  {
+   "en": "on its last legs",
+   "zh": "快不行了、撑不了多久",
+   "ex": "If it's twelve years old, it's probably on its last legs."
+  },
+  {
+   "en": "cactus",
+   "zh": "（澳洲口语）坏透了、没救了",
+   "ex": "If it's leaking from the tank itself, she's cactus."
+  },
+  {
+   "en": "give you a buzz",
+   "zh": "给你打个电话",
+   "ex": "I'll give you a buzz when I'm on my way."
+  },
+  {
+   "en": "ballpark (figure)",
+   "zh": "大概的数字、估价",
+   "ex": "Can you give me a ballpark for a new unit?"
+  }
+ ],
+ "listening": [
+  {
+   "en": "Yeah, g'day, Craig's Plumbing, Craig speaking — you're on speaker, I'm just in the ute.",
+   "sound": "g'day → \"g'dye\"；ute = 澳洲皮卡车。他在开车，背景会很吵",
+   "zh": "你好，Craig 水管服务，我是 Craig——你在免提上，我在车里。",
+   "reply": "Hi Craig, thanks for picking up. I'm calling about a leaking hot water system."
+  },
+  {
+   "en": "No worries. So what's the go — is it the relief valve dripping, or is it actually coming out the bottom of the tank?",
+   "sound": "what's the go → \"wots-the-go\" = 什么情况；coming out the bottom 连读 \"comin-ou-the-bottom\"",
+   "zh": "没事。什么情况——是泄压阀在滴，还是水真的从水箱底部漏出来？",
+   "reply": "I think it's both. The valve keeps dripping, and there's a puddle under the tank."
+  },
+  {
+   "en": "Righto. If it's the tank itself, I'll be honest with ya, she's probably cactus.",
+   "sound": "righto = 好的/明白；ya = you；she's cactus：澳洲人常用 she 指东西，cactus = 坏透了",
+   "zh": "好。如果是水箱本身漏，说实话，它大概是没救了。",
+   "reply": "Oh no. So it might need to be replaced?"
+  },
+  {
+   "en": "Hang on, I'll just pop you on hold for a sec, I've got another call coming in.",
+   "sound": "pop you on hold → \"pop-ya-on-hold\"；for a sec = 一下下",
+   "zh": "等一下，我先让你稍等，有另一个电话进来。",
+   "reply": "Sure, no worries."
+  },
+  {
+   "en": "I can squeeze you in between one and three this arvo — I'll give you a buzz when I'm on my way.",
+   "sound": "squeeze you in = 挤出时间安排你；arvo = afternoon；give you a buzz = 给你打电话",
+   "zh": "我今天下午一点到三点之间可以挤时间过来——出发时给你打电话。",
+   "reply": "That works. Someone will be home all afternoon."
+  },
+  {
+   "en": "Call-out's a hundred and twenty, that covers the first half hour, then it's parts and labour on top.",
+   "sound": "a hundred and twenty → \"a-hundr'n-twenty\"；on top = 另外加收",
+   "zh": "上门费 120 块，包含前半小时，之后零件和人工另算。",
+   "reply": "Okay. Just to confirm, the bill goes to the agency, right?"
+  }
+ ],
+ "speech": {
+  "topic": "说说我在家里遇到过的一次维修问题，以及我是怎么处理的",
+  "paragraphs": [
+   "Today I want to talk about a time something broke at home and I had to sort it out on the phone. One Monday morning, I went outside and saw water pooling under our hot water system. The small valve on the side was dripping, and the shower water was only lukewarm.",
+   "At first I felt a bit stressed, because we rent our place, and I wasn't sure who I should call. Then I remembered that our property manager had told us we could call their plumber directly for urgent repairs. So I found the number and gave him a ring.",
+   "The plumber spoke really fast, and he was driving, so there was a lot of noise. I didn't understand everything the first time. I asked him to say a few things again more slowly, and I repeated the important parts back to him, like the time and the call-out fee. That helped a lot.",
+   "He told me how to turn off the water to the tank and asked me to send him the work order number by text. He came that afternoon and said the tank was about twelve years old and on its last legs, so it had to be replaced. Luckily, the owner paid for it.",
+   "What I learned is that I don't need to understand every word. I just need to know what the problem is, what the next step is, and who is paying. Now, when something breaks, I write down three or four key sentences before I call, and I always ask for a text to confirm."
+  ],
+  "zh": "我讲的是家里热水器漏水、需要打电话找水管工的经历。一开始因为是租房，不知道该找谁，有点紧张；后来想起中介说过紧急维修可以直接找他们的水管工。水管工语速快、在开车，很吵，我没全听懂，就请他慢一点重复，并把时间和上门费复述一遍。他教我关掉热水器的水，让我短信发工单号。下午他来了，说热水器用了 12 年，快不行了，得换新的，好在房东付钱。我的体会是：不用每个词都听懂，只要搞清楚问题、下一步、谁付钱；现在我打电话前会先写好几句关键句，并且总是请对方发短信确认。",
+  "patterns": [
+   {
+    "en": "At first I felt a bit stressed, because I wasn't sure ___.",
+    "zh": "一开始有点紧张，因为我不确定 ___。（换成：who to call / how much it would cost / what he meant）"
+   },
+   {
+    "en": "I asked him to ___ again more slowly.",
+    "zh": "我请他再慢一点 ___。（换成：say the time / spell his name / explain the fee）"
+   },
+   {
+    "en": "He told me how to ___.",
+    "zh": "他教我怎么 ___。（换成：turn off the water / reset the switch / check the meter）"
+   },
+   {
+    "en": "Now, before I call, I always ___.",
+    "zh": "现在打电话前我总会 ___。（换成：write down key sentences / have the reference number ready）"
+   }
+  ]
+ },
+ "dialogue": {
+  "other": {
+   "name": "Craig",
+   "role": "水管工"
+  },
+  "lines": [
+   {
+    "s": "o",
+    "en": "Yeah, g'day, Craig's Plumbing, Craig speaking. You're on speaker, I'm just in the ute.",
+    "zh": "你好，Craig 水管服务，我是 Craig。你在免提上，我在车里。"
+   },
+   {
+    "s": "y",
+    "en": "Hi Craig, thanks for picking up. Our property manager gave me your number. I think our hot water system is leaking.",
+    "zh": "你好 Craig，谢谢接电话。我们的物业经理给了我你的号码。我觉得我们家热水器在漏水。"
+   },
+   {
+    "s": "o",
+    "en": "No worries. So what's the go? Is it the relief valve dripping, or is it actually coming out the bottom of the tank?",
+    "zh": "没事。什么情况？是泄压阀在滴，还是水真的从水箱底部出来？"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, could you say that again a bit slower? It's a bit noisy on your end.",
+    "zh": "不好意思，能再慢一点说一遍吗？你那边有点吵。"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, sorry about that. Is the little valve on the side dripping, or is the water coming from underneath the tank?",
+    "zh": "嗯，抱歉。是侧面那个小阀门在滴水，还是水从水箱底下出来？"
+   },
+   {
+    "s": "y",
+    "en": "I think it's both. The valve on the side keeps dripping, and there's a big puddle under the tank. The shower's only lukewarm too.",
+    "zh": "我觉得两个都有。侧面的阀门一直滴，水箱下面有一大摊水。洗澡水也只有温的。"
+   },
+   {
+    "s": "o",
+    "en": "Righto. Is it gas or electric? And roughly how old? There should be a sticker on the side with the date.",
+    "zh": "好。是燃气的还是电的？大概多少年了？侧面应该有个贴纸写着日期。"
+   },
+   {
+    "s": "y",
+    "en": "It's gas. Hang on, I'm just outside now... the sticker says 2014.",
+    "zh": "是燃气的。等一下，我现在就在外面……贴纸上写的是 2014 年。"
+   },
+   {
+    "s": "o",
+    "en": "Twelve years, yeah. Look, I'll be honest with ya, if it's coming out of the tank itself, she's probably cactus. They don't really last much longer than that.",
+    "zh": "十二年了。嗯，说实话，如果是水箱本身在漏，它大概没救了。这种一般也就用这么久。"
+   },
+   {
+    "s": "y",
+    "en": "Cactus? Do you mean it can't be fixed?",
+    "zh": "Cactus？你是说修不好了吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yeah, pretty much. Can't patch a tank. But I'll have a proper look before we say that. In the meantime, can you turn the water off to it? There's an isolation valve on the cold pipe going in, usually a little tap with a red or blue handle.",
+    "zh": "对，差不多。水箱是补不了的。不过我先仔细看了再说。现在你能先把热水器的水关掉吗？进水的冷水管上有个隔断阀，一般是个红色或蓝色把手的小龙头。"
+   },
+   {
+    "s": "y",
+    "en": "Just to confirm, you mean the tap on the pipe going into the tank? Should I turn the gas off as well?",
+    "zh": "确认一下，你是说进水箱那根管子上的龙头吗？燃气也要关吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, that one, turn it clockwise till it stops. And yeah, flick the gas knob on the front to 'off' while you're there. If you can't find the valve, just turn it off at the mains, out the front near the meter.",
+    "zh": "对，就那个，顺时针拧到底。顺便把前面的燃气旋钮拧到 off。如果找不到那个阀，就把前院水表旁边的总阀关掉。"
+   },
+   {
+    "s": "y",
+    "en": "Okay, I've done that. The dripping's slowing down already. When could you come and have a look?",
+    "zh": "好，关了。滴水已经慢下来了。你什么时候能来看看？"
+   },
+   {
+    "s": "o",
+    "en": "Hang on, I'll just pop you on hold for a sec, I've got another call coming in.",
+    "zh": "等一下，我先让你稍等，有另一个电话进来。"
+   },
+   {
+    "s": "y",
+    "en": "Sure, no worries.",
+    "zh": "好的，没事。"
+   },
+   {
+    "s": "o",
+    "en": "Sorry about that. Right, I can squeeze you in between one and three this arvo. I'll give you a buzz when I'm on my way. That suit?",
+    "zh": "抱歉。好，我今天下午一点到三点之间可以挤时间过来。出发时给你打电话。可以吗？"
+   },
+   {
+    "s": "y",
+    "en": "Yes, that works. I'll be home all afternoon. How much is the call-out fee?",
+    "zh": "可以。我下午都在家。上门费是多少？"
+   },
+   {
+    "s": "o",
+    "en": "Call-out's a hundred and twenty, covers the first half hour, then parts and labour on top. If it needs a new unit, I'll get a quote to the agent first.",
+    "zh": "上门费 120，包含前半小时，之后零件和人工另算。如果要换新的，我会先给中介报价。"
+   },
+   {
+    "s": "y",
+    "en": "Okay. And the bill goes to the agency, not to us, right? Could you give me a ballpark for a new one, just so I can tell them?",
+    "zh": "好的。账单是寄给中介、不是给我们，对吧？能大概说一下换新的要多少钱吗？我好告诉他们。"
+   },
+   {
+    "s": "o",
+    "en": "Yep, straight to the agency, I just need the work order number off ya. Ballpark, a new gas storage one, supplied and installed, you're looking at around two and a half grand, maybe a bit more.",
+    "zh": "对，直接给中介，我只需要你给我工单号。大概的话，新的燃气储水式热水器，含安装，差不多两千五左右，可能再多一点。"
+   },
+   {
+    "s": "y",
+    "en": "Sorry, was that two and a half thousand? And I'll text you the work order number. Could you send me a text to confirm the time as well?",
+    "zh": "不好意思，是两千五百块吗？我会把工单号短信发给你。你也能发个短信确认一下时间吗？"
+   },
+   {
+    "s": "o",
+    "en": "Yep, two and a half grand, give or take. I'll flick you a text now. What's the address?",
+    "zh": "对，两千五左右。我现在就给你发短信。地址是哪里？"
+   },
+   {
+    "s": "y",
+    "en": "It's 14 Wattle Street, and my number's 0491 570 156. Thanks so much, Craig.",
+    "zh": "Wattle 街 14 号，我的电话是 0491 570 156。非常感谢，Craig。"
+   },
+   {
+    "s": "o",
+    "en": "No worries at all. Keep the water off till I get there, and see you this arvo. Cheers.",
+    "zh": "不客气。我到之前先别开水，下午见。拜拜。"
+   }
+  ]
+ },
+ "rescue": [
+  {
+   "en": "Sorry, it's a bit noisy on your end. Could you say that again?",
+   "zh": "不好意思，你那边有点吵，能再说一遍吗？"
+  },
+  {
+   "en": "Could you say that again a bit slower, please?",
+   "zh": "能再慢一点说一遍吗？"
+  },
+  {
+   "en": "Just to confirm, you mean ___?",
+   "zh": "确认一下，你的意思是 ___？"
+  },
+  {
+   "en": "Sorry, how do you spell your business name?",
+   "zh": "不好意思，你公司名字怎么拼？"
+  },
+  {
+   "en": "Could you send me a text to confirm the time and the fee?",
+   "zh": "能发个短信确认一下时间和费用吗？"
+  }
+ ],
+ "checklist": [
+  "我能用两三句话说清楚哪里漏、漏多少、热水还有没有",
+  "我听懂了 relief valve、isolation valve、turn it off at the mains 并知道怎么关水关燃气",
+  "我听懂了 she's cactus、on its last legs 是\"快坏了/没救了\"",
+  "我听清了上门时间（1–3pm this arvo）和上门费（$120 含前半小时，parts and labour on top）",
+  "我确认了账单寄给中介，并答应短信发 work order 号码",
+  "对话中我至少礼貌追问了两次（请他慢一点 / Just to confirm…）"
+ ]
+}

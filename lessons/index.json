@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-12",
  "lessons": [
+  {
+   "id": "2026-10-12",
+   "date": "2026-10-12",
+   "category": "房屋",
+   "title": "热水器漏水，打电话约水管工上门",
+   "titleEn": "Calling a plumber about a leaking hot water system"
+  },
+  {
+   "id": "2026-10-11",
+   "date": "2026-10-11",
+   "category": "日常",
+   "title": "打电话给网络运营商报修家里断网",
+   "titleEn": "Calling your internet provider about an NBN dropout"
+  },
   {
    "id": "2026-10-10",
    "date": "2026-10-10",
