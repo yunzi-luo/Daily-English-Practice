@@ -4,7 +4,7 @@
 
 每课包括核心词汇、听力难点（连读/吞音）、两分钟演讲范文、情景对话和救命句，所有英文都可以点开朗读。
 
-网站：https://yunzi-luo.github.io/Daily-English-Practice/
+网站：https://yunzi-luo.github.io/Gday-Daily-Speaking/
 
 ## 结构
 
