@@ -193,7 +193,7 @@ footer .about{border-top:1px solid var(--line);padding-top:14px;display:flex;fle
     <div class="empty" id="loading">正在加载今天的练习…</div>
   </main>
 
-  <footer>
+  <footer id="foot" hidden>
     <section class="support" id="support" aria-label="支持作者">
       <svg class="dots" viewBox="0 0 140 140" aria-hidden="true"><g fill="var(--wattle)"><circle cx="40" cy="40" r="9"/><circle cx="62" cy="30" r="7"/><circle cx="30" cy="64" r="7"/><circle cx="58" cy="56" r="10"/><circle cx="82" cy="48" r="6"/><circle cx="48" cy="82" r="6"/><circle cx="78" cy="74" r="8"/></g><path d="M20 120 Q60 80 110 30" stroke="var(--accent)" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/></svg>
       <div class="txt">
@@ -540,12 +540,14 @@ window.addEventListener('hashchange',()=>{route();window.scrollTo(0,0);});
 document.getElementById('home').onclick=document.getElementById('toToday').onclick=()=>{if(location.hash&&location.hash!=='#')location.hash='';else route();};
 document.getElementById('toArchive').onclick=()=>{location.hash='archive';};
 
+try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
+function showFoot(){const ft=document.getElementById('foot');if(ft)ft.hidden=false;}
 getJSON('lessons/index.json').then(j=>{
   INDEX=(j.lessons||[]).slice().sort((a,b)=>b.date.localeCompare(a.date));
   document.getElementById('count').textContent=INDEX.length?('已更新 '+INDEX.length+' 课'):'';
   const st=document.getElementById('supportStat');if(st&&INDEX.length){st.textContent='已经坚持每天更新 '+INDEX.length+' 课';st.hidden=false;}
-  route();
-}).catch(()=>{$view.innerHTML='';$view.append(el('div','empty','内容没能加载出来。刷新一下页面试试。'));});
+  Promise.resolve(route()).then(()=>{showFoot();if(!location.hash||location.hash.startsWith('#d')||location.hash==='#archive')window.scrollTo(0,0);});
+}).catch(()=>{$view.innerHTML='';$view.append(el('div','empty','内容没能加载出来。刷新一下页面试试。'));showFoot();});
 })();
 </script>
 
