@@ -332,15 +332,26 @@ function pickVoice(){
   if(info)info.textContent=voice?('朗读声音：'+voice.name+'（'+voice.lang+'）'+(au.length?'':' · 没找到澳洲声音，已用替代')):'没找到英文声音';
 }
 if(synth){synth.onvoiceschanged=pickVoice;}
+let curU=null,gate=null;
 function say(text){return new Promise(res=>{
-  if(!synth){res();return;}
+  if(!synth){res('end');return;}
   const u=new SpeechSynthesisUtterance(text.replace(/_{2,}/g,' blank '));
-  if(voice)u.voice=voice;u.lang=voice?voice.lang:'en-AU';u.rate=rate;u.onend=res;u.onerror=res;synth.speak(u);
+  if(voice)u.voice=voice;u.lang=voice?voice.lang:'en-AU';u.rate=rate;
+  const fin=()=>{if(u._done)return;u._done=true;if(curU===u)curU=null;res(u._replay?'replay':'end');};
+  u.onend=fin;u.onerror=fin;u.onpause=()=>{u._p=true;};
+  curU=u;if(synth.paused)synth.resume();synth.speak(u);
 });}
+/* say a line, waiting while paused; if the browser could not pause mid-line, the line is read again from its start */
+async function sayLine(text,id){let r;do{while(gate){await gate.p;}if(id!==runId)return;r=await say(text);if(id!==runId)return;}while(r==='replay');while(gate){await gate.p;}}
+function pausePlay(){if(gate)return;gate={};gate.p=new Promise(r=>gate.r=r);const u=curU;
+  if(synth&&u){synth.pause();setTimeout(()=>{if(gate&&curU===u&&!u._p&&!synth.paused){u._replay=true;synth.cancel();}},350);}}
+function resumePlay(){const g=gate;gate=null;const u=curU;
+  if(synth&&u&&!u._replay){synth.resume();setTimeout(()=>{if(!gate&&curU===u&&!synth.speaking){u._replay=true;synth.cancel();}},600);}
+  if(g)g.r();}
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 let setStatus=()=>{};
 let stopHooks=[];
-function stopAll(){runId++;stopHooks.forEach(h=>h());if(synth)synth.cancel();document.querySelectorAll('.play.on').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.ln.playing').forEach(e=>e.classList.remove('playing'));setStatus('');}
+function stopAll(){runId++;stopHooks.forEach(h=>h());if(gate){const g=gate;gate=null;g.r();}if(synth){if(synth.paused)synth.resume();synth.cancel();}document.querySelectorAll('.play.on').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.ln.playing').forEach(e=>e.classList.remove('playing'));setStatus('');}
 
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
 function playBtn(text){
@@ -413,10 +424,9 @@ async function showLesson(id){
   const paintSp=()=>{spBtn.textContent=spState==='playing'?'⏸ 暂停':spState==='paused'?'▶ 继续':'▶ 朗读范文';spBtn.classList.toggle('primary',spState!=='idle');spRe.disabled=spState==='idle';};
   stopHooks.push(()=>{spState='idle';paintSp();});
   async function runSpeech(from){stopAll();const id=runId;spState='playing';paintSp();await wait(120);if(id!==runId)return;
-    for(let i=from;i<spSents.length;i++){if(id!==runId)return;spPos=i;await say(spSents[i]);if(id!==runId)return;}
+    for(let i=from;i<spSents.length;i++){if(id!==runId)return;spPos=i;await sayLine(spSents[i],id);if(id!==runId)return;}
     spState='idle';spPos=0;paintSp();}
-  function pauseSpeech(){const keep=spPos;stopAll();spState='paused';spPos=keep;paintSp();}
-  spBtn.onclick=()=>{if(spState==='playing')pauseSpeech();else if(spState==='paused')runSpeech(spPos);else runSpeech(0);};
+  spBtn.onclick=()=>{if(spState==='playing'){pausePlay();spState='paused';paintSp();}else if(spState==='paused'){spState='playing';paintSp();resumePlay();}else runSpeech(0);};
   spRe.onclick=()=>runSpeech(0);
   (sp.patterns||[]).forEach(p=>{const it=el('div','item');it.append(enRow(p.en),el('div','small',p.zh));f('patterns').append(it);});
   cleanups.push(makeTimer(f('t2'),f('t2go'),f('t2reset'),120,'开始'));
@@ -431,8 +441,9 @@ async function showLesson(id){
     bAll.textContent=lab(false,'▶ 播放全部');bThem.textContent=lab(true,'▶ 只播对方（停顿让我答）');
     bAll.classList.toggle('primary',dlgState==='idle'||dlgMode===false);bThem.classList.toggle('primary',dlgState!=='idle'&&dlgMode===true);dRe.disabled=dlgState==='idle';};
   stopHooks.push(()=>{dlgState='idle';paintD();});
-  function pauseDlg(){const keep=dlgPos;stopAll();dlgState='paused';dlgPos=keep;paintD();rows[keep]&&rows[keep].classList.add('playing');setStatus('已暂停 · 再点一下同一个按钮，从这一句接着听');}
-  function toggleDlg(mode){if(dlgState==='playing'&&dlgMode===mode)pauseDlg();else if(dlgState==='paused'&&dlgMode===mode)runDialogue(mode,dlgPos);else runDialogue(mode,0);}
+  let dlgMsg='';
+  function toggleDlg(mode){if(dlgState==='playing'&&dlgMode===mode){pausePlay();dlgState='paused';paintD();dlgMsg=statusEl.textContent;setStatus('已暂停 · 再点一下同一个按钮接着听');}
+    else if(dlgState==='paused'&&dlgMode===mode){dlgState='playing';paintD();setStatus(dlgMsg);resumePlay();}else runDialogue(mode,0);}
   async function runDialogue(onlyThem,from){
     stopAll();const id=runId;dlgMode=onlyThem;dlgState='playing';paintD();await wait(120);if(id!==runId)return;
     for(let i=from||0;i<lines.length;i++){
@@ -441,11 +452,11 @@ async function showLesson(id){
       if(onlyThem&&ln.s!=='o'){
         const ms=Math.round((2000+ln.en.split(/\s+/).length*450)/Math.min(rate,1));
         row.classList.add('playing');
-        for(let left=Math.ceil(ms/1000);left>0;left--){if(id!==runId)return;setStatus('轮到你说 · '+left+' 秒');await wait(1000);}
+        for(let left=Math.ceil(ms/1000);left>0;left--){while(gate){await gate.p;}if(id!==runId)return;setStatus('轮到你说 · '+left+' 秒');await wait(1000);}
         row.classList.remove('playing');setStatus('');continue;
       }
       row.classList.add('playing');setStatus(ln.s==='o'?other.name+' 在说…':'你在说…');
-      await say(ln.en);row.classList.remove('playing');if(id!==runId)return;await wait(350);
+      await sayLine(ln.en,id);row.classList.remove('playing');if(id!==runId)return;await wait(350);
     }
     if(id===runId){dlgState='idle';dlgPos=0;paintD();setStatus('对话结束');}
   }
