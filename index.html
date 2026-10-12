@@ -138,6 +138,14 @@ ol.steps b{font-family:var(--mono);font-weight:500;color:var(--accent);font-size
 
 footer{border-top:1px solid var(--line);padding-top:14px;font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 footer b{color:var(--ink);font-weight:500}
+.support{display:flex;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:8px}
+.support .txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.support .txt b{font-family:var(--display);font-weight:400;font-size:17px}
+.support .codes{display:flex;gap:12px;flex-wrap:wrap}
+.support figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:4px}
+.support img{width:132px;height:auto;border-radius:8px;background:#fff;padding:6px;border:1px solid var(--line)}
+.support figcaption{font-size:12px;color:var(--muted)}
+@media (max-width:480px){.support{flex-direction:column;align-items:flex-start}}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 
@@ -156,6 +164,15 @@ footer b{color:var(--ink);font-weight:500}
   </main>
 
   <footer>
+    <section class="support" id="support" aria-label="支持作者">
+      <div class="txt">
+        <b>觉得有帮助？</b>
+        <span>网站免费使用，每日更新。如果觉得有帮助，可以随意打赏支持作者。</span>
+      </div>
+      <div class="codes">
+        <figure><img src="support/wechat.png" alt="微信赞赏码" loading="lazy" onerror="this.closest('figure').remove();if(!document.querySelector('#support figure'))document.getElementById('support').remove();"><figcaption>微信</figcaption></figure>
+      </div>
+    </section>
     <div><b>每天早上 7 点更新一课。</b>每课一个在澳洲真实会遇到的场景：打电话、同事闲聊、看病、租房、孩子学校……</div>
     <div>适合日常英语还行、但一到电话和闲聊就听不懂的人。每课包括词汇、听力难点、两分钟演讲、情景对话和救命句，跟着步骤练 15–20 分钟。</div>
     <div>朗读用的是你手机或电脑自带的声音，没有澳洲口音时会自动换成英式或美式。</div>
