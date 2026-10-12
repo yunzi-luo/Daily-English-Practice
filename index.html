@@ -84,6 +84,7 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,7vw,38px);lin
 .btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:500;cursor:pointer;transition:transform .12s,border-color .15s}
 .btn:hover{border-color:var(--accent)}
 .btn:active{transform:scale(.97)}
+.btn:disabled{opacity:.45;cursor:default}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .btn.stop{color:var(--them);border-color:var(--them-soft)}
 #voiceInfo{font-size:12px;color:var(--muted);width:100%}
@@ -260,6 +261,7 @@ footer .about{border-top:1px solid var(--line);padding-top:14px;display:flex;fle
         <button type="button" class="btn primary" data-f="t2go">开始</button>
         <button type="button" class="btn" data-f="t2reset">重置</button>
         <button type="button" class="btn" data-f="speechPlay">▶ 朗读范文</button>
+        <button type="button" class="btn" data-f="speechPause" disabled>⏸ 暂停</button>
       </div>
       <div class="speech" data-f="speech"></div>
       <button type="button" class="zh-btn" data-f="speechZhBtn">显示中文大意</button>
@@ -274,6 +276,7 @@ footer .about{border-top:1px solid var(--line);padding-top:14px;display:flex;fle
       <div class="ctrl">
         <button type="button" class="btn primary" data-f="playAll">▶ 播放全部</button>
         <button type="button" class="btn" data-f="playThem">▶ 只播对方（停顿让我答）</button>
+        <button type="button" class="btn" data-f="dlgPause" disabled>⏸ 暂停</button>
         <button type="button" class="btn" data-f="hideMe">遮住我的台词</button>
       </div>
       <div class="ctrl">
@@ -336,7 +339,8 @@ function say(text){return new Promise(res=>{
 });}
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 let setStatus=()=>{};
-function stopAll(){runId++;if(synth)synth.cancel();document.querySelectorAll('.play.on').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.ln.playing').forEach(e=>e.classList.remove('playing'));setStatus('');}
+let stopHooks=[];
+function stopAll(){runId++;stopHooks.forEach(h=>h());if(synth)synth.cancel();document.querySelectorAll('.play.on').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.ln.playing').forEach(e=>e.classList.remove('playing'));setStatus('');}
 
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
 function playBtn(text){
@@ -374,7 +378,7 @@ async function loadLesson(id){if(!cache[id])cache[id]=await getJSON('lessons/'+i
 function setNav(which){document.getElementById('toToday').setAttribute('aria-pressed',which==='today'?'true':'false');document.getElementById('toArchive').setAttribute('aria-pressed',which==='archive'?'true':'false');}
 
 async function showLesson(id){
-  stopAll();cleanups.forEach(f=>f());cleanups=[];
+  stopAll();cleanups.forEach(f=>f());cleanups=[];stopHooks=[];
   setNav(id===INDEX[0]?.id?'today':'');
   let L;
   try{L=await loadLesson(id);}catch(e){$view.innerHTML='';const m=el('div','empty','这一课没能加载出来。检查一下网络，或者去往期里选别的日期。');$view.append(m);return;}
@@ -404,7 +408,15 @@ async function showLesson(id){
   (sp.paragraphs||[]).forEach(p=>f('speech').append(el('p',null,p)));
   f('speechZh').textContent=sp.zh||'';
   f('speechZhBtn').onclick=e=>{const z=e.target.nextElementSibling;z.hidden=!z.hidden;};
-  f('speechPlay').onclick=async()=>{stopAll();const id=runId;for(const p of sp.paragraphs||[]){if(id!==runId)return;await say(p);}};
+  const spSents=(sp.paragraphs||[]).flatMap(p=>(p.match(/[^.!?]+[.!?]+["”')]*\s*|[^.!?]+$/g)||[p])).map(x=>x.trim()).filter(Boolean);
+  let spPos=0,spState='idle';const spPause=f('speechPause');
+  const paintSp=()=>{spPause.disabled=spState==='idle';spPause.textContent=spState==='paused'?'▶ 继续':'⏸ 暂停';};
+  stopHooks.push(()=>{spState='idle';paintSp();});
+  async function runSpeech(from){stopAll();const id=runId;spState='playing';paintSp();
+    for(let i=from;i<spSents.length;i++){if(id!==runId)return;spPos=i;await say(spSents[i]);if(id!==runId)return;}
+    spState='idle';spPos=0;paintSp();}
+  f('speechPlay').onclick=()=>runSpeech(0);
+  spPause.onclick=()=>{if(spState==='playing'){const keep=spPos;stopAll();spState='paused';spPos=keep;paintSp();}else if(spState==='paused')runSpeech(spPos);};
   (sp.patterns||[]).forEach(p=>{const it=el('div','item');it.append(enRow(p.en),el('div','small',p.zh));f('patterns').append(it);});
   cleanups.push(makeTimer(f('t2'),f('t2go'),f('t2reset'),120,'开始'));
 
@@ -413,10 +425,14 @@ async function showLesson(id){
   const dEl=f('dialogue');const rows=[];
   lines.forEach(ln=>{const them=ln.s==='o';const it=el('div','ln '+(them?'them':'me'));it.append(el('div','who',them?(other.name+(other.role?' · '+other.role:'')):'You · 你'),enRow(ln.en),zhToggle(ln.zh));dEl.append(it);rows.push(it);});
   const statusEl=f('dlgStatus');setStatus=t=>{statusEl.textContent=t;};
-  async function runDialogue(onlyThem){
-    stopAll();const id=runId;
-    for(let i=0;i<lines.length;i++){
-      if(id!==runId)return;const ln=lines[i],row=rows[i];
+  let dlgPos=0,dlgMode=false,dlgState='idle';const dPause=f('dlgPause');
+  const paintD=()=>{dPause.disabled=dlgState==='idle';dPause.textContent=dlgState==='paused'?'▶ 继续':'⏸ 暂停';};
+  stopHooks.push(()=>{dlgState='idle';paintD();});
+  dPause.onclick=()=>{if(dlgState==='playing'){const keep=dlgPos;stopAll();dlgState='paused';dlgPos=keep;paintD();rows[keep]&&rows[keep].classList.add('playing');setStatus('已暂停 · 点「继续」从这一句接着听');}else if(dlgState==='paused')runDialogue(dlgMode,dlgPos);};
+  async function runDialogue(onlyThem,from){
+    stopAll();const id=runId;dlgMode=onlyThem;dlgState='playing';paintD();
+    for(let i=from||0;i<lines.length;i++){
+      if(id!==runId)return;dlgPos=i;const ln=lines[i],row=rows[i];
       row.scrollIntoView({block:'nearest',behavior:'smooth'});
       if(onlyThem&&ln.s!=='o'){
         const ms=Math.round((2000+ln.en.split(/\s+/).length*450)/Math.min(rate,1));
@@ -427,7 +443,7 @@ async function showLesson(id){
       row.classList.add('playing');setStatus(ln.s==='o'?other.name+' 在说…':'你在说…');
       await say(ln.en);row.classList.remove('playing');if(id!==runId)return;await wait(350);
     }
-    if(id===runId)setStatus('对话结束');
+    if(id===runId){dlgState='idle';dlgPos=0;paintD();setStatus('对话结束');}
   }
   f('playAll').onclick=()=>runDialogue(false);
   f('playThem').onclick=()=>runDialogue(true);
@@ -473,7 +489,7 @@ async function showLesson(id){
 
 let filterCat='全部';
 function showArchive(){
-  stopAll();cleanups.forEach(f=>f());cleanups=[];
+  stopAll();cleanups.forEach(f=>f());cleanups=[];stopHooks=[];
   setNav('archive');document.title="往期 | G'day 每日口语";
   $view.innerHTML='';
   const head=el('section','hero');head.append(el('h1',null,'往期练习'),el('p','en-title','按日期找，或者按生活场景筛选'));
