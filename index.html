@@ -261,7 +261,7 @@ footer .about{border-top:1px solid var(--line);padding-top:14px;display:flex;fle
         <button type="button" class="btn primary" data-f="t2go">开始</button>
         <button type="button" class="btn" data-f="t2reset">重置</button>
         <button type="button" class="btn" data-f="speechPlay">▶ 朗读范文</button>
-        <button type="button" class="btn" data-f="speechPause" disabled>⏸ 暂停</button>
+        <button type="button" class="btn" data-f="speechRestart" disabled>↺ 从头</button>
       </div>
       <div class="speech" data-f="speech"></div>
       <button type="button" class="zh-btn" data-f="speechZhBtn">显示中文大意</button>
@@ -276,7 +276,7 @@ footer .about{border-top:1px solid var(--line);padding-top:14px;display:flex;fle
       <div class="ctrl">
         <button type="button" class="btn primary" data-f="playAll">▶ 播放全部</button>
         <button type="button" class="btn" data-f="playThem">▶ 只播对方（停顿让我答）</button>
-        <button type="button" class="btn" data-f="dlgPause" disabled>⏸ 暂停</button>
+        <button type="button" class="btn" data-f="dlgRestart" disabled>↺ 从头</button>
         <button type="button" class="btn" data-f="hideMe">遮住我的台词</button>
       </div>
       <div class="ctrl">
@@ -409,14 +409,15 @@ async function showLesson(id){
   f('speechZh').textContent=sp.zh||'';
   f('speechZhBtn').onclick=e=>{const z=e.target.nextElementSibling;z.hidden=!z.hidden;};
   const spSents=(sp.paragraphs||[]).flatMap(p=>(p.match(/[^.!?]+[.!?]+["”')]*\s*|[^.!?]+$/g)||[p])).map(x=>x.trim()).filter(Boolean);
-  let spPos=0,spState='idle';const spPause=f('speechPause');
-  const paintSp=()=>{spPause.disabled=spState==='idle';spPause.textContent=spState==='paused'?'▶ 继续':'⏸ 暂停';};
+  let spPos=0,spState='idle';const spBtn=f('speechPlay'),spRe=f('speechRestart');
+  const paintSp=()=>{spBtn.textContent=spState==='playing'?'⏸ 暂停':spState==='paused'?'▶ 继续':'▶ 朗读范文';spBtn.classList.toggle('primary',spState!=='idle');spRe.disabled=spState==='idle';};
   stopHooks.push(()=>{spState='idle';paintSp();});
-  async function runSpeech(from){stopAll();const id=runId;spState='playing';paintSp();
+  async function runSpeech(from){stopAll();const id=runId;spState='playing';paintSp();await wait(120);if(id!==runId)return;
     for(let i=from;i<spSents.length;i++){if(id!==runId)return;spPos=i;await say(spSents[i]);if(id!==runId)return;}
     spState='idle';spPos=0;paintSp();}
-  f('speechPlay').onclick=()=>runSpeech(0);
-  spPause.onclick=()=>{if(spState==='playing'){const keep=spPos;stopAll();spState='paused';spPos=keep;paintSp();}else if(spState==='paused')runSpeech(spPos);};
+  function pauseSpeech(){const keep=spPos;stopAll();spState='paused';spPos=keep;paintSp();}
+  spBtn.onclick=()=>{if(spState==='playing')pauseSpeech();else if(spState==='paused')runSpeech(spPos);else runSpeech(0);};
+  spRe.onclick=()=>runSpeech(0);
   (sp.patterns||[]).forEach(p=>{const it=el('div','item');it.append(enRow(p.en),el('div','small',p.zh));f('patterns').append(it);});
   cleanups.push(makeTimer(f('t2'),f('t2go'),f('t2reset'),120,'开始'));
 
@@ -425,12 +426,15 @@ async function showLesson(id){
   const dEl=f('dialogue');const rows=[];
   lines.forEach(ln=>{const them=ln.s==='o';const it=el('div','ln '+(them?'them':'me'));it.append(el('div','who',them?(other.name+(other.role?' · '+other.role:'')):'You · 你'),enRow(ln.en),zhToggle(ln.zh));dEl.append(it);rows.push(it);});
   const statusEl=f('dlgStatus');setStatus=t=>{statusEl.textContent=t;};
-  let dlgPos=0,dlgMode=false,dlgState='idle';const dPause=f('dlgPause');
-  const paintD=()=>{dPause.disabled=dlgState==='idle';dPause.textContent=dlgState==='paused'?'▶ 继续':'⏸ 暂停';};
+  let dlgPos=0,dlgMode=false,dlgState='idle';const bAll=f('playAll'),bThem=f('playThem'),dRe=f('dlgRestart');
+  const paintD=()=>{const lab=(m,base)=>dlgState!=='idle'&&dlgMode===m?(dlgState==='playing'?'⏸ 暂停':'▶ 继续'):base;
+    bAll.textContent=lab(false,'▶ 播放全部');bThem.textContent=lab(true,'▶ 只播对方（停顿让我答）');
+    bAll.classList.toggle('primary',dlgState==='idle'||dlgMode===false);bThem.classList.toggle('primary',dlgState!=='idle'&&dlgMode===true);dRe.disabled=dlgState==='idle';};
   stopHooks.push(()=>{dlgState='idle';paintD();});
-  dPause.onclick=()=>{if(dlgState==='playing'){const keep=dlgPos;stopAll();dlgState='paused';dlgPos=keep;paintD();rows[keep]&&rows[keep].classList.add('playing');setStatus('已暂停 · 点「继续」从这一句接着听');}else if(dlgState==='paused')runDialogue(dlgMode,dlgPos);};
+  function pauseDlg(){const keep=dlgPos;stopAll();dlgState='paused';dlgPos=keep;paintD();rows[keep]&&rows[keep].classList.add('playing');setStatus('已暂停 · 再点一下同一个按钮，从这一句接着听');}
+  function toggleDlg(mode){if(dlgState==='playing'&&dlgMode===mode)pauseDlg();else if(dlgState==='paused'&&dlgMode===mode)runDialogue(mode,dlgPos);else runDialogue(mode,0);}
   async function runDialogue(onlyThem,from){
-    stopAll();const id=runId;dlgMode=onlyThem;dlgState='playing';paintD();
+    stopAll();const id=runId;dlgMode=onlyThem;dlgState='playing';paintD();await wait(120);if(id!==runId)return;
     for(let i=from||0;i<lines.length;i++){
       if(id!==runId)return;dlgPos=i;const ln=lines[i],row=rows[i];
       row.scrollIntoView({block:'nearest',behavior:'smooth'});
@@ -445,8 +449,9 @@ async function showLesson(id){
     }
     if(id===runId){dlgState='idle';dlgPos=0;paintD();setStatus('对话结束');}
   }
-  f('playAll').onclick=()=>runDialogue(false);
-  f('playThem').onclick=()=>runDialogue(true);
+  bAll.onclick=()=>toggleDlg(false);
+  bThem.onclick=()=>toggleDlg(true);
+  dRe.onclick=()=>runDialogue(dlgMode,0);
   f('hideMe').onclick=e=>{const on=!dEl.classList.contains('hiding');dEl.classList.toggle('hiding',on);rows.forEach((r,i)=>{if(lines[i].s!=='o')r.classList.toggle('hide',on);});e.target.textContent=on?'显示我的台词':'遮住我的台词';};
   cleanups.push(makeTimer(f('t5'),f('t5go'),f('t5reset'),300,'开始计时'));
 
