@@ -158,7 +158,8 @@
  "dialogue": {
   "other": {
    "name": "Craig",
-   "role": "水管工"
+   "role": "水管工",
+   "voice": "m"
   },
   "lines": [
    {

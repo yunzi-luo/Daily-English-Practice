@@ -140,7 +140,8 @@
  "dialogue": {
   "other": {
    "name": "Gav",
-   "role": "修车厂师傅"
+   "role": "修车厂师傅",
+   "voice": "m"
   },
   "lines": [
    {

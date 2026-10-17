@@ -157,7 +157,8 @@
  "dialogue": {
   "other": {
    "name": "Josh",
-   "role": "网络运营商技术支持"
+   "role": "网络运营商技术支持",
+   "voice": "m"
   },
   "lines": [
    {

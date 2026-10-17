@@ -141,7 +141,8 @@
  "dialogue": {
   "other": {
    "name": "Brooke",
-   "role": "招聘顾问"
+   "role": "招聘顾问",
+   "voice": "f"
   },
   "lines": [
    {

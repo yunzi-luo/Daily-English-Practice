@@ -140,7 +140,8 @@
  "dialogue": {
   "other": {
    "name": "Jess",
-   "role": "房屋中介"
+   "role": "房屋中介",
+   "voice": "f"
   },
   "lines": [
    {

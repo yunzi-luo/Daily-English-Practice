@@ -141,7 +141,8 @@
  "dialogue": {
   "other": {
    "name": "Mel",
-   "role": "专科诊所前台"
+   "role": "专科诊所前台",
+   "voice": "f"
   },
   "lines": [
    {

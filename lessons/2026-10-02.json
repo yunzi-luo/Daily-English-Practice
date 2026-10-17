@@ -140,7 +140,8 @@
  "dialogue": {
   "other": {
    "name": "Jess",
-   "role": "Bupa 理赔客服"
+   "role": "Bupa 理赔客服",
+   "voice": "f"
   },
   "lines": [
    {

@@ -141,7 +141,8 @@
  "dialogue": {
   "other": {
    "name": "Kylie",
-   "role": "OSHC 假期托管协调员"
+   "role": "OSHC 假期托管协调员",
+   "voice": "f"
   },
   "lines": [
    {

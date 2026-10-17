@@ -209,8 +209,8 @@ footer .about{border-top:1px solid var(--line);padding-top:14px;display:flex;fle
     <div class="about">
       <div><b>每天早上 7 点更新一课。</b>每课一个在澳洲真实会遇到的场景：打电话、同事闲聊、看病、租房、孩子学校……</div>
       <div>适合日常英语还行、但一到电话和闲聊就听不懂的人。每课包括词汇、听力难点、两分钟演讲、情景对话和救命句，跟着步骤练 15–20 分钟。</div>
-      <div>朗读用的是你手机或电脑自带的声音，没有澳洲口音时会自动换成英式或美式。</div>
-      <div class="small">版本 10-12 · 暂停 v3</div>
+      <div>朗读用的是澳洲口音的 AI 配音，点开就能听；还没配好音的课会用你手机或电脑自带的声音。</div>
+      <div class="small">版本 10-17 · 配音 v1</div>
       <div class="small">© 2026 G'day 每日口语 · 网站免费学习使用，未经许可请勿转载或商用 · <a href="https://github.com/yunzi-luo/gday-daily-speaking/blob/main/LICENSE.md" target="_blank" rel="noopener" style="color:var(--accent)">版权与使用说明</a></div>
     </div>
   </footer>
@@ -324,7 +324,8 @@ function todayAdl(){try{return new Intl.DateTimeFormat('en-CA',{timeZone:'Austra
 /* ---------- speech ---------- */
 const synth=window.speechSynthesis;let voice=null,rate=parseFloat(store.get('gd-rate')||'1')||1,runId=0;
 function pickVoice(){
-  const info=document.getElementById('voiceInfo');
+  let info=document.getElementById('voiceInfo');
+  if(info&&clips&&Object.keys(clips.files).length){info.textContent='朗读：澳洲口音 AI 配音';info=null;}
   if(!synth){if(info)info.textContent='这个浏览器不支持朗读，换成手机自带浏览器或 Chrome 试试';return;}
   const vs=synth.getVoices();if(!vs.length){if(info)info.textContent='正在查找英文声音…';return;}
   const by=l=>vs.filter(v=>v.lang&&v.lang.replace('_','-').toLowerCase().startsWith(l));
@@ -334,25 +335,39 @@ function pickVoice(){
 }
 if(synth){synth.onvoiceschanged=pickVoice;}
 let curU=null,gate=null;
-function say(text){return new Promise(res=>{
+/* recorded clips (lessons/audio/<id>.json, made by tools/make_audio.py); one shared element so iOS keeps it unlocked after the first tap */
+const player=new Audio();player.preload='auto';let clips=null;
+function playClip(src){return new Promise(res=>{
+  const c={audio:true};
+  const fin=r=>{if(c._done)return;c._done=true;player.onended=player.onerror=null;if(curU===c)curU=null;res(r);};
+  c._fin=()=>fin('end');
+  player.onended=()=>fin('end');player.onerror=()=>fin('fail');
+  curU=c;player.src=src;player.defaultPlaybackRate=player.playbackRate=rate;
+  player.play().catch(()=>fin('fail'));
+});}
+async function say(text){
+  const f=clips&&clips.files[text.replace(/^You: /,'')];
+  if(f){const r=await playClip(clips.base+f);if(r!=='fail')return r;}
+  return speak(text);
+}
+function speak(text){return new Promise(res=>{
   if(!synth){res('end');return;}
   const u=new SpeechSynthesisUtterance(text.replace(/_{2,}/g,' blank '));
   if(voice)u.voice=voice;u.lang=voice?voice.lang:'en-AU';u.rate=rate;
   const fin=()=>{if(u._done)return;u._done=true;if(curU===u)curU=null;res(u._replay?'replay':'end');};
-  u.onend=fin;u.onerror=fin;u.onpause=()=>{u._p=true;};
+  u.onend=fin;u.onerror=fin;u._fin=fin;
   curU=u;if(synth.paused)synth.resume();synth.speak(u);
 });}
-/* say a line, waiting while paused; if the browser could not pause mid-line, the line is read again from its start */
+/* say a line, waiting while paused; a line cut off by pause is read again from its start on resume */
 async function sayLine(text,id){let r;do{while(gate){await gate.p;}if(id!==runId)return;r=await say(text);if(id!==runId)return;}while(r==='replay');while(gate){await gate.p;}}
+/* clips pause mid-sentence; browser speech can't do that reliably (it may end, skip or restart the line), so it cancels the line and reads it again on resume */
 function pausePlay(){if(gate)return;gate={};gate.p=new Promise(r=>gate.r=r);const u=curU;
-  if(synth&&u){synth.pause();setTimeout(()=>{if(gate&&curU===u&&!u._p&&!synth.paused){u._replay=true;synth.cancel();}},350);}}
-function resumePlay(){const g=gate;gate=null;const u=curU;
-  if(synth&&u&&!u._replay){synth.resume();setTimeout(()=>{if(!gate&&curU===u&&!synth.speaking){u._replay=true;synth.cancel();}},600);}
-  if(g)g.r();}
+  if(u&&u.audio)player.pause();else if(synth&&u){u._replay=true;synth.cancel();u._fin();}}
+function resumePlay(){const g=gate;gate=null;const u=curU;if(u&&u.audio)player.play().catch(()=>u._fin());if(g)g.r();}
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 let setStatus=()=>{};
 let stopHooks=[];
-function stopAll(){runId++;stopHooks.forEach(h=>h());if(gate){const g=gate;gate=null;g.r();}if(synth){if(synth.paused)synth.resume();synth.cancel();}document.querySelectorAll('.play.on').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.ln.playing').forEach(e=>e.classList.remove('playing'));setStatus('');}
+function stopAll(){runId++;stopHooks.forEach(h=>h());if(gate){const g=gate;gate=null;g.r();}const u=curU;player.pause();if(synth){if(synth.paused)synth.resume();synth.cancel();}if(u)u._fin();document.querySelectorAll('.play.on').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.ln.playing').forEach(e=>e.classList.remove('playing'));setStatus('');}
 
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
 function playBtn(text){
@@ -394,6 +409,7 @@ async function showLesson(id){
   setNav(id===INDEX[0]?.id?'today':'');
   let L;
   try{L=await loadLesson(id);}catch(e){$view.innerHTML='';const m=el('div','empty','这一课没能加载出来。检查一下网络，或者去往期里选别的日期。');$view.append(m);return;}
+  clips=null;try{const m=await getJSON('lessons/audio/'+id+'.json');clips={base:'lessons/audio/'+id+'/',files:m.files||{}};}catch(e){}
   const node=document.getElementById('tplLesson').content.cloneNode(true);
   const f=n=>node.querySelector('[data-f="'+n+'"]');
   const other=(L.dialogue&&L.dialogue.other)||{name:'对方',role:''};
@@ -443,7 +459,7 @@ async function showLesson(id){
     bAll.classList.toggle('primary',dlgState==='idle'||dlgMode===false);bThem.classList.toggle('primary',dlgState!=='idle'&&dlgMode===true);dRe.disabled=dlgState==='idle';};
   stopHooks.push(()=>{dlgState='idle';paintD();});
   let dlgMsg='';
-  function toggleDlg(mode){if(dlgState==='playing'&&dlgMode===mode){pausePlay();dlgState='paused';paintD();dlgMsg=statusEl.textContent;setStatus('已暂停 · 再点一下同一个按钮接着听');}
+  function toggleDlg(mode){if(dlgState==='playing'&&dlgMode===mode){pausePlay();dlgState='paused';paintD();dlgMsg=statusEl.textContent;setStatus('已暂停 · 再点一下同一个按钮，从这一句接着听');}
     else if(dlgState==='paused'&&dlgMode===mode){dlgState='playing';paintD();setStatus(dlgMsg);resumePlay();}else runDialogue(mode,0);}
   async function runDialogue(onlyThem,from){
     stopAll();const id=runId;dlgMode=onlyThem;dlgState='playing';paintD();await wait(120);if(id!==runId)return;
@@ -494,7 +510,7 @@ async function showLesson(id){
 
   // rate segment
   const seg=f('rateSeg');
-  seg.querySelectorAll('button').forEach(b=>{b.setAttribute('aria-pressed',parseFloat(b.dataset.r)===rate?'true':'false');b.onclick=()=>{rate=parseFloat(b.dataset.r);store.set('gd-rate',String(rate));seg.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));};});
+  seg.querySelectorAll('button').forEach(b=>{b.setAttribute('aria-pressed',parseFloat(b.dataset.r)===rate?'true':'false');b.onclick=()=>{rate=parseFloat(b.dataset.r);store.set('gd-rate',String(rate));player.defaultPlaybackRate=player.playbackRate=rate;seg.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));};});
   let zhOn=false;
   f('zhAll').onclick=e=>{zhOn=!zhOn;$view.querySelectorAll('.zh').forEach(z=>z.hidden=!zhOn);e.target.textContent=zhOn?'隐藏全部中文':'显示全部中文';};
   f('stopAll').onclick=stopAll;

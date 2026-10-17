@@ -141,7 +141,8 @@
  "dialogue": {
   "other": {
    "name": "Dave",
-   "role": "同事 · Senior Developer"
+   "role": "同事 · Senior Developer",
+   "voice": "m"
   },
   "lines": [
    {

@@ -160,7 +160,8 @@
  "dialogue": {
   "other": {
    "name": "Nicole",
-   "role": "Ava 的妈妈"
+   "role": "Ava 的妈妈",
+   "voice": "f"
   },
   "lines": [
    {

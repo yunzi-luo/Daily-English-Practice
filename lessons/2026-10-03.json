@@ -140,7 +140,8 @@
  "dialogue": {
   "other": {
    "name": "Sharon",
-   "role": "隔壁邻居"
+   "role": "隔壁邻居",
+   "voice": "f"
   },
   "lines": [
    {
